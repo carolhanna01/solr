@@ -120,9 +120,6 @@ public abstract class RuleBasedAuthorizationPluginBase
 
   /** Retrieves permission names for a given set of roles */
   public Set<String> getPermissionNamesForRoles(Set<String> roles) {
-    if (roles == null) {
-      return Set.of();
-    }
     return roles.stream()
         .filter(roleToPermissionsMap::containsKey)
         .flatMap(r -> roleToPermissionsMap.get(r).stream())
