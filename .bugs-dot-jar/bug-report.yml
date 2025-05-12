@@ -1,0 +1,325 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      aggregateprogress:
+        '@percentage': '100'
+        currentProgress:
+          row:
+          - '@backgroundColor': '#51a825'
+            '@percentage': '100'
+          - '@backgroundColor': '#ec8e00'
+            '@percentage': '0'
+        originalProgress:
+          row:
+          - '@backgroundColor': '#89afd7'
+            '@percentage': '0'
+          - '@backgroundColor': transparent
+            '@percentage': '100'
+      assignee:
+        '#text': Kevin Risden
+        '@username': krisden
+      attachments: null
+      comments:
+        comment:
+        - '#text': <p><a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=stillalex"
+            class="user-hover" rel="stillalex">stillalex</a> I updated affects version
+            to 9.1 - since <a href="https://issues.apache.org/jira/browse/SOLR-15776"
+            title="Make Admin UI play well with Authorization" class="issue-link"
+            data-issue-key="SOLR-15776"><del>SOLR-15776</del></a> was only committed
+            in 9.1.</p>
+          '@author': risdenk
+          '@created': Mon, 7 Nov 2022 19:20:50 +0000
+          '@id': '17629974'
+        - '#text': <p>good catch <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=krisden"
+            class="user-hover" rel="krisden">krisden</a> you are indeed correct.</p>
+          '@author': alex.parvulescu
+          '@created': Mon, 7 Nov 2022 19:25:56 +0000
+          '@id': '17629981'
+        - '#text': "<p>Hoping to be able to target 9.1 RC2 for this, as it is quite\
+            \ serious, affecting all Cloud BasicAuth setups.\_</p>"
+          '@author': janhoy
+          '@created': Mon, 7 Nov 2022 23:00:14 +0000
+          '@id': '17630078'
+        - '#text': <p>thanks for confirming <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=janhoy"
+            class="user-hover" rel="janhoy">janhoy</a>. Is there anything else to
+            do besides the PR to get this into the 9.1 RC2?</p>
+          '@author': alex.parvulescu
+          '@created': Mon, 7 Nov 2022 23:52:44 +0000
+          '@id': '17630088'
+        - '#text': '<p>Commit f35e1a3ed2b092b14411b799fd6360c4993bf4a8 in solr''s
+            branch refs/heads/main from Alex<br/>
+
+            [ <a href="https://gitbox.apache.org/repos/asf?p=solr.git;h=f35e1a3ed2b"
+            class="external-link" target="_blank" rel="nofollow noopener">https://gitbox.apache.org/repos/asf?p=solr.git;h=f35e1a3ed2b</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/SOLR-16527" title="RuleBasedAuthorizationPluginBase
+            NPE" class="issue-link" data-issue-key="SOLR-16527"><del>SOLR-16527</del></a>
+            RuleBasedAuthorizationPluginBase NPE (#1164)</p>
+
+
+            <p>Fixed NPE on RuleBasedAuthorizationPluginBase#getPermissionNamesForRoles
+            for null set of roles</p>'
+          '@author': jira-bot
+          '@created': Tue, 8 Nov 2022 00:54:06 +0000
+          '@id': '17630107'
+        - '#text': '<p>Commit b2ab5c1bb797959dc52358ea3069865393d5d359 in solr''s
+            branch refs/heads/branch_9x from Alex<br/>
+
+            [ <a href="https://gitbox.apache.org/repos/asf?p=solr.git;h=b2ab5c1bb79"
+            class="external-link" target="_blank" rel="nofollow noopener">https://gitbox.apache.org/repos/asf?p=solr.git;h=b2ab5c1bb79</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/SOLR-16527" title="RuleBasedAuthorizationPluginBase
+            NPE" class="issue-link" data-issue-key="SOLR-16527"><del>SOLR-16527</del></a>
+            RuleBasedAuthorizationPluginBase NPE (#1164)</p>
+
+
+            <p>Fixed NPE on RuleBasedAuthorizationPluginBase#getPermissionNamesForRoles
+            for null set of roles</p>'
+          '@author': jira-bot
+          '@created': Tue, 8 Nov 2022 00:57:34 +0000
+          '@id': '17630109'
+        - '#text': '<p>Commit aa4f3d98ab19c201e7f3c74cd14c99174148616d in solr''s
+            branch refs/heads/branch_9_1 from Alex<br/>
+
+            [ <a href="https://gitbox.apache.org/repos/asf?p=solr.git;h=aa4f3d98ab1"
+            class="external-link" target="_blank" rel="nofollow noopener">https://gitbox.apache.org/repos/asf?p=solr.git;h=aa4f3d98ab1</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/SOLR-16527" title="RuleBasedAuthorizationPluginBase
+            NPE" class="issue-link" data-issue-key="SOLR-16527"><del>SOLR-16527</del></a>
+            RuleBasedAuthorizationPluginBase NPE (#1164)</p>
+
+
+            <p>Fixed NPE on RuleBasedAuthorizationPluginBase#getPermissionNamesForRoles
+            for null set of roles</p>'
+          '@author': jira-bot
+          '@created': Tue, 8 Nov 2022 01:15:23 +0000
+          '@id': '17630113'
+        - '#text': '<p>Commit 2e6c7692981828c7da95de4691dd903dd558a576 in solr''s
+            branch refs/heads/main from Kevin Risden<br/>
+
+            [ <a href="https://gitbox.apache.org/repos/asf?p=solr.git;h=2e6c7692981"
+            class="external-link" target="_blank" rel="nofollow noopener">https://gitbox.apache.org/repos/asf?p=solr.git;h=2e6c7692981</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/SOLR-16527" title="RuleBasedAuthorizationPluginBase
+            NPE" class="issue-link" data-issue-key="SOLR-16527"><del>SOLR-16527</del></a>:
+            move changes to 9.1</p>'
+          '@author': jira-bot
+          '@created': Tue, 8 Nov 2022 01:18:41 +0000
+          '@id': '17630114'
+        - '#text': '<p>Commit 70cb2da5fb2ae7957ba048bf37622db92c161aec in solr''s
+            branch refs/heads/branch_9x from Kevin Risden<br/>
+
+            [ <a href="https://gitbox.apache.org/repos/asf?p=solr.git;h=70cb2da5fb2"
+            class="external-link" target="_blank" rel="nofollow noopener">https://gitbox.apache.org/repos/asf?p=solr.git;h=70cb2da5fb2</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/SOLR-16527" title="RuleBasedAuthorizationPluginBase
+            NPE" class="issue-link" data-issue-key="SOLR-16527"><del>SOLR-16527</del></a>:
+            move changes to 9.1</p>'
+          '@author': jira-bot
+          '@created': Tue, 8 Nov 2022 01:19:00 +0000
+          '@id': '17630115'
+        - '#text': <p>Thanks <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=stillalex"
+            class="user-hover" rel="stillalex">stillalex</a>!</p>
+          '@author': risdenk
+          '@created': Tue, 8 Nov 2022 01:19:14 +0000
+          '@id': '17630116'
+        - '#text': '<p>Thanks Alex and Kevin.</p>
+
+
+            <p>PS: It''s not necessary with a separate <a href="https://issues.apache.org/jira/browse/SOLR-16527"
+            title="RuleBasedAuthorizationPluginBase NPE" class="issue-link" data-issue-key="SOLR-16527"><del>SOLR-16527</del></a>
+            CHANGES entry, as the feature (<a href="https://issues.apache.org/jira/browse/SOLR-15776"
+            title="Make Admin UI play well with Authorization" class="issue-link"
+            data-issue-key="SOLR-15776"><del>SOLR-15776</del></a>) was introduced
+            in the same version, i.e. this bug has never been released to users. We
+            could fold the credit to Alex into the <a href="https://issues.apache.org/jira/browse/SOLR-15776"
+            title="Make Admin UI play well with Authorization" class="issue-link"
+            data-issue-key="SOLR-15776"><del>SOLR-15776</del></a> line instead?</p>'
+          '@author': janhoy
+          '@created': Tue, 8 Nov 2022 09:25:54 +0000
+          '@id': '17630304'
+        - '#text': <p><a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=janhoy"
+            class="user-hover" rel="janhoy">janhoy</a> yea technically true on changes.txt
+            - it was just easier to merge as it was instead of making a whole bunch
+            of changes entries across 3 branches (main, branch_9x, branch_9_1). I
+            don't think it hurts anything to leave it separate.</p>
+          '@author': risdenk
+          '@created': Tue, 8 Nov 2022 17:23:09 +0000
+          '@id': '17630535'
+        - '#text': "<p>Sure, no prob for me <img class=\"emoticon\" src=\"https://issues.apache.org/jira/images/icons/emoticons/smile.png\"\
+            \ height=\"16\" width=\"16\" align=\"absmiddle\" alt=\"\" border=\"0\"\
+            />\_</p>"
+          '@author': janhoy
+          '@created': Tue, 8 Nov 2022 19:00:07 +0000
+          '@id': '17630569'
+        - '#text': <p>Bulk closing 9.1 issues.</p>
+          '@author': ishan
+          '@created': Tue, 10 Jan 2023 20:45:35 +0000
+          '@id': '17656920'
+      component: Authorization
+      created: Mon, 7 Nov 2022 19:04:50 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '0.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: 'false'
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 2 years, 17 weeks, 6 days ago
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|z1bi40:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12313321
+          '@key': com.atlassian.jira.toolkit:message
+          customfieldname: Solr Mailing List Info
+          customfieldvalues: null
+      description: "<p>I set up a SolrCloud with 2 nodes and enabled basic auth following\
+        \ the Solr guide (<a href=\"https://solr.apache.org/guide/solr/latest/deployment-guide/basic-authentication-plugin.html#enable-basic-authentication\"\
+        \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\">https://solr.apache.org/guide/solr/latest/deployment-guide/basic-authentication-plugin.html#enable-basic-authentication</a>).</p>\n\
+        <div class=\"preformatted panel\" style=\"border-width: 1px;\"><div class=\"\
+        preformattedContent panelContent\">\n<pre>ERROR (qtp1527086220-49) [] o.a.s.h.RequestHandlerBase\
+        \ java.lang.NullPointerException =&gt; java.lang.NullPointerException\nat\
+        \ org.apache.solr.security.RuleBasedAuthorizationPluginBase.getPermissionNamesForRoles(RuleBasedAuthorizationPluginBase.java:123)\n\
+        java.lang.NullPointerException: null\nat org.apache.solr.security.RuleBasedAuthorizationPluginBase.getPermissionNamesForRoles(RuleBasedAuthorizationPluginBase.java:123)\
+        \ ~[?:?]\nat org.apache.solr.handler.admin.SystemInfoHandler.getSecurityInfo(SystemInfoHandler.java:342)\
+        \ ~[?:?]\nat org.apache.solr.handler.admin.SystemInfoHandler.handleRequestBody(SystemInfoHandler.java:153)\
+        \ ~[?:?]\n</pre>\n</div></div>\n<p>Logs seen on the Solr node originating\
+        \ the request:</p>\n<div class=\"preformatted panel\" style=\"border-width:\
+        \ 1px;\"><div class=\"preformattedContent panelContent\">\n<pre>2022-11-04\
+        \ 09:26:46.251 INFO  (qtp1658512704-126) [] o.a.s.s.HttpSolrCall [admin] webapp=null\
+        \ path=/admin/info/system params={wt=javabin&amp;version=2&amp;_=1667579206203}\
+        \ status=0 QTime=1\n2022-11-04 09:26:46.259 WARN  (qtp1658512704-81) [] o.a.s.h.a.AdminHandlersProxy\
+        \ Exception when fetching result from node localhost:6564_solr =&gt; java.util.concurrent.ExecutionException:\
+        \ org.apache.solr.client.solrj.impl.BaseHttpSolrClient$RemoteSolrException:\
+        \ Error from server at http://localhost:6564/solr: java.lang.NullPointerException\n\
+        at org.apache.solr.security.RuleBasedAuthorizationPluginBase.getPermissionNamesForRoles(RuleBasedAuthorizationPluginBase.java:126)\n\
+        java.util.concurrent.ExecutionException: org.apache.solr.client.solrj.impl.BaseHttpSolrClient$RemoteSolrException:\
+        \ Error from server at http://localhost:6564/solr: java.lang.NullPointerException\n\
+        </pre>\n</div></div>\n<p>\_</p>\n\n<p>I believe the reason is the 'roles'\
+        \ set is null on inter-node requests so this method will throw a NPE <a href=\"\
+        https://github.com/apache/solr/blob/26195c82493422cb9d6d4bdf9d4452046e7b3f67/solr/core/src/java/org/apache/solr/security/RuleBasedAuthorizationPluginBase.java#L122\"\
+        \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\">https://github.com/apache/solr/blob/26195c82493422cb9d6d4bdf9d4452046e7b3f67/solr/core/src/java/org/apache/solr/security/RuleBasedAuthorizationPluginBase.java#L122</a></p>\n\
+        \n<p>\_</p>\n\n<p>It looks like this was introduced with following commit\
+        \ for <a href=\"https://issues.apache.org/jira/browse/SOLR-15776\" title=\"\
+        Make Admin UI play well with Authorization\" class=\"issue-link\" data-issue-key=\"\
+        SOLR-15776\"><del>SOLR-15776</del></a> <a href=\"https://github.com/apache/solr/commit/a1406847ba256965e636e05b11e53c0ac696e2a9#diff-83579b1681fbe3ea47f7340796963b034594921405afb41c62d9415f52f5adcfR356\"\
+        \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\">https://github.com/apache/solr/commit/a1406847ba256965e636e05b11e53c0ac696e2a9#diff-83579b1681fbe3ea47f7340796963b034594921405afb41c62d9415f52f5adcfR356</a></p>"
+      due: null
+      environment: null
+      fixVersion:
+      - '9.1'
+      - main (10.0)
+      issuelinks:
+        issuelinktype:
+          '@id': '12310050'
+          inwardlinks:
+            '@description': is broken by
+            issuelink:
+              issuekey:
+                '#text': SOLR-15776
+                '@id': '13410498'
+          name: Regression
+      key:
+        '#text': SOLR-16527
+        '@id': '13498775'
+      labels: null
+      link: https://issues.apache.org/jira/browse/SOLR-16527
+      priority:
+        '#text': Major
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/major.svg
+        '@id': '3'
+      progress:
+        '@percentage': '100'
+        currentProgress:
+          row:
+          - '@backgroundColor': '#51a825'
+            '@percentage': '100'
+          - '@backgroundColor': '#ec8e00'
+            '@percentage': '0'
+        originalProgress:
+          row:
+          - '@backgroundColor': '#89afd7'
+            '@percentage': '0'
+          - '@backgroundColor': transparent
+            '@percentage': '100'
+      project:
+        '#text': Solr
+        '@id': '12310230'
+        '@key': SOLR
+      reporter:
+        '#text': Alex Deparvu
+        '@username': stillalex
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Tue, 8 Nov 2022 01:19:14 +0000
+      status:
+        '#text': Closed
+        '@description': The issue is considered finished, the resolution is correct.
+          Issues which are not closed can be reopened.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/closed.png
+        '@id': '6'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: RuleBasedAuthorizationPluginBase NPE
+      timeestimate:
+        '#text': 0h
+        '@seconds': '0'
+      timespent:
+        '#text': 20m
+        '@seconds': '1200'
+      title: '[SOLR-16527] RuleBasedAuthorizationPluginBase NPE'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Wed, 25 Jan 2023 16:15:56 +0000
+      version: '9.1'
+      votes: '0'
+      watches: '4'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA
