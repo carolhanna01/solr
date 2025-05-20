@@ -1,0 +1,199 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      assignee:
+        '#text': Alan Woodward
+        '@username': romseygeek
+      attachments:
+        attachment:
+          '@author': romseygeek
+          '@created': Wed, 27 Mar 2019 16:00:58 +0000
+          '@id': '12963903'
+          '@name': LUCENE-8741.patch
+          '@size': '2490'
+      comments:
+        comment:
+        - '#text': <p>Thanks for reporting <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=markus17"
+            class="user-hover" rel="markus17">markus17</a> - it's a leftover from
+            <a href="https://issues.apache.org/jira/browse/LUCENE-6228" title="Do
+            not expose full-fledged scorers in LeafCollector.setScorer" class="issue-link"
+            data-issue-key="LUCENE-6228"><del>LUCENE-6228</del></a>, we should be
+            casting to a <tt>Scorable</tt> instead of a <tt>Scorer</tt>. I'll put
+            up a patch.</p>
+          '@author': romseygeek
+          '@created': Wed, 27 Mar 2019 15:39:10 +0000
+          '@id': '16802941'
+        - '#text': '<p>Commit b1edfc5ef26b2ade2e7c6d012e4f1f438a0b4173 in lucene-solr''s
+            branch refs/heads/branch_8x from Alan Woodward<br/>
+
+            [ <a href="https://gitbox.apache.org/repos/asf?p=lucene-solr.git;h=b1edfc5"
+            class="external-link" target="_blank" rel="nofollow noopener">https://gitbox.apache.org/repos/asf?p=lucene-solr.git;h=b1edfc5</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-8741" title="ClassCastException
+            in ValueSource$ScoreAndDoc" class="issue-link" data-issue-key="LUCENE-8741"><del>LUCENE-8741</del></a>:
+            Fix ClassCastException in ValueSource.fromDoubleValuesSource()</p>'
+          '@author': jira-bot
+          '@created': Wed, 27 Mar 2019 16:25:17 +0000
+          '@id': '16803010'
+        - '#text': '<p>Commit 1c46dd1f9b1f1e1ea984e288bd61e83c07aba032 in lucene-solr''s
+            branch refs/heads/master from Alan Woodward<br/>
+
+            [ <a href="https://gitbox.apache.org/repos/asf?p=lucene-solr.git;h=1c46dd1"
+            class="external-link" target="_blank" rel="nofollow noopener">https://gitbox.apache.org/repos/asf?p=lucene-solr.git;h=1c46dd1</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-8741" title="ClassCastException
+            in ValueSource$ScoreAndDoc" class="issue-link" data-issue-key="LUCENE-8741"><del>LUCENE-8741</del></a>:
+            Fix ClassCastException in ValueSource.fromDoubleValuesSource()</p>'
+          '@author': jira-bot
+          '@created': Wed, 27 Mar 2019 16:25:18 +0000
+          '@id': '16803011'
+        - '#text': <p>Thanks Alan!</p>
+          '@author': markus17
+          '@created': Fri, 29 Mar 2019 09:59:41 +0000
+          '@id': '16804762'
+        - '#text': <p>Closing after the 9.0.0 release</p>
+          '@author': jpountz
+          '@created': Wed, 8 Dec 2021 17:05:16 +0000
+          '@id': '17455633'
+        - '#text': '<p>This issue was moved to GitHub issue: <a href="https://github.com/apache/lucene/issues/9786"
+            class="external-link" target="_blank" rel="nofollow noopener">#9786</a>.</p>'
+          '@author': tomoko uchida
+          '@created': Sun, 28 Aug 2022 15:43:25 +0000
+          '@id': '17594954'
+      created: Wed, 27 Mar 2019 11:40:27 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '1.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: no_permission
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 2 years, 38 weeks, 2 days ago
+        - '@id': customfield_12310120
+          '@key': com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes
+          customfieldname: Lucene Fields
+          customfieldvalues:
+            customfieldvalue:
+              '#text': New
+              '@key': '10121'
+        - '@id': customfield_12313320
+          '@key': com.atlassian.jira.toolkit:message
+          customfieldname: Lucene Mailing List Info
+          customfieldvalues: null
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|z015g0:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+      description: "<p>Upgrading to Apache Solr/Lucene 8.0, this popped up in our\
+        \ unit tests:</p>\n\n<div class=\"code panel\" style=\"border-width: 1px;\"\
+        ><div class=\"codeContent panelContent\">\n<pre class=\"code-java\">\nCaused\
+        \ by: java.lang.ClassCastException: org.apache.lucene.queries.function.ValueSource$ScoreAndDoc\
+        \ cannot be <span class=\"code-keyword\">cast</span> to org.apache.lucene.search.Scorer\n\
+        \        at org.apache.lucene.queries.function.ValueSource$FromDoubleValuesSource.getValues(ValueSource.java:288)\n\
+        \        at org.apache.lucene.queries.function.valuesource.MultiFloatFunction.getValues(MultiFloatFunction.java:76)\n\
+        \        at org.apache.lucene.queries.function.valuesource.ReciprocalFloatFunction.getValues(ReciprocalFloatFunction.java:64)\n\
+        \        at org.apache.lucene.queries.function.valuesource.MultiFloatFunction.getValues(MultiFloatFunction.java:76)\n\
+        \        at org.apache.lucene.queries.function.ValueSource$WrappedDoubleValuesSource.getValues(ValueSource.java:203)\n\
+        \        at org.apache.lucene.queries.function.FunctionScoreQuery$MultiplicativeBoostValuesSource.getValues(FunctionScoreQuery.java:248)\n\
+        \        at org.apache.lucene.queries.function.FunctionScoreQuery$FunctionScoreWeight.scorer(FunctionScoreQuery.java:211)\n\
+        \        at org.apache.lucene.search.Weight.scorerSupplier(Weight.java:143)\n\
+        \        at org.apache.lucene.search.BooleanWeight.scorerSupplier(BooleanWeight.java:374)\n\
+        \        at org.apache.lucene.search.BooleanWeight.scorer(BooleanWeight.java:340)\n\
+        \        at org.apache.lucene.search.Weight.bulkScorer(Weight.java:177)\n\
+        \        at org.apache.lucene.search.BooleanWeight.bulkScorer(BooleanWeight.java:334)\n\
+        \        at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:649)\n\
+        \        at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:443)\n\
+        \        at org.apache.solr.search.SolrIndexSearcher.buildAndRunCollectorChain(SolrIndexSearcher.java:200)\n\
+        \        at org.apache.solr.search.SolrIndexSearcher.getDocListNC(SolrIndexSearcher.java:1604)\n\
+        \        at org.apache.solr.search.SolrIndexSearcher.getDocListC(SolrIndexSearcher.java:1420)\n\
+        \        at org.apache.solr.search.SolrIndexSearcher.search(SolrIndexSearcher.java:567)\n\
+        \        at org.apache.solr.handler.component.QueryComponent.doProcessUngroupedSearch(QueryComponent.java:1434)\n\
+        \        at org.apache.solr.handler.component.QueryComponent.process(QueryComponent.java:373)\n\
+        \        at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:306)\n\
+        </pre>\n</div></div>\n\n<p>It only happens when, edismax, we boost by geodist:</p>\n\
+        <div class=\"code panel\" style=\"border-width: 1px;\"><div class=\"codeContent\
+        \ panelContent\">\n<pre class=\"code-java\">\nrecip(max(100,geodist()),1,10,1)\n\
+        </pre>\n</div></div>\n\n<p><a href=\"http://mail-archives.apache.org/mod_mbox/lucene-java-user/201903.mbox/browser\"\
+        \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\">http://mail-archives.apache.org/mod_mbox/lucene-java-user/201903.mbox/browser</a></p>"
+      due: null
+      environment: null
+      fixVersion:
+      - '8.1'
+      - '9.0'
+      key:
+        '#text': LUCENE-8741
+        '@id': '13224270'
+      labels: null
+      link: https://issues.apache.org/jira/browse/LUCENE-8741
+      priority:
+        '#text': Major
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/major.svg
+        '@id': '3'
+      project:
+        '#text': Lucene - Core
+        '@id': '12310110'
+        '@key': LUCENE
+      reporter:
+        '#text': Markus Jelsma
+        '@username': markus17
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Wed, 27 Mar 2019 16:26:04 +0000
+      status:
+        '#text': Closed
+        '@description': The issue is considered finished, the resolution is correct.
+          Issues which are not closed can be reopened.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/closed.png
+        '@id': '6'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: ClassCastException in ValueSource$ScoreAndDoc
+      title: '[LUCENE-8741] ClassCastException in ValueSource$ScoreAndDoc'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Sun, 28 Aug 2022 15:43:25 +0000
+      version: '8.0'
+      votes: '0'
+      watches: '4'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA

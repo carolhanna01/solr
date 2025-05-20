@@ -1,0 +1,518 @@
+Buildfile: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/build.xml
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+[loadresource] Do not set property disallowed.ivy.jars.list as its length is 0.
+
+-ivy-fail-disallowed-ivy-version:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: Apache Ivy 2.4.0 - 20141213170938 :: http://ant.apache.org/ivy/ ::
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+[loadresource] Do not set property disallowed.ivy.jars.list as its length is 0.
+
+-ivy-fail-disallowed-ivy-version:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+init:
+
+test:
+
+-clover.disable:
+
+ivy-availability-check:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+compile-test:
+
+check-expressions-uptodate:
+
+jar-expressions:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+common.compile-core:
+    [javac] Compiling 1 source file to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/queries/classes/java
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:54: warning: [rawtypes] found raw type: Map
+    [javac]   public abstract FunctionValues getValues(Map context, LeafReaderContext readerContext) throws IOException;
+    [javac]                                            ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:78: warning: [rawtypes] found raw type: Map
+    [javac]   public void createWeight(Map context, IndexSearcher searcher) throws IOException {
+    [javac]                            ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:84: warning: [rawtypes] found raw type: Map
+    [javac]   public static Map newContext(IndexSearcher searcher) {
+    [javac]                 ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:85: warning: [rawtypes] found raw type: Map
+    [javac]     Map context = new IdentityHashMap();
+    [javac]     ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:85: warning: [rawtypes] found raw type: IdentityHashMap
+    [javac]     Map context = new IdentityHashMap();
+    [javac]                       ^
+    [javac]   missing type arguments for generic class IdentityHashMap<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in class IdentityHashMap
+    [javac]     V extends Object declared in class IdentityHashMap
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:86: warning: [unchecked] unchecked call to put(K,V) as a member of the raw type Map
+    [javac]     context.put("searcher", searcher);
+    [javac]                ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:123: warning: [rawtypes] found raw type: Map
+    [javac]       Map context = new IdentityHashMap<>();
+    [javac]       ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:125: warning: [unchecked] unchecked call to put(K,V) as a member of the raw type Map
+    [javac]       context.put("scorer", scorer);
+    [javac]                  ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:200: warning: [rawtypes] found raw type: Map
+    [javac]       Map context = new HashMap<>();
+    [javac]       ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:202: warning: [unchecked] unchecked call to put(K,V) as a member of the raw type Map
+    [javac]       context.put("scorer", scorer);
+    [javac]                  ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:203: warning: [unchecked] unchecked call to put(K,V) as a member of the raw type Map
+    [javac]       context.put("searcher", searcher);
+    [javac]                  ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:240: warning: [rawtypes] found raw type: Map
+    [javac]       Map context = new HashMap<>();
+    [javac]       ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:243: warning: [unchecked] unchecked call to put(K,V) as a member of the raw type Map
+    [javac]       context.put("scorer", scorer);
+    [javac]                  ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:244: warning: [unchecked] unchecked call to put(K,V) as a member of the raw type Map
+    [javac]       context.put("searcher", searcher);
+    [javac]                  ^
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:287: warning: [rawtypes] found raw type: Map
+    [javac]     public FunctionValues getValues(Map context, LeafReaderContext readerContext) throws IOException {
+    [javac]                                     ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:369: warning: [rawtypes] found raw type: Map
+    [javac]       Map context = newContext(searcher);
+    [javac]       ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:376: warning: [rawtypes] found raw type: Map
+    [javac]     private final Map context;
+    [javac]                   ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:378: warning: [rawtypes] found raw type: Map
+    [javac]     public ValueSourceComparatorSource(Map context) {
+    [javac]                                        ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:398: warning: [rawtypes] found raw type: Map
+    [javac]     private final Map fcontext;
+    [javac]                   ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/java/org/apache/lucene/queries/function/ValueSource.java:401: warning: [rawtypes] found raw type: Map
+    [javac]     ValueSourceComparator(Map fcontext, int numHits) {
+    [javac]                           ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] 20 warnings
+
+compile-core:
+
+compile-test-framework:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+[loadresource] Do not set property disallowed.ivy.jars.list as its length is 0.
+
+-ivy-fail-disallowed-ivy-version:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+init:
+
+compile-lucene-core:
+
+compile-codecs:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+[loadresource] Do not set property disallowed.ivy.jars.list as its length is 0.
+
+-ivy-fail-disallowed-ivy-version:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+common.compile-core:
+
+compile-core:
+
+common.compile-test:
+    [javac] Compiling 1 source file to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/queries/classes/test
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/test/org/apache/lucene/queries/function/TestValueSources.java:527: warning: [rawtypes] found raw type: Map
+    [javac]     final Map context = ValueSource.newContext(searcher);
+    [javac]           ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/test/org/apache/lucene/queries/function/TestValueSources.java:610: warning: [rawtypes] found raw type: Map
+    [javac]     Map context = ValueSource.newContext(searcher);
+    [javac]     ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/queries/src/test/org/apache/lucene/queries/function/TestValueSources.java:674: warning: [rawtypes] found raw type: Map
+    [javac]     public FunctionValues getValues(Map context, LeafReaderContext readerContext) {
+    [javac]                                     ^
+    [javac]   missing type arguments for generic class Map<K,V>
+    [javac]   where K,V are type-variables:
+    [javac]     K extends Object declared in interface Map
+    [javac]     V extends Object declared in interface Map
+    [javac] 3 warnings
+
+-mrjar-classes-uptodate:
+
+resolve-groovy:
+[ivy:cachepath] :: resolving dependencies :: org.codehaus.groovy#groovy-all-caller;working
+[ivy:cachepath] 	confs: [default]
+[ivy:cachepath] 	found org.codehaus.groovy#groovy-all;2.4.15 in public
+[ivy:cachepath] :: resolution report :: resolve 73ms :: artifacts dl 2ms
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+	---------------------------------------------------------------------
+
+check-expressions-uptodate:
+
+jar-expressions:
+
+common.compile-core:
+
+compile-core:
+
+patch-mrjar-classes:
+[patch-cls] Remapped 0 class files for Java 9 to: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/queries/classes/java9
+
+install-junit4-taskdef:
+
+validate:
+
+-init-totals:
+
+-test:
+   [junit4] <JUnit4> says hi! Master seed: 9714AF7D6D8D0D19
+   [junit4] Executing 20 suites with 4 JVMs.
+   [junit4] 
+   [junit4] Started J2 PID(3130738@localhost).
+   [junit4] Started J0 PID(3130739@localhost).
+   [junit4] Started J3 PID(3130741@localhost).
+   [junit4] Started J1 PID(3130740@localhost).
+   [junit4] Suite: org.apache.lucene.queries.function.TestFunctionMatchQuery
+   [junit4] Completed [1/20] on J2 in 4.11s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestDocValuesFieldSources
+   [junit4] Completed [2/20] on J3 in 4.49s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestFieldScoreQuery
+   [junit4] Completed [3/20] on J1 in 6.10s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.payloads.TestPayloadTermQuery
+   [junit4] Completed [4/20] on J2 in 4.55s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.mlt.TestMoreLikeThis
+   [junit4] IGNOR/A 0.01s J1 | TestMoreLikeThis.testMultiFieldShouldReturnPerFieldBooleanQuery
+   [junit4]    > Assumption #1: 'awaitsfix' test group is disabled (@AwaitsFix(bugUrl="https://issues.apache.org/jira/browse/LUCENE-7161"))
+   [junit4] Completed [5/20] on J1 in 2.55s, 9 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestLongNormValueSource
+   [junit4] Completed [6/20] on J2 in 0.52s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.CommonTermsQueryTest
+   [junit4] Completed [7/20] on J0 in 10.07s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestFunctionRangeQuery
+   [junit4] Completed [8/20] on J1 in 1.55s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestFunctionScoreQuery
+   [junit4] Completed [9/20] on J1 in 2.54s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.payloads.TestPayloadScoreQuery
+   [junit4] Completed [10/20] on J3 in 8.56s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.payloads.TestPayloadSpans
+   [junit4] Completed [11/20] on J0 in 3.77s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestSortedSetFieldSource
+   [junit4] Completed [12/20] on J0 in 0.54s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.payloads.TestPayloadCheckQuery
+   [junit4] Completed [13/20] on J2 in 5.29s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestValueSources
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestValueSources -Dtests.method=testBuildingFromDoubleValues -Dtests.seed=9714AF7D6D8D0D19 -Dtests.slow=true -Dtests.badapples=true -Dtests.locale=en-BM -Dtests.timezone=SystemV/CST6 -Dtests.asserts=true -Dtests.file.encoding=UTF-8
+   [junit4] ERROR   0.09s J3 | TestValueSources.testBuildingFromDoubleValues <<<
+   [junit4]    > Throwable #1: java.lang.ClassCastException: class org.apache.lucene.queries.function.ValueSource$ScoreAndDoc cannot be cast to class org.apache.lucene.search.Scorer (org.apache.lucene.queries.function.ValueSource$ScoreAndDoc and org.apache.lucene.search.Scorer are in unnamed module of loader 'app')
+   [junit4]    > 	at __randomizedtesting.SeedInfo.seed([9714AF7D6D8D0D19:30A71CD49E49D99C]:0)
+   [junit4]    > 	at org.apache.lucene.queries.function.ValueSource$FromDoubleValuesSource.getValues(ValueSource.java:288)
+   [junit4]    > 	at org.apache.lucene.queries.function.ValueSource$WrappedDoubleValuesSource.getValues(ValueSource.java:204)
+   [junit4]    > 	at org.apache.lucene.queries.function.ValueSource$FromDoubleValuesSource.getValues(ValueSource.java:294)
+   [junit4]    > 	at org.apache.lucene.queries.function.FunctionQuery$AllScorer.<init>(FunctionQuery.java:105)
+   [junit4]    > 	at org.apache.lucene.queries.function.FunctionQuery$FunctionWeight.scorer(FunctionQuery.java:71)
+   [junit4]    > 	at org.apache.lucene.search.Weight.bulkScorer(Weight.java:167)
+   [junit4]    > 	at org.apache.lucene.search.LRUQueryCache$CachingWrapperWeight.bulkScorer(LRUQueryCache.java:796)
+   [junit4]    > 	at org.apache.lucene.search.AssertingWeight.bulkScorer(AssertingWeight.java:88)
+   [junit4]    > 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:649)
+   [junit4]    > 	at org.apache.lucene.search.AssertingIndexSearcher.search(AssertingIndexSearcher.java:72)
+   [junit4]    > 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:443)
+   [junit4]    > 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:567)
+   [junit4]    > 	at org.apache.lucene.search.IndexSearcher.searchAfter(IndexSearcher.java:548)
+   [junit4]    > 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:462)
+   [junit4]    > 	at org.apache.lucene.queries.function.TestValueSources.assertHits(TestValueSources.java:636)
+   [junit4]    > 	at org.apache.lucene.queries.function.TestValueSources.testBuildingFromDoubleValues(TestValueSources.java:587)
+   [junit4]    > 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+   [junit4]    > 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+   [junit4]    > 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+   [junit4]    > 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+   [junit4]    > 	at java.base/java.lang.Thread.run(Thread.java:829)
+   [junit4]   2> NOTE: test params are: codec=Asserting(Lucene80): {string=FSTOrd50, id=FSTOrd50, text=Lucene50(blocksize=128)}, docValues:{intMv=DocValuesFormat(name=Lucene80), floatMv=DocValuesFormat(name=Lucene80), string=DocValuesFormat(name=Lucene80), double=DocValuesFormat(name=Lucene80), id=DocValuesFormat(name=Lucene80), float=DocValuesFormat(name=Lucene80), doubleMv=DocValuesFormat(name=Direct), longMv=DocValuesFormat(name=Lucene80), int=DocValuesFormat(name=Lucene80), long=DocValuesFormat(name=Lucene80)}, maxPointsInLeafNode=1652, maxMBSortInHeap=7.944066161704475, sim=Asserting(org.apache.lucene.search.similarities.AssertingSimilarity@3a6a7483), locale=en-BM, timezone=SystemV/CST6
+   [junit4]   2> NOTE: Linux 6.8.0-59-generic amd64/Ubuntu 11.0.27 (64-bit)/cpus=8,threads=1,free=148655328,total=262144000
+   [junit4]   2> NOTE: All tests run in this JVM: [TestDocValuesFieldSources, TestPayloadScoreQuery, TestValueSources]
+   [junit4] Completed [14/20 (1!)] on J3 in 2.08s, 36 tests, 1 error <<< FAILURES!
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestFunctionScoreExplanations
+   [junit4] Completed [15/20 (1!)] on J0 in 0.79s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestFunctionQueryExplanations
+   [junit4] Completed [16/20 (1!)] on J2 in 0.52s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestFunctionQuerySort
+   [junit4] Completed [17/20 (1!)] on J3 in 0.27s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.TestIndexReaderFunctions
+   [junit4] Completed [18/20 (1!)] on J0 in 0.54s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.function.docvalues.TestBoolValOfNumericDVs
+   [junit4] Completed [19/20 (1!)] on J2 in 0.27s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.queries.payloads.TestPayloadExplanations
+   [junit4] Completed [20/20 (1!)] on J1 in 2.78s, 8 tests
+   [junit4] 
+   [junit4] 
+   [junit4] Tests with failures [seed: 9714AF7D6D8D0D19]:
+   [junit4]   - org.apache.lucene.queries.function.TestValueSources.testBuildingFromDoubleValues
+   [junit4] 
+   [junit4] 
+   [junit4] JVM J0:     2.11 ..    19.84 =    17.73s
+   [junit4] JVM J1:     2.11 ..    19.93 =    17.83s
+   [junit4] JVM J2:     2.10 ..    19.90 =    17.80s
+   [junit4] JVM J3:     2.11 ..    19.46 =    17.35s
+   [junit4] Execution time total: 19 seconds
+   [junit4] Tests summary: 20 suites, 134 tests, 1 error, 1 ignored (1 assumption)
