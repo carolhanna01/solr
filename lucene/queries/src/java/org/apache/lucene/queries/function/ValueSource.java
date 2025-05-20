@@ -32,6 +32,7 @@ import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.LongValues;
 import org.apache.lucene.search.LongValuesSource;
 import org.apache.lucene.search.Scorable;
+import org.apache.lucene.search.Scorer;
 import org.apache.lucene.search.SimpleFieldComparator;
 import org.apache.lucene.search.SortField;
 
@@ -284,7 +285,7 @@ public abstract class ValueSource {
 
     @Override
     public FunctionValues getValues(Map context, LeafReaderContext readerContext) throws IOException {
-      Scorable scorer = (Scorable) context.get("scorer");
+      Scorer scorer = (Scorer) context.get("scorer");
       DoubleValues scores = scorer == null ? null : DoubleValuesSource.fromScorer(scorer);
 
       IndexSearcher searcher = (IndexSearcher) context.get("searcher");
