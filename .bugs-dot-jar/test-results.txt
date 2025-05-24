@@ -1,0 +1,1529 @@
+Buildfile: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/core/build.xml
+
+-clover.disable:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: Apache Ivy 2.4.0 - 20141213170938 :: http://ant.apache.org/ivy/ ::
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+resolve:
+
+init:
+
+compile-core:
+    [javac] Compiling 1 source file to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/core/classes/java
+
+compile-test-framework:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+init:
+
+compile-lucene-core:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+compile-codecs:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+common.compile-core:
+
+compile-core:
+
+compile-test:
+    [javac] Compiling 3 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/core/classes/test
+
+install-junit4-taskdef:
+
+validate:
+
+resolve-groovy:
+[ivy:cachepath] :: resolving dependencies :: org.codehaus.groovy#groovy-all-caller;working
+[ivy:cachepath] 	confs: [default]
+[ivy:cachepath] 	found org.codehaus.groovy#groovy-all;2.3.6 in public
+[ivy:cachepath] :: resolution report :: resolve 12ms :: artifacts dl 0ms
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+	---------------------------------------------------------------------
+
+-init-totals:
+
+-test:
+   [junit4] <JUnit4> says hello! Master seed: 79E29FF44D3321E
+   [junit4] Executing 413 suites with 4 JVMs.
+   [junit4] 
+   [junit4] Started J1 PID(519342@JustynaProBook).
+   [junit4] Started J0 PID(519344@JustynaProBook).
+   [junit4] Started J3 PID(519343@JustynaProBook).
+   [junit4] Started J2 PID(519345@JustynaProBook).
+   [junit4] Suite: org.apache.lucene.search.TestSubScorerFreqs
+   [junit4] Completed on J3 in 1.04s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSortedSetSelector
+   [junit4] Completed on J0 in 1.33s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestSpanExplanationsOfNonMatches
+   [junit4] Completed on J2 in 1.32s, 30 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestTermRangeQuery
+   [junit4] Completed on J2 in 0.51s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestPrefixInBooleanQuery
+   [junit4] Completed on J1 in 2.07s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestFilterCachingPolicy
+   [junit4] Completed on J1 in 0.06s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestQueryWrapperFilter
+   [junit4] Completed on J3 in 1.27s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexCommit
+   [junit4] Completed on J3 in 0.04s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestMixedCodecs
+   [junit4] Completed on J0 in 1.22s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexFileDeleter
+   [junit4] Completed on J1 in 0.75s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.TestToken
+   [junit4] Completed on J1 in 0.15s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestSpanFirstQuery
+   [junit4] Completed on J1 in 0.11s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestParallelLeafReader
+   [junit4] Completed on J1 in 0.57s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestRollingUpdates
+   [junit4] Completed on J0 in 2.56s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSortRandom
+   [junit4] Completed on J0 in 0.51s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestBagOfPositions
+   [junit4] Completed on J0 in 1.19s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestBlockPostingsFormat2
+   [junit4] Completed on J3 in 5.13s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestManyFields
+   [junit4] Completed on J2 in 7.19s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterExceptions2
+   [junit4] Completed on J1 in 5.27s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestPayloadSpans
+   [junit4] Completed on J3 in 1.80s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestPayloadsOnVectors
+   [junit4] Completed on J3 in 0.12s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestScorerPerf
+   [junit4] Completed on J0 in 2.89s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestSegmentMerger
+   [junit4] Completed on J1 in 1.76s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestWildcard
+   [junit4] Completed on J1 in 0.39s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestMergeRateLimiter
+   [junit4] Completed on J1 in 0.06s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestLogMergePolicy
+   [junit4] Completed on J1 in 0.10s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestCodecUtil
+   [junit4] Completed on J1 in 0.11s, 13 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestLazyProxSkipping
+   [junit4] Completed on J1 in 0.53s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterCommit
+   [junit4] Completed on J3 in 3.99s, 13 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestRamUsageEstimatorOnWildAnimals
+   [junit4] Completed on J1 in 1.67s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestSentinelIntSet
+   [junit4] Completed on J1 in 0.23s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestPrefixCodedTerms
+   [junit4] Completed on J3 in 0.61s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestMinShouldMatch2
+   [junit4] Completed on J0 in 4.89s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.automaton.TestAutomaton
+   [junit4] Completed on J0 in 2.78s, 42 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestSameTokenSamePosition
+   [junit4] Completed on J0 in 0.13s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.asserting.TestAssertingTermVectorsFormat
+   [junit4] IGNOR/A 0.15s J3 | TestAssertingTermVectorsFormat.testBigDocuments
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J3 in 3.52s, 16 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestFieldMaskingSpanQuery
+   [junit4] Completed on J3 in 0.89s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestOmitPositions
+   [junit4] Completed on J3 in 0.66s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestTimeLimitingCollector
+   [junit4] Completed on J0 in 3.61s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestExceedMaxTermLength
+   [junit4] Completed on J0 in 0.06s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestOfflineSorter
+   [junit4] IGNOR/A 0.16s J1 | TestOfflineSorter.testLargerRandom
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J1 in 8.02s, 6 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.compressing.TestFastCompressionMode
+   [junit4] Completed on J1 in 0.62s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.document.TestDateTools
+   [junit4] Completed on J1 in 0.09s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestSetOnce
+   [junit4] Completed on J1 in 0.08s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestInPlaceMergeSorter
+   [junit4] Completed on J1 in 0.33s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestNRTThreads
+   [junit4] Completed on J3 in 5.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestFilterLeafReader
+   [junit4] Completed on J3 in 0.08s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterWithThreads
+   [junit4] Completed on J0 in 3.16s, 12 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestStringHelper
+   [junit4] Completed on J0 in 0.05s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestNRTReaderWithThreads
+   [junit4] Completed on J3 in 1.87s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestRollingBuffer
+   [junit4] Completed on J3 in 0.50s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestSloppyMath
+   [junit4] Completed on J3 in 0.33s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestBlockPostingsFormat
+   [junit4] Completed on J1 in 6.54s, 18 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestMaxFailuresRule
+   [junit4] Completed on J3 in 2.92s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.asserting.TestAssertingStoredFieldsFormat
+   [junit4] Completed on J2 in 22.09s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestFilterDirectory
+   [junit4] IGNOR/A 0.14s J2 | TestFilterDirectory.testFsyncDoesntCreateNewFiles
+   [junit4]    > Assumption #1: test only works for FSDirectory subclasses
+   [junit4] Completed on J2 in 1.35s, 40 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTryDelete
+   [junit4] Completed on J2 in 0.10s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestMultiFields
+   [junit4] Completed on J2 in 0.68s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestAutomatonQueryUnicode
+   [junit4] Completed on J2 in 0.19s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.tokenattributes.TestCharTermAttributeImpl
+   [junit4] Completed on J2 in 1.05s, 12 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestCollectionUtil
+   [junit4] Completed on J0 in 10.12s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestBufferedChecksum
+   [junit4] Completed on J2 in 0.10s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestTermRangeFilter
+   [junit4] Completed on J0 in 1.05s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTermVectors
+   [junit4] Completed on J2 in 1.00s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestBooleanScorer
+   [junit4] Completed on J0 in 0.11s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestSegmentTermDocs
+   [junit4] Completed on J2 in 1.34s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterLockRelease
+   [junit4] Completed on J2 in 0.05s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestSegmentReader
+   [junit4] Completed on J2 in 1.74s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestVersion
+   [junit4] Completed on J2 in 0.11s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestWeakIdentityMap
+   [junit4] Completed on J2 in 3.22s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestRoaringDocIdSet
+   [junit4] Completed on J2 in 2.34s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.Test2BSortedDocValues
+   [junit4] IGNOR/A 0.01s J2 | Test2BSortedDocValues.test2BOrds
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=Takes ~ 6 hours if the heap is 5gb))
+   [junit4] IGNOR/A 0.01s J2 | Test2BSortedDocValues.testFixedSorted
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=Takes ~ 6 hours if the heap is 5gb))
+   [junit4] Completed on J2 in 0.03s, 2 tests, 2 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDocInverterPerFieldErrorInfo
+   [junit4] Completed on J2 in 0.10s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.perfield.TestPerFieldPostingsFormat
+   [junit4] IGNOR/A 0.02s J1 | TestPerFieldPostingsFormat.testPostingsEnumReuse
+   [junit4]    > Assumption #1: The MockRandom PF randomizes content on the fly, so we can't check it
+   [junit4] IGNOR/A 0.02s J1 | TestPerFieldPostingsFormat.testMergeStability
+   [junit4]    > Assumption #1: The MockRandom PF randomizes content on the fly, so we can't check it
+   [junit4] Completed on J1 in 15.18s, 16 tests, 2 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestSumDocFreq
+   [junit4] Completed on J1 in 0.24s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.automaton.TestOperations
+   [junit4] Completed on J2 in 1.82s, 14 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestIntsRef
+   [junit4] Completed on J2 in 0.05s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestAddIndexes
+   [junit4] Completed on J2 in 3.61s, 23 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDocCount
+   [junit4] Completed on J2 in 0.11s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestBooleanQuery
+   [junit4] Completed on J2 in 0.58s, 16 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.Test2BNumericDocValues
+   [junit4] IGNOR/A 0.00s J2 | Test2BNumericDocValues.testNumerics
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=takes ~ 2 hours if the heap is 5gb))
+   [junit4] Completed on J2 in 0.01s, 1 test, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.compressing.TestCompressingStoredFieldsFormat
+   [junit4] IGNOR/A 0.01s J1 | TestCompressingStoredFieldsFormat.testBigDocuments
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J1 in 7.53s, 21 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestLucene50SegmentInfoFormat
+   [junit4] Completed on J1 in 0.18s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.perfield.TestPerFieldDocValuesFormat
+   [junit4] Completed on J3 in 23.63s, 85 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.automaton.TestDeterminism
+   [junit4] Completed on J1 in 0.74s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestBinaryTerms
+   [junit4] Completed on J3 in 0.15s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDeletionPolicy
+   [junit4] Completed on J2 in 3.79s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestBeforeAfterOverrides
+   [junit4] Completed on J2 in 0.12s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.TestNumericTokenStream
+   [junit4] Completed on J2 in 0.07s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.TestMockAnalyzer
+   [junit4] Completed on J1 in 2.08s, 17 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDirectoryReaderReopen
+   [junit4] Completed on J2 in 1.96s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestMultiTermQueryRewrites
+   [junit4] Completed on J2 in 0.07s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestSparseFixedBitDocIdSet
+   [junit4] Completed on J3 in 3.39s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestLongBitSet
+   [junit4] Completed on J3 in 2.91s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.Test2BBinaryDocValues
+   [junit4] IGNOR/A 0.01s J3 | Test2BBinaryDocValues.testFixedBinary
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=takes ~ 6 hours if the heap is 5gb))
+   [junit4] IGNOR/A 0.00s J3 | Test2BBinaryDocValues.testVariableBinary
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=takes ~ 6 hours if the heap is 5gb))
+   [junit4] Completed on J3 in 0.03s, 2 tests, 2 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestMixedDocValuesUpdates
+   [junit4] IGNOR/A 0.02s J2 | TestMixedDocValuesUpdates.testTonsOfUpdates
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J2 in 3.95s, 4 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestBagOfPostings
+   [junit4] Completed on J3 in 2.15s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTwoPhaseCommitTool
+   [junit4] Completed on J3 in 0.06s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.fst.TestFSTs
+   [junit4] IGNOR/A 0.01s J2 | TestFSTs.testBigSet
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J2 in 9.69s, 20 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestPerSegmentDeletes
+   [junit4] Completed on J2 in 0.03s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestLucene50TermVectorsFormat
+   [junit4] Completed on J1 in 15.60s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestLucene50StoredFieldsFormatHighCompression
+   [junit4] IGNOR/A 0.00s J3 | TestLucene50StoredFieldsFormatHighCompression.testBigDocuments
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J3 in 9.79s, 18 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.Test4GBStoredFields
+   [junit4] IGNOR/A 0.00s J3 | Test4GBStoredFields.test
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J3 in 0.01s, 1 test, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.automaton.TestRegExp
+   [junit4] Completed on J3 in 0.16s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestPersistentSnapshotDeletionPolicy
+   [junit4] Completed on J2 in 1.91s, 13 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestBytesRefHash
+   [junit4] Completed on J2 in 1.46s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestLock
+   [junit4] Completed on J2 in 0.05s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestControlledRealTimeReopenThread
+   [junit4] IGNOR/A 0.03s J1 | TestControlledRealTimeReopenThread.testCRTReopen
+   [junit4]    > Assumption #1: 'awaitsfix' test group is disabled (@AwaitsFix(bugUrl=https://issues.apache.org/jira/browse/LUCENE-5737))
+   [junit4] Completed on J1 in 3.09s, 5 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexReaderClose
+   [junit4] Completed on J1 in 0.21s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSameScoresWithThreads
+   [junit4] Completed on J2 in 1.58s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.asserting.TestAssertingNormsFormat
+   [junit4] IGNOR/A 0.01s J3 | TestAssertingNormsFormat.testNCommonBig
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] IGNOR/A 0.01s J3 | TestAssertingNormsFormat.testMergeStability
+   [junit4]    > Assumption #1: The MockRandom PF randomizes content on the fly, so we can't check it
+   [junit4] Completed on J3 in 3.90s, 16 tests, 2 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestAtomicUpdate
+   [junit4] Completed on J3 in 2.56s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSimpleExplanations
+   [junit4] Completed on J2 in 3.05s, 68 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestFuzzyQuery
+   [junit4] Completed on J3 in 0.22s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexInput
+   [junit4] Completed on J3 in 1.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestLucene50DocValuesFormat
+   [junit4] IGNOR/A 0.13s J0 | TestLucene50DocValuesFormat.testSortedVariableLengthManyVsStoredFields
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] IGNOR/A 0.00s J0 | TestLucene50DocValuesFormat.testSortedSetVariableLengthManyVsStoredFields
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] IGNOR/A 0.00s J0 | TestLucene50DocValuesFormat.testTermsEnumRandomMany
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J0 in 45.04s, 94 tests, 3 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.automaton.TestLevenshteinAutomata
+   [junit4] Completed on J3 in 3.33s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestSparseFixedBitSet
+   [junit4] Completed on J1 in 9.45s, 17 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterNRTIsCurrent
+   [junit4] Completed on J3 in 1.89s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterOnDiskFull
+   [junit4] Completed on J3 in 0.44s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestBitDocIdSetBuilder
+   [junit4] Completed on J3 in 0.19s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestSpanExplanations
+   [junit4] Completed on J3 in 0.72s, 30 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestNot
+   [junit4] Completed on J3 in 0.05s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestPhrasePrefixQuery
+   [junit4] Completed on J3 in 0.05s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDocValuesIndexing
+   [junit4] Completed on J3 in 0.56s, 34 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestNorms
+   [junit4] Completed on J3 in 0.57s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterMaxDocs
+   [junit4] IGNOR/A 0.01s J3 | TestIndexWriterMaxDocs.testExactlyAtTrueLimit
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=takes over two hours))
+   [junit4] Completed on J3 in 0.97s, 11 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDuelingCodecs
+   [junit4] Completed on J2 in 13.28s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestSizeBoundedForceMerge
+   [junit4] Completed on J2 in 0.21s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterMerging
+   [junit4] Completed on J1 in 8.56s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestParallelCompositeReader
+   [junit4] Completed on J2 in 0.61s, 13 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.document.TestFieldType
+   [junit4] Completed on J2 in 0.03s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterOutOfMemory
+   [junit4] IGNOR/A 0.00s J1 | TestIndexWriterOutOfMemory.testCheckpoint
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J1 in 0.29s, 2 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestCloseableThreadLocal
+   [junit4] Completed on J1 in 0.04s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.TestAssertions
+   [junit4] Completed on J2 in 0.03s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestTotalHitCountCollector
+   [junit4] Completed on J2 in 0.03s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestElevationComparator
+   [junit4] Completed on J2 in 0.11s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestDocIdSetBuilder
+   [junit4] Completed on J2 in 0.06s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestSpanMultiTermQueryWrapper
+   [junit4] Completed on J1 in 0.22s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestLucene50CompoundFormat
+   [junit4] Completed on J3 in 4.56s, 22 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.TestCharFilter
+   [junit4] Completed on J3 in 0.04s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestRegexpRandom
+   [junit4] Completed on J3 in 0.20s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestDocIdSet
+   [junit4] Completed on J3 in 0.06s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestDocTermOrdsRewriteMethod
+   [junit4] Completed on J1 in 1.04s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestBitUtil
+   [junit4] Completed on J3 in 0.59s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestFileSwitchDirectory
+   [junit4] IGNOR/A 0.02s J0 | TestFileSwitchDirectory.testFsyncDoesntCreateNewFiles
+   [junit4]    > Assumption #1: test only works for FSDirectory subclasses
+   [junit4] Completed on J0 in 13.59s, 39 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDocumentsWriterStallControl
+   [junit4] Completed on J2 in 1.33s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDoc
+   [junit4] Completed on J3 in 0.34s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestFieldCacheRangeFilter
+   [junit4] Completed on J1 in 0.51s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.Test2BPostingsBytes
+   [junit4] IGNOR/A 0.01s J1 | Test2BPostingsBytes.test
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=takes ~20GB-30GB of space and 10 minutes, and more heap space sometimes))
+   [junit4] Completed on J1 in 0.01s, 1 test, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestAllFilesHaveCodecHeader
+   [junit4] Completed on J3 in 0.31s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.MultiCollectorTest
+   [junit4] Completed on J3 in 0.05s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestTermScorer
+   [junit4] Completed on J3 in 0.10s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestIndexSearcher
+   [junit4] Completed on J3 in 0.21s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDirectoryReader
+   [junit4] Completed on J2 in 1.53s, 24 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestCustomSearcherSort
+   [junit4] Completed on J2 in 0.93s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestNumericDocValuesUpdates
+   [junit4] IGNOR/A 0.01s J0 | TestNumericDocValuesUpdates.testTonsOfUpdates
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J0 in 2.52s, 29 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestSnapshotDeletionPolicy
+   [junit4] Completed on J3 in 1.66s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTransactionRollback
+   [junit4] Completed on J0 in 0.15s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestSpanSearchEquivalence
+   [junit4] Completed on J2 in 0.35s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSloppyPhraseQuery2
+   [junit4] Completed on J0 in 0.77s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.document.TestBinaryDocument
+   [junit4] Completed on J0 in 0.06s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestCodecHoldsOpenFiles
+   [junit4] Completed on J0 in 0.06s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestLongPostings
+   [junit4] Completed on J1 in 3.61s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestNumericRangeQuery32
+   [junit4] Completed on J2 in 4.41s, 24 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSearcherManager
+   [junit4] Completed on J0 in 4.02s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterMergePolicy
+   [junit4] Completed on J1 in 4.67s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.tokenattributes.TestSimpleAttributeImpl
+   [junit4] Completed on J1 in 0.03s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.TestDemo
+   [junit4] Completed on J1 in 0.05s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestOmitNorms
+   [junit4] Completed on J0 in 1.28s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestMatchAllDocsQuery
+   [junit4] Completed on J1 in 0.07s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.FuzzyTermOnShortTermsTest
+   [junit4] Completed on J1 in 0.15s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestTopFieldCollector
+   [junit4] Completed on J0 in 0.13s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestBoolean2
+   [junit4] Completed on J2 in 3.19s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestFixedBitDocIdSet
+   [junit4] Completed on J1 in 1.87s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.document.TestField
+   [junit4] Completed on J1 in 0.14s, 18 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestLucene50StoredFieldsFormat
+   [junit4] IGNOR/A 0.00s J1 | TestLucene50StoredFieldsFormat.testBigDocuments
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J1 in 1.35s, 16 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTerms
+   [junit4] Completed on J1 in 0.09s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestScoreCachingWrappingScorer
+   [junit4] Completed on J1 in 0.03s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestNotDocIdSet
+   [junit4] Completed on J0 in 4.19s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestDisjunctionMaxQuery
+   [junit4] Completed on J1 in 0.67s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestSegmentTermEnum
+   [junit4] Completed on J1 in 0.06s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.automaton.TestMinimize
+   [junit4] Completed on J0 in 3.57s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.Test2BTerms
+   [junit4] IGNOR/A 0.00s J0 | Test2BTerms.test2BTerms
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=very slow, use 5g minimum heap))
+   [junit4] Completed on J0 in 0.02s, 1 test, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexableField
+   [junit4] Completed on J0 in 0.32s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestCodecs
+   [junit4] Completed on J0 in 0.54s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterConfig
+   [junit4] Completed on J0 in 0.05s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestMergedIterator
+   [junit4] Completed on J0 in 0.58s, 25 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestComplexExplanationsOfNonMatches
+   [junit4] Completed on J0 in 0.14s, 21 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.compressing.TestCompressingTermVectorsFormat
+   [junit4] Completed on J2 in 7.90s, 12 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestSeedFromUncaught
+   [junit4] Completed on J0 in 0.14s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestRollback
+   [junit4] Completed on J0 in 0.05s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestFailIfDirectoryNotClosed
+   [junit4] Completed on J0 in 0.06s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIntBlockPool
+   [junit4] Completed on J0 in 0.40s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.fst.TestBytesStore
+   [junit4] Completed on J0 in 0.78s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestFieldsReader
+   [junit4] Completed on J0 in 0.74s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDocValues
+   [junit4] Completed on J0 in 0.10s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTermsEnum
+   [junit4] Completed on J3 in 21.91s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterExceptions
+   [junit4] IGNOR/A 0.01s J2 | TestIndexWriterExceptions.testTooManyTokens
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J2 in 7.72s, 37 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDemoParallelLeafReader
+   [junit4] Completed on J3 in 5.02s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.packed.TestPackedInts
+   [junit4] IGNOR/A 0.01s J1 | TestPackedInts.testBlockReaderOverflow
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J1 in 16.83s, 28 tests, 3 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.asserting.TestAssertingDocValuesFormat
+   [junit4] Completed on J2 in 4.45s, 16 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSearchAfter
+   [junit4] Completed on J0 in 10.97s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestCachingWrapperFilter
+   [junit4] Completed on J0 in 0.41s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterThreadsToSegments
+   [junit4] Completed on J2 in 1.74s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestExitableDirectoryReader
+   [junit4] Completed on J0 in 0.77s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.TestExternalCodecs
+   [junit4] Completed on J0 in 0.28s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.packed.TestEliasFanoSequence
+   [junit4] Completed on J3 in 5.32s, 24 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestComplexExplanations
+   [junit4] Completed on J0 in 1.97s, 21 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestWildcardRandom
+   [junit4] Completed on J0 in 0.14s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestRecyclingIntBlockAllocator
+   [junit4] Completed on J0 in 0.15s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestNoMergeScheduler
+   [junit4] Completed on J0 in 0.06s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriter
+   [junit4] Completed on J1 in 5.82s, 67 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTieredMergePolicy
+   [junit4] Completed on J1 in 2.67s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestConcurrentMergeScheduler
+   [junit4] Completed on J2 in 6.30s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.asserting.TestAssertingPostingsFormat
+   [junit4] Completed on J3 in 4.30s, 16 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestPagedBytes
+   [junit4] Completed on J0 in 4.72s, 4 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestPayloads
+   [junit4] Completed on J0 in 0.39s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestShardSearching
+   [junit4] Completed on J1 in 4.78s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestBasics
+   [junit4] Completed on J2 in 5.47s, 28 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.TestGraphTokenizers
+   [junit4] Completed on J3 in 4.95s, 21 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestFlushByRamOrCountsPolicy
+   [junit4] Completed on J1 in 1.38s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestAutomatonQuery
+   [junit4] Completed on J2 in 4.24s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestMultiMMap
+   [junit4] Completed on J1 in 3.92s, 50 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterReader
+   [junit4] IGNOR/A 0.01s J0 | TestIndexWriterReader.testDuringAddIndexes
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J0 in 11.27s, 23 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestByteSlices
+   [junit4] Completed on J2 in 3.32s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.perfield.TestPerFieldPostingsFormat2
+   [junit4] Completed on J2 in 0.40s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterDelete
+   [junit4] IGNOR/A 0.01s J1 | TestIndexWriterDelete.testApplyDeletesOnFlush
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J1 in 3.35s, 26 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestNumericRangeQuery64
+   [junit4] Completed on J3 in 9.55s, 30 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterUnicode
+   [junit4] Completed on J2 in 1.54s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestDirectory
+   [junit4] IGNOR/A 0.01s J0 | TestDirectory.testFsyncDoesntCreateNewFiles
+   [junit4]    > Assumption #1: test only works for FSDirectory subclasses
+   [junit4] IGNOR/A 0.00s J0 | TestDirectory.testThreadSafety
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J0 in 2.60s, 41 tests, 2 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestNIOFSDirectory
+   [junit4] Completed on J2 in 1.44s, 38 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestArrayUtil
+   [junit4] Completed on J3 in 2.42s, 13 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestNRTCachingDirectory
+   [junit4] IGNOR/A 0.00s J1 | TestNRTCachingDirectory.testFsyncDoesntCreateNewFiles
+   [junit4]    > Assumption #1: test only works for FSDirectory subclasses
+   [junit4] Completed on J1 in 5.12s, 39 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterOutOfFileDescriptors
+   [junit4] Completed on J2 in 2.30s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSearchWithThreads
+   [junit4] Completed on J3 in 2.00s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterForceMerge
+   [junit4] Completed on J2 in 2.72s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestLRUFilterCache
+   [junit4] Completed on J3 in 2.26s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestConjunctionDISI
+   [junit4] Completed on J1 in 3.07s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestFixedBitSet
+   [junit4] Completed on J0 in 7.89s, 21 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestSimpleFSDirectory
+   [junit4] Completed on J3 in 1.94s, 38 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestMmapDirectory
+   [junit4] Completed on J2 in 2.11s, 38 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestTimSorter
+   [junit4] Completed on J2 in 0.28s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestBinaryDocValuesUpdates
+   [junit4] IGNOR/A 0.00s J1 | TestBinaryDocValuesUpdates.testTonsOfUpdates
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J1 in 2.99s, 28 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.automaton.TestUTF32ToUTF8
+   [junit4] Completed on J0 in 1.80s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestStressNRT
+   [junit4] Completed on J2 in 0.70s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestTrackingDirectoryWrapper
+   [junit4] IGNOR/A 0.01s J3 | TestTrackingDirectoryWrapper.testFsyncDoesntCreateNewFiles
+   [junit4]    > Assumption #1: test only works for FSDirectory subclasses
+   [junit4] Completed on J3 in 1.40s, 43 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestFieldCacheRewriteMethod
+   [junit4] Completed on J2 in 1.46s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestRateLimiter
+   [junit4] Completed on J1 in 1.75s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestBlockPostingsFormat3
+   [junit4] Completed on J3 in 2.19s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestStressIndexing
+   [junit4] Completed on J1 in 1.42s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.packed.TestEliasFanoDocIdSet
+   [junit4] Completed on J0 in 3.47s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestNeverDelete
+   [junit4] Completed on J3 in 1.06s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSloppyPhraseQuery
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestSloppyPhraseQuery -Dtests.method=testSlopWithHoles -Dtests.seed=79E29FF44D3321E -Dtests.slow=true -Dtests.locale=ca_ES -Dtests.timezone=Etc/GMT-6 -Dtests.asserts=true -Dtests.file.encoding=US-ASCII
+   [junit4] FAILURE 0.02s J2 | TestSloppyPhraseQuery.testSlopWithHoles <<<
+   [junit4]    > Throwable #1: java.lang.AssertionError: expected:<1> but was:<0>
+   [junit4]    > 	at __randomizedtesting.SeedInfo.seed([79E29FF44D3321E:14C116D27EB1AD94]:0)
+   [junit4]    > 	at org.apache.lucene.search.TestSloppyPhraseQuery.testSlopWithHoles(TestSloppyPhraseQuery.java:251)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4]   2> NOTE: test params are: codec=Asserting(Lucene50): {f=PostingsFormat(name=LuceneVarGapDocFreqInterval), lyrics=PostingsFormat(name=LuceneVarGapDocFreqInterval)}, docValues:{}, sim=RandomSimilarityProvider(queryNorm=true,coord=crazy): {f=DFR I(F)3(800.0), lyrics=IB LL-D1}, locale=ca_ES, timezone=Etc/GMT-6
+   [junit4]   2> NOTE: Linux 6.8.0-59-generic amd64/Private Build 1.8.0_452 (64-bit)/cpus=8,threads=1,free=237249160,total=346554368
+   [junit4]   2> NOTE: All tests run in this JVM: [TestSpanExplanationsOfNonMatches, TestTermRangeQuery, TestManyFields, TestAssertingStoredFieldsFormat, TestFilterDirectory, TestTryDelete, TestMultiFields, TestAutomatonQueryUnicode, TestCharTermAttributeImpl, TestBufferedChecksum, TestTermVectors, TestSegmentTermDocs, TestIndexWriterLockRelease, TestSegmentReader, TestVersion, TestWeakIdentityMap, TestRoaringDocIdSet, Test2BSortedDocValues, TestDocInverterPerFieldErrorInfo, TestOperations, TestIntsRef, TestAddIndexes, TestDocCount, TestBooleanQuery, Test2BNumericDocValues, TestDeletionPolicy, Before3, Before3, TestNumericTokenStream, TestDirectoryReaderReopen, TestMultiTermQueryRewrites, TestMixedDocValuesUpdates, TestFSTs, TestPerSegmentDeletes, TestPersistentSnapshotDeletionPolicy, TestBytesRefHash, TestLock, TestSameScoresWithThreads, TestSimpleExplanations, TestDuelingCodecs, TestSizeBoundedForceMerge, TestParallelCompositeReader, TestFieldType, TestAssertions, TestTotalHitCountCollector, TestElevationComparator, TestDocIdSetBuilder, TestDocumentsWriterStallControl, TestDirectoryReader, TestCustomSearcherSort, TestSpanSearchEquivalence, TestNumericRangeQuery32, TestBoolean2, TestCompressingTermVectorsFormat, TestIndexWriterExceptions, TestAssertingDocValuesFormat, TestIndexWriterThreadsToSegments, TestConcurrentMergeScheduler, TestBasics, TestAutomatonQuery, TestByteSlices, TestPerFieldPostingsFormat2, TestIndexWriterUnicode, TestNIOFSDirectory, TestIndexWriterOutOfFileDescriptors, TestIndexWriterForceMerge, TestMmapDirectory, TestTimSorter, TestStressNRT, TestFieldCacheRewriteMethod, TestSloppyPhraseQuery]
+   [junit4] Completed on J2 in 2.09s, 9 tests, 1 failure <<< FAILURES!
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestNumericUtils
+   [junit4] Completed on J2 in 1.87s, 12 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestConsistentFieldNumbers
+   [junit4] Completed on J2 in 0.65s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestMultiThreadTermVectors
+   [junit4] Completed on J1 in 3.39s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestLucene50NormsFormat
+   [junit4] IGNOR/A 0.01s J0 | TestLucene50NormsFormat.testNCommonBig
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] IGNOR/A 0.01s J0 | TestLucene50NormsFormat.testMergeStability
+   [junit4]    > Assumption #1: The MockRandom PF randomizes content on the fly, so we can't check it
+   [junit4] Completed on J0 in 3.16s, 18 tests, 2 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestHugeRamFile
+   [junit4] Completed on J3 in 3.38s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestPhraseQuery
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestPhraseQuery -Dtests.method=testNegativePosition -Dtests.seed=79E29FF44D3321E -Dtests.slow=true -Dtests.locale=ar_EG -Dtests.timezone=Europe/Kyiv -Dtests.asserts=true -Dtests.file.encoding=US-ASCII
+   [junit4] FAILURE 0.01s J2 | TestPhraseQuery.testNegativePosition <<<
+   [junit4]    > Throwable #1: java.lang.AssertionError: didn't get expected exception
+   [junit4]    > 	at __randomizedtesting.SeedInfo.seed([79E29FF44D3321E:F11081C505BAAB63]:0)
+   [junit4]    > 	at org.apache.lucene.search.TestPhraseQuery.testNegativePosition(TestPhraseQuery.java:722)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestPhraseQuery -Dtests.method=testToString -Dtests.seed=79E29FF44D3321E -Dtests.slow=true -Dtests.locale=ar_EG -Dtests.timezone=Europe/Kyiv -Dtests.asserts=true -Dtests.file.encoding=US-ASCII
+   [junit4] FAILURE 0.02s J2 | TestPhraseQuery.testToString <<<
+   [junit4]    > Throwable #1: org.junit.ComparisonFailure: expected:<"[]"> but was:<"[?]">
+   [junit4]    > 	at __randomizedtesting.SeedInfo.seed([79E29FF44D3321E:D6BF9EFE7BC95FB6]:0)
+   [junit4]    > 	at org.apache.lucene.search.TestPhraseQuery.testToString(TestPhraseQuery.java:379)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestPhraseQuery -Dtests.method=testBackwardPositions -Dtests.seed=79E29FF44D3321E -Dtests.slow=true -Dtests.locale=ar_EG -Dtests.timezone=Europe/Kyiv -Dtests.asserts=true -Dtests.file.encoding=US-ASCII
+   [junit4] FAILURE 0.02s J2 | TestPhraseQuery.testBackwardPositions <<<
+   [junit4]    > Throwable #1: java.lang.AssertionError: didn't get expected exception
+   [junit4]    > 	at __randomizedtesting.SeedInfo.seed([79E29FF44D3321E:D4196FAE0E99BDAE]:0)
+   [junit4]    > 	at org.apache.lucene.search.TestPhraseQuery.testBackwardPositions(TestPhraseQuery.java:734)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4]   2> NOTE: test params are: codec=FastCompressingStoredFields(storedFieldsFormat=CompressingStoredFieldsFormat(compressionMode=FAST, chunkSize=1, maxDocsPerChunk=817, blockSize=8), termVectorsFormat=CompressingTermVectorsFormat(compressionMode=FAST, chunkSize=1, blockSize=8)), sim=RandomSimilarityProvider(queryNorm=true,coord=no): {palindrome=DFR G2, field=DFR G1, contents=DFR I(n)B1, f=DFR I(n)L2, nonexist=IB LL-D2, source=DFR I(n)1, repeated=DFR I(n)B2}, locale=ar_EG, timezone=Europe/Kyiv
+   [junit4]   2> NOTE: Linux 6.8.0-59-generic amd64/Private Build 1.8.0_452 (64-bit)/cpus=8,threads=1,free=250926872,total=349700096
+   [junit4]   2> NOTE: All tests run in this JVM: [TestSpanExplanationsOfNonMatches, TestTermRangeQuery, TestManyFields, TestAssertingStoredFieldsFormat, TestFilterDirectory, TestTryDelete, TestMultiFields, TestAutomatonQueryUnicode, TestCharTermAttributeImpl, TestBufferedChecksum, TestTermVectors, TestSegmentTermDocs, TestIndexWriterLockRelease, TestSegmentReader, TestVersion, TestWeakIdentityMap, TestRoaringDocIdSet, Test2BSortedDocValues, TestDocInverterPerFieldErrorInfo, TestOperations, TestIntsRef, TestAddIndexes, TestDocCount, TestBooleanQuery, Test2BNumericDocValues, TestDeletionPolicy, Before3, Before3, TestNumericTokenStream, TestDirectoryReaderReopen, TestMultiTermQueryRewrites, TestMixedDocValuesUpdates, TestFSTs, TestPerSegmentDeletes, TestPersistentSnapshotDeletionPolicy, TestBytesRefHash, TestLock, TestSameScoresWithThreads, TestSimpleExplanations, TestDuelingCodecs, TestSizeBoundedForceMerge, TestParallelCompositeReader, TestFieldType, TestAssertions, TestTotalHitCountCollector, TestElevationComparator, TestDocIdSetBuilder, TestDocumentsWriterStallControl, TestDirectoryReader, TestCustomSearcherSort, TestSpanSearchEquivalence, TestNumericRangeQuery32, TestBoolean2, TestCompressingTermVectorsFormat, TestIndexWriterExceptions, TestAssertingDocValuesFormat, TestIndexWriterThreadsToSegments, TestConcurrentMergeScheduler, TestBasics, TestAutomatonQuery, TestByteSlices, TestPerFieldPostingsFormat2, TestIndexWriterUnicode, TestNIOFSDirectory, TestIndexWriterOutOfFileDescriptors, TestIndexWriterForceMerge, TestMmapDirectory, TestTimSorter, TestStressNRT, TestFieldCacheRewriteMethod, TestSloppyPhraseQuery, TestNumericUtils, TestConsistentFieldNumbers, TestPhraseQuery]
+   [junit4] Completed on J2 in 1.48s, 20 tests, 3 failures <<< FAILURES!
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.compressing.TestFastDecompressionMode
+   [junit4] Completed on J0 in 1.91s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.automaton.TestDeterminizeLexicon
+   [junit4] Completed on J3 in 1.87s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestCheckIndex
+   [junit4] Completed on J2 in 1.14s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestRegexpRandom2
+   [junit4] Completed on J1 in 3.13s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.packed.TestDirectPacked
+   [junit4] Completed on J3 in 1.11s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestLockFactory
+   [junit4] IGNOR/A 0.01s J2 | TestLockFactory.testStressLocksNativeFSLockFactory
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] IGNOR/A 0.00s J2 | TestLockFactory.testStressLocksSimpleFSLockFactory
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J2 in 1.16s, 7 tests, 2 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestStressAdvance
+   [junit4] Completed on J1 in 0.78s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestBooleanMinShouldMatch
+   [junit4] Completed on J0 in 2.41s, 17 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.TestLookaheadTokenFilter
+   [junit4] Completed on J3 in 1.05s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestStressIndexing2
+   [junit4] Completed on J2 in 1.03s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestReproduceMessage
+   [junit4] Completed on J1 in 1.29s, 21 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestPriorityQueue
+   [junit4] Completed on J3 in 1.39s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestApproximationSearchEquivalence
+   [junit4] Completed on J2 in 1.02s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestRAMDirectory
+   [junit4] IGNOR/A 0.02s J0 | TestRAMDirectory.testFsyncDoesntCreateNewFiles
+   [junit4]    > Assumption #1: test only works for FSDirectory subclasses
+   [junit4] Completed on J0 in 1.82s, 41 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTransactions
+   [junit4] Completed on J1 in 0.78s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestThreadedForceMerge
+   [junit4] Completed on J2 in 0.58s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestStressDeletes
+   [junit4] Completed on J1 in 0.63s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestBooleanOr
+   [junit4] Completed on J0 in 0.97s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestPostingsOffsets
+   [junit4] Completed on J3 in 1.15s, 13 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestSpans
+   [junit4] Completed on J0 in 0.61s, 26 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestBufferedIndexInput
+   [junit4] Completed on J1 in 0.78s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.TestMergeSchedulerExternal
+   [junit4] Completed on J3 in 0.84s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestDocTermOrdsRangeFilter
+   [junit4] Completed on J2 in 1.70s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSimpleSearchEquivalence
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestSimpleSearchEquivalence -Dtests.method=testPhraseRelativePositions -Dtests.seed=79E29FF44D3321E -Dtests.slow=true -Dtests.locale=iw_IL -Dtests.timezone=America/Aruba -Dtests.asserts=true -Dtests.file.encoding=US-ASCII
+   [junit4] FAILURE 0.04s J0 | TestSimpleSearchEquivalence.testPhraseRelativePositions <<<
+   [junit4]    > Throwable #1: java.lang.AssertionError
+   [junit4]    > 	at __randomizedtesting.SeedInfo.seed([79E29FF44D3321E:4977D06EE381F211]:0)
+   [junit4]    > 	at org.apache.lucene.search.SearchEquivalenceTestBase.assertSubsetOf(SearchEquivalenceTestBase.java:184)
+   [junit4]    > 	at org.apache.lucene.search.SearchEquivalenceTestBase.assertSubsetOf(SearchEquivalenceTestBase.java:161)
+   [junit4]    > 	at org.apache.lucene.search.SearchEquivalenceTestBase.assertSameSet(SearchEquivalenceTestBase.java:151)
+   [junit4]    > 	at org.apache.lucene.search.SearchEquivalenceTestBase.assertSameScores(SearchEquivalenceTestBase.java:202)
+   [junit4]    > 	at org.apache.lucene.search.TestSimpleSearchEquivalence.testPhraseRelativePositions(TestSimpleSearchEquivalence.java:202)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4]   2> NOTE: test params are: codec=Asserting(Lucene50): {field=Lucene50(blocksize=128), id=PostingsFormat(name=Memory doPackFST= false)}, docValues:{}, sim=RandomSimilarityProvider(queryNorm=false,coord=no): {field=DFR I(n)Z(0.3)}, locale=iw_IL, timezone=America/Aruba
+   [junit4]   2> NOTE: Linux 6.8.0-59-generic amd64/Private Build 1.8.0_452 (64-bit)/cpus=8,threads=1,free=215630832,total=444071936
+   [junit4]   2> NOTE: All tests run in this JVM: [TestSortedSetSelector, TestMixedCodecs, TestRollingUpdates, TestSortRandom, TestBagOfPositions, TestScorerPerf, TestMinShouldMatch2, TestAutomaton, TestSameTokenSamePosition, TestTimeLimitingCollector, TestExceedMaxTermLength, TestIndexWriterWithThreads, TestStringHelper, TestCollectionUtil, TestTermRangeFilter, TestBooleanScorer, TestLucene50DocValuesFormat, TestFileSwitchDirectory, TestNumericDocValuesUpdates, TestTransactionRollback, TestSloppyPhraseQuery2, TestBinaryDocument, TestCodecHoldsOpenFiles, TestSearcherManager, TestOmitNorms, TestTopFieldCollector, TestNotDocIdSet, TestMinimize, Test2BTerms, TestIndexableField, TestCodecs, TestIndexWriterConfig, TestMergedIterator, TestComplexExplanationsOfNonMatches, ThrowInUncaught, TestRollback, Nested1, TestIntBlockPool, TestBytesStore, TestFieldsReader, TestDocValues, TestSearchAfter, TestCachingWrapperFilter, TestExitableDirectoryReader, TestExternalCodecs, TestComplexExplanations, TestWildcardRandom, TestRecyclingIntBlockAllocator, TestNoMergeScheduler, TestPagedBytes, TestPayloads, TestIndexWriterReader, TestDirectory, TestFixedBitSet, TestUTF32ToUTF8, TestEliasFanoDocIdSet, TestLucene50NormsFormat, TestFastDecompressionMode, TestBooleanMinShouldMatch, TestRAMDirectory, TestBooleanOr, TestSpans, TestSimpleSearchEquivalence]
+   [junit4] Completed on J0 in 0.51s, 14 tests, 1 failure <<< FAILURES!
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestTopDocsMerge
+   [junit4] Completed on J1 in 0.66s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.similarities.TestSimilarityBase
+   [junit4] Completed on J3 in 0.79s, 30 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestMultiValuedNumericRangeQuery
+   [junit4] Completed on J1 in 0.45s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.payloads.TestPayloadTermQuery
+   [junit4] Completed on J2 in 0.50s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.compressing.TestHighCompressionMode
+   [junit4] Completed on J0 in 0.91s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestOmitTf
+   [junit4] Completed on J2 in 0.47s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestUnicodeUtil
+   [junit4] Completed on J1 in 0.63s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestMultiTermConstantScore
+   [junit4] Completed on J3 in 0.94s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDocumentWriter
+   [junit4] Completed on J2 in 0.52s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestLiveFieldValues
+   [junit4] Completed on J0 in 0.82s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestFilteredQuery
+   [junit4] Completed on J1 in 0.97s, 12 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestFrequencyTrackingRingBuffer
+   [junit4] Completed on J2 in 0.48s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestForceMergeForever
+   [junit4] Completed on J0 in 0.47s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestCrash
+   [junit4] Completed on J3 in 1.20s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestBooleanCoord
+   [junit4] Completed on J1 in 0.56s, 70 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.payloads.TestPayloadExplanations
+   [junit4] Completed on J2 in 0.53s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestExceptionInBeforeClassHooks
+   [junit4] Completed on J3 in 0.28s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestPrefixRandom
+   [junit4] Completed on J0 in 0.87s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTermVectorsWriter
+   [junit4] Completed on J1 in 0.41s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestQueryRescorer
+   [junit4] Completed on J2 in 0.56s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTermsEnum2
+   [junit4] Completed on J3 in 0.55s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSimpleExplanationsOfNonMatches
+   [junit4] Completed on J0 in 0.49s, 68 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestMultiDocValues
+   [junit4] Completed on J2 in 0.38s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestCustomNorms
+   [junit4] Completed on J1 in 0.95s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDocsAndPositions
+   [junit4] Completed on J3 in 0.67s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSortRescorer
+   [junit4] Completed on J2 in 0.33s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestMaxTermFrequency
+   [junit4] Completed on J0 in 0.65s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.similarities.TestSimilarity2
+   [junit4] Completed on J1 in 0.27s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestSpansAdvanced2
+   [junit4] Completed on J2 in 0.21s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestMultiPhraseQuery
+   [junit4] Completed on J3 in 0.42s, 17 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestDocumentsWriterDeleteQueue
+   [junit4] Completed on J0 in 0.38s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestNearSpansOrdered
+   [junit4] Completed on J1 in 0.41s, 13 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestIntroSorter
+   [junit4] Completed on J2 in 0.39s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestSystemPropertiesInvariantRule
+   [junit4] Completed on J3 in 0.30s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSort
+   [junit4] Completed on J0 in 0.41s, 24 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestReproduceMessageWithRepeated
+   [junit4] Completed on J3 in 0.14s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestCrashCausesCorruptIndex
+   [junit4] Completed on J1 in 0.36s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestMultiLevelSkipList
+   [junit4] Completed on J2 in 0.35s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestFieldValueFilter
+   [junit4] Completed on J3 in 0.17s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestOrdinalMap
+   [junit4] Completed on J3 in 0.16s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestIOUtils
+   [junit4] Completed on J1 in 0.33s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.mockfile.TestMockFilesystems
+   [junit4] Completed on J2 in 0.31s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.payloads.TestPayloadNearQuery
+   [junit4] Completed on J0 in 0.54s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestFilteredSearch
+   [junit4] Completed on J3 in 0.08s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.TestSearchForDuplicates
+   [junit4] Completed on J1 in 0.17s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestRegexpQuery
+   [junit4] Completed on J2 in 0.16s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTermVectorsReader
+   [junit4] Completed on J3 in 0.23s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestWindowsMMap
+   [junit4] Completed on J1 in 0.24s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestForTooMuchCloning
+   [junit4] Completed on J2 in 0.18s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestAllFilesHaveChecksumFooter
+   [junit4] Completed on J0 in 0.27s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSortedNumericSortField
+   [junit4] Completed on J3 in 0.17s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestFlex
+   [junit4] Completed on J1 in 0.20s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestNoDeletionPolicy
+   [junit4] Completed on J2 in 0.16s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestDateFilter
+   [junit4] Completed on J0 in 0.12s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestDocValuesScoring
+   [junit4] Completed on J3 in 0.15s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestSameRandomnessLocalePassedOrNot
+   [junit4] Completed on J1 in 0.12s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestUniqueTermCount
+   [junit4] Completed on J2 in 0.10s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestSmallFloat
+   [junit4] Completed on J0 in 0.18s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestNeedsScores
+   [junit4] Completed on J3 in 0.16s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestSetupTeardownChaining
+   [junit4] Completed on J1 in 0.09s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestBooleanQueryVisitSubscorers
+   [junit4] Completed on J2 in 0.12s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestTopDocsCollector
+   [junit4] Completed on J0 in 0.08s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestCachingCollector
+   [junit4] Completed on J3 in 0.08s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestLucene50FieldInfoFormat
+   [junit4] Completed on J1 in 0.12s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestJUnitRuleOrder
+   [junit4] Completed on J2 in 0.04s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestBytesRefArray
+   [junit4] Completed on J0 in 0.03s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSortedSetSortField
+   [junit4] Completed on J3 in 0.06s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestDateSort
+   [junit4] Completed on J1 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestFilterIterator
+   [junit4] Completed on J2 in 0.04s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSimilarity
+   [junit4] Completed on J0 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestEarlyTermination
+   [junit4] Completed on J3 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.TestCachingTokenFilter
+   [junit4] Completed on J1 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.tokenattributes.TestPackedTokenAttributeImpl
+   [junit4] Completed on J2 in 0.02s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTragicIndexWriterDeadlock
+   [junit4] Completed on J0 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestMathUtil
+   [junit4] Completed on J3 in 0.02s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestCodecReported
+   [junit4] Completed on J1 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestConstantScoreQuery
+   [junit4] Completed on J2 in 0.03s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestPrefixFilter
+   [junit4] Completed on J0 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestFieldCacheTermsFilter
+   [junit4] Completed on J3 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestSpansAdvanced
+   [junit4] Completed on J1 in 0.03s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestParallelReaderEmptyIndex
+   [junit4] Completed on J2 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestDocBoost
+   [junit4] Completed on J0 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestNoMergePolicy
+   [junit4] Completed on J3 in 0.01s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.TestMockCharFilter
+   [junit4] Completed on J1 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.automaton.TestCompiledAutomaton
+   [junit4] Completed on J2 in 0.08s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestQueryBuilder
+   [junit4] Completed on J0 in 0.04s, 20 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.document.TestDocument
+   [junit4] Completed on J3 in 0.04s, 12 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestReaderClosed
+   [junit4] Completed on J1 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestMockDirectoryWrapper
+   [junit4] Completed on J2 in 0.01s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestCharsRefBuilder
+   [junit4] Completed on J0 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestPositiveScoresOnlyCollector
+   [junit4] Completed on J3 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestInfoStream
+   [junit4] Completed on J1 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestBytesRef
+   [junit4] Completed on J2 in 0.01s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.TestSearch
+   [junit4] Completed on J0 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestAttributeSource
+   [junit4] Completed on J3 in 0.02s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestPostingsEnum
+   [junit4] Completed on J1 in 0.03s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.codecs.lucene50.TestForUtil
+   [junit4] Completed on J2 in 0.06s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.TestWorstCaseTestBehavior
+   [junit4] Completed on J0 in 0.00s, 6 tests, 6 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTermdocPerf
+   [junit4] Completed on J3 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestVirtualMethod
+   [junit4] Completed on J1 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.spans.TestFilterSpans
+   [junit4] Completed on J2 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestConjunctions
+   [junit4] Completed on J0 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestCharsRef
+   [junit4] Completed on J3 in 0.02s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestFieldReuse
+   [junit4] Completed on J1 in 0.02s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestParallelTermEnum
+   [junit4] Completed on J2 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestSimilarityProvider
+   [junit4] Completed on J0 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestPositionIncrement
+   [junit4] Completed on J3 in 0.03s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.TestReusableStringReader
+   [junit4] Completed on J1 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestNamedSPILoader
+   [junit4] Completed on J2 in 0.02s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.mutable.TestMutableValues
+   [junit4] Completed on J0 in 0.02s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestLeaveFilesIfTestFails
+   [junit4] IGNOR/A 0.01s J3 | TestLeaveFilesIfTestFails.testWindowsUnremovableFile
+   [junit4]    > Assumption #1: Requires Windows.
+   [junit4] Completed on J3 in 0.02s, 2 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestRecyclingByteBlockAllocator
+   [junit4] Completed on J1 in 0.02s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestNewestSegment
+   [junit4] Completed on J2 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestPrefixQuery
+   [junit4] Completed on J0 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestUsageTrackingFilterCachingPolicy
+   [junit4] Completed on J3 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestRamUsageEstimator
+   [junit4] IGNOR/A 0.00s J1 | TestRamUsageEstimator.testPrintValues
+   [junit4]    > Assumption #1: Specify -Dtests.verbose=true to print constants of RamUsageEstimator.
+   [junit4] Completed on J1 in 0.02s, 5 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIsCurrent
+   [junit4] Completed on J2 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.junitcompat.TestGroupFiltering
+   [junit4] IGNOR/A 0.00s J0 | TestGroupFiltering.testFoo
+   [junit4]    > Assumption #1: 'foo' test group is disabled (@Foo())
+   [junit4] IGNOR/A 0.00s J0 | TestGroupFiltering.testJira
+   [junit4]    > Assumption #1: 'jira' test group is disabled (@Jira(bug=JIRA bug reference))
+   [junit4] IGNOR/A 0.00s J0 | TestGroupFiltering.testBar
+   [junit4]    > Assumption #1: 'bar' test group is disabled (@Bar())
+   [junit4] IGNOR/A 0.00s J0 | TestGroupFiltering.testFooBar
+   [junit4]    > Assumption #1: 'bar' test group is disabled (@Bar())
+   [junit4] Completed on J0 in 0.01s, 4 tests, 4 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.TestByteBlockPool
+   [junit4] Completed on J3 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.TestNGramPhraseQuery
+   [junit4] Completed on J1 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.store.TestByteArrayDataInput
+   [junit4] Completed on J2 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterOnJRECrash
+   [junit4] IGNOR/A 0.00s J0 | TestIndexWriterOnJRECrash.testNRTThreads
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J0 in 0.00s, 1 test, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.TestTerm
+   [junit4] Completed on J3 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.util.Test2BPagedBytes
+   [junit4] IGNOR/A 0.00s J1 | Test2BPagedBytes.test
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=You must increase heap to > 2 G to run this))
+   [junit4] Completed on J1 in 0.00s, 1 test, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.Test2BPositions
+   [junit4] IGNOR/A 0.00s J2 | Test2BPositions.test
+   [junit4]    > Assumption #1: 'monster' test group is disabled (@Monster(value=uses lots of space and takes a few minutes))
+   [junit4] Completed on J2 in 0.00s, 1 test, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.index.Test2BPostings
+   [junit4] IGNOR/A 0.00s J0 | Test2BPostings.test
+   [junit4]    > Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] Completed on J0 in 0.00s, 1 test, 1 skipped
+   [junit4] 
+   [junit4] 
+   [junit4] Tests with failures:
+   [junit4]   - org.apache.lucene.search.TestSloppyPhraseQuery.testSlopWithHoles
+   [junit4]   - org.apache.lucene.search.TestPhraseQuery.testNegativePosition
+   [junit4]   - org.apache.lucene.search.TestPhraseQuery.testToString
+   [junit4]   - org.apache.lucene.search.TestPhraseQuery.testBackwardPositions
+   [junit4]   - org.apache.lucene.search.TestSimpleSearchEquivalence.testPhraseRelativePositions
+   [junit4] 
+   [junit4] 
+   [junit4] JVM J0:     0.92 ..   189.90 =   188.97s
+   [junit4] JVM J1:     0.92 ..   189.71 =   188.79s
+   [junit4] JVM J2:     0.93 ..   189.76 =   188.83s
+   [junit4] JVM J3:     0.92 ..   189.94 =   189.02s
+   [junit4] Execution time total: 3 minutes 9 seconds
+   [junit4] Tests summary: 413 suites, 3288 tests, 5 failures, 62 ignored (52 assumptions)
