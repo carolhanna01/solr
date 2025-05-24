@@ -214,9 +214,6 @@ public class IndexWriter implements Closeable, TwoPhaseCommit, Accountable {
   static int getActualMaxDocs() {
     return IndexWriter.actualMaxDocs;
   }
-  
-  /** Used only for testing. */
-  boolean enableTestPoints = false;
 
   private static final int UNBOUNDED_MAX_MERGE_SEGMENTS = -1;
   
@@ -4420,8 +4417,7 @@ public class IndexWriter implements Closeable, TwoPhaseCommit, Accountable {
   //   startMergeInit
   //   DocumentsWriter.ThreadState.init start
   private final void testPoint(String message) {
-    if (enableTestPoints) {
-      assert infoStream.isEnabled("TP"); // don't enable unless you need them.
+    if (infoStream.isEnabled("TP")) {
       infoStream.message("TP", message);
     }
   }
