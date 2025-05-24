@@ -1,0 +1,119 @@
+Buildfile: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/core/build.xml
+
+clean:
+   [delete] Deleting directory /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/core
+
+-clover.disable:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: Apache Ivy 2.4.0 - 20141213170938 :: http://ant.apache.org/ivy/ ::
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+resolve:
+
+init:
+
+compile-core:
+    [mkdir] Created dir: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/core/classes/java
+    [javac] Compiling 680 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/core/classes/java
+    [javac] Note: {0} uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [copy] Copying 3 files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/core/classes/java
+
+compile-test-framework:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+init:
+
+compile-lucene-core:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+compile-codecs:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+common.compile-core:
+    [javac] Compiling 1 source file to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/test-framework/classes/java
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/test-framework/src/java/org/apache/lucene/index/RandomIndexWriter.java:70: error: cannot find symbol
+    [javac]     iw.enableTestPoints = true;
+    [javac]       ^
+    [javac]   symbol:   variable enableTestPoints
+    [javac]   location: variable iw of type IndexWriter
+    [javac] 1 error

@@ -1,0 +1,247 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      assignee:
+        '#text': Unassigned
+        '@username': '-1'
+      attachments:
+        attachment:
+          '@author': rcmuir
+          '@created': Wed, 17 Dec 2014 05:34:21 +0000
+          '@id': '12687676'
+          '@name': LUCENE-6117.patch
+          '@size': '12108'
+      comments:
+        comment:
+        - '#text': '<p>Here is a patch.</p>
+
+
+            <p>This adds a package private boolean ''enableTestPoints'' to IndexWriter.
+            We don''t base it on assertion status or any of that, you only want test
+            points if you are one of the few special tests asking for them.</p>
+
+
+            <p>I refactored all tests to use the RandomIndexWriter.mockIndexWriter
+            for registering listeners at test points, and this sets the necessary
+            boolean for you on IW.</p>
+
+
+            <p>I also added simple tests ensuring that test points are only output
+            when we ask for them.</p>'
+          '@author': rcmuir
+          '@created': Wed, 17 Dec 2014 05:34:21 +0000
+          '@id': '14249504'
+        - '#text': <p>+1, thanks Rob!</p>
+          '@author': mikemccand
+          '@created': Wed, 17 Dec 2014 10:02:42 +0000
+          '@id': '14249671'
+        - '#text': '<p>Commit 1646240 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=rcmuir"
+            class="user-hover" rel="rcmuir">rcmuir</a> in branch ''dev/trunk''<br/>
+
+            [ <a href="https://svn.apache.org/r1646240" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1646240</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-6117" title="infostream
+            is currently unusable out of box" class="issue-link" data-issue-key="LUCENE-6117"><del>LUCENE-6117</del></a>:
+            make infostream usable again</p>'
+          '@author': jira-bot
+          '@created': Wed, 17 Dec 2014 13:51:55 +0000
+          '@id': '14249855'
+        - '#text': '<p>Commit 1646242 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=rcmuir"
+            class="user-hover" rel="rcmuir">rcmuir</a> in branch ''dev/branches/branch_5x''<br/>
+
+            [ <a href="https://svn.apache.org/r1646242" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1646242</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-6117" title="infostream
+            is currently unusable out of box" class="issue-link" data-issue-key="LUCENE-6117"><del>LUCENE-6117</del></a>:
+            make infostream usable again</p>'
+          '@author': jira-bot
+          '@created': Wed, 17 Dec 2014 13:55:48 +0000
+          '@id': '14249858'
+        - '#text': '<p>Commit 1646288 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=mikemccand"
+            class="user-hover" rel="mikemccand">mikemccand</a> in branch ''dev/trunk''<br/>
+
+            [ <a href="https://svn.apache.org/r1646288" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1646288</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-6117" title="infostream
+            is currently unusable out of box" class="issue-link" data-issue-key="LUCENE-6117"><del>LUCENE-6117</del></a>:
+            this test secretly relies on testPoint too</p>'
+          '@author': jira-bot
+          '@created': Wed, 17 Dec 2014 16:27:12 +0000
+          '@id': '14250067'
+        - '#text': '<p>Commit 1646289 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=mikemccand"
+            class="user-hover" rel="mikemccand">mikemccand</a> in branch ''dev/branches/branch_5x''<br/>
+
+            [ <a href="https://svn.apache.org/r1646289" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1646289</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-6117" title="infostream
+            is currently unusable out of box" class="issue-link" data-issue-key="LUCENE-6117"><del>LUCENE-6117</del></a>:
+            this test secretly relies on testPoint too</p>'
+          '@author': jira-bot
+          '@created': Wed, 17 Dec 2014 16:28:06 +0000
+          '@id': '14250069'
+        - '#text': '<p>Commit 1646416 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=mikemccand"
+            class="user-hover" rel="mikemccand">mikemccand</a> in branch ''dev/branches/lucene_solr_4_10''<br/>
+
+            [ <a href="https://svn.apache.org/r1646416" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1646416</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-6019" title="IndexWriter
+            allows to add same field with different docvlaues type " class="issue-link"
+            data-issue-key="LUCENE-6019"><del>LUCENE-6019</del></a>, <a href="https://issues.apache.org/jira/browse/LUCENE-6117"
+            title="infostream is currently unusable out of box" class="issue-link"
+            data-issue-key="LUCENE-6117"><del>LUCENE-6117</del></a>: remove -Dtests.assert:
+            this is too big a change for a bug-fix release (and it introduced a bug)</p>'
+          '@author': jira-bot
+          '@created': Thu, 18 Dec 2014 09:27:38 +0000
+          '@id': '14251419'
+        - '#text': <p>Bulk close after 5.0 release.</p>
+          '@author': anshumg
+          '@created': Mon, 23 Feb 2015 05:02:56 +0000
+          '@id': '14332982'
+        - '#text': '<p>This issue was moved to GitHub issue: <a href="https://github.com/apache/lucene/issues/7179"
+            class="external-link" target="_blank" rel="nofollow noopener">#7179</a>.</p>'
+          '@author': tomoko uchida
+          '@created': Sun, 28 Aug 2022 14:21:26 +0000
+          '@id': '17592330'
+      created: Wed, 17 Dec 2014 01:20:55 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '1.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: no_permission
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 2 years, 38 weeks, 5 days ago
+        - '@id': customfield_12310120
+          '@key': com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes
+          customfieldname: Lucene Fields
+          customfieldvalues:
+            customfieldvalue:
+              '#text': New
+              '@key': '10121'
+        - '@id': customfield_12313320
+          '@key': com.atlassian.jira.toolkit:message
+          customfieldname: Lucene Mailing List Info
+          customfieldvalues: null
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|i23i87:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+      description: '<p>testpoints used to only be emitted by assertions (still sketchy),
+        but now are emitted always. I assume this is due to the change to support
+        running tests with assertions disabled.</p>
+
+
+        <p>we should try to clean this up, simple stuff like this is now useless:</p>
+
+        <div class="code panel" style="border-width: 1px;"><div class="codeContent
+        panelContent">
+
+        <pre class="code-java">indexWriterConfig.setInfoStream(<span class="code-object">System</span>.out);
+
+        <span class="code-comment">// causes massive flooding like <span class="code-keyword">this</span>:
+
+        </span><span class="code-comment">// TP 0 [Tue Dec 16 20:19:37 EST 2014; <span
+        class="code-object">Thread</span>-0]: DocumentsWriterPerThread addDocument
+        start
+
+        </span><span class="code-comment">// TP 0 [Tue Dec 16 20:19:37 EST 2014; <span
+        class="code-object">Thread</span>-0]: DocumentsWriterPerThread addDocument
+        start
+
+        </span><span class="code-comment">// TP 0 [Tue Dec 16 20:19:37 EST 2014; <span
+        class="code-object">Thread</span>-0]: DocumentsWriterPerThread addDocument
+        start</span>
+
+        </pre>
+
+        </div></div>
+
+
+        <p>I hit this several times today just trying to do benchmarks and debugging.</p>'
+      due: null
+      environment: null
+      fixVersion:
+      - '5.0'
+      - '6.0'
+      key:
+        '#text': LUCENE-6117
+        '@id': '12762168'
+      labels: null
+      link: https://issues.apache.org/jira/browse/LUCENE-6117
+      priority:
+        '#text': Major
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/major.svg
+        '@id': '3'
+      project:
+        '#text': Lucene - Core
+        '@id': '12310110'
+        '@key': LUCENE
+      reporter:
+        '#text': Robert Muir
+        '@username': rcmuir
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Wed, 17 Dec 2014 13:56:20 +0000
+      status:
+        '#text': Closed
+        '@description': The issue is considered finished, the resolution is correct.
+          Issues which are not closed can be reopened.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/closed.png
+        '@id': '6'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: infostream is currently unusable out of box
+      title: '[LUCENE-6117] infostream is currently unusable out of box'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Sun, 28 Aug 2022 14:21:26 +0000
+      votes: '0'
+      watches: '3'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA
