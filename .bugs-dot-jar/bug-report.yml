@@ -1,0 +1,229 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      assignee:
+        '#text': Ryan Ernst
+        '@username': rjernst
+      attachments:
+        attachment:
+        - '@author': rjernst
+          '@created': Tue, 26 Aug 2014 19:21:18 +0000
+          '@id': '12664455'
+          '@name': LUCENE-5908.patch
+          '@size': '10883'
+        - '@author': rjernst
+          '@created': Tue, 26 Aug 2014 15:31:14 +0000
+          '@id': '12664410'
+          '@name': LUCENE-5908.patch
+          '@size': '2119'
+      comments:
+        comment:
+        - '#text': <p>Simple patch.</p>
+          '@author': rjernst
+          '@created': Tue, 26 Aug 2014 15:31:14 +0000
+          '@id': '14110830'
+        - '#text': '<p>Why is the Tokenizer itsself not final. I looked into the history,
+            you removed the final keyword, so it was final before.</p>
+
+
+            <p>Was there a reason to remove it?</p>'
+          '@author': thetaphi
+          '@created': Tue, 26 Aug 2014 16:01:46 +0000
+          '@id': '14110875'
+        - '#text': <p>IIRC, I was adding <tt>Lucene43EdgeNGramTokenizer</tt>, which
+            was almost exactly the same, and didn't want to duplicate it.  Here I
+            just went the route that satisfies the assert. If you feel strongly, I
+            can copy the impl and make it final.</p>
+          '@author': rjernst
+          '@created': Tue, 26 Aug 2014 16:12:36 +0000
+          '@id': '14110886'
+        - '#text': '<p>In my 4.10 checkout it looks like that:</p>
+
+
+            <div class="code panel" style="border-width: 1px;"><div class="codeContent
+            panelContent">
+
+            <pre class="code-java"><span class="code-keyword">public</span> <span
+            class="code-keyword">final</span> <span class="code-keyword">class </span>Lucene43EdgeNGramTokenizer
+            <span class="code-keyword">extends</span> Tokenizer {
+
+            <span class="code-keyword">public</span> <span class="code-keyword">class
+            </span>Lucene43NGramTokenizer <span class="code-keyword">extends</span>
+            Tokenizer {
+
+            </pre>
+
+            </div></div>
+
+
+            <p>So it does not relate to each other.</p>
+
+
+            <p>I know that EdgeNGramTokenizer extends NGramTokenizer, which explains
+            the non-finalness.</p>'
+          '@author': thetaphi
+          '@created': Tue, 26 Aug 2014 16:28:16 +0000
+          '@id': '14110902'
+        - '#text': '<p>Ah I see: In 4.x its code duplication, in trunk it extends
+            each other. We should fix that, too. But I am nervous about trunk, because
+            it has no tests.</p>'
+          '@author': thetaphi
+          '@created': Tue, 26 Aug 2014 16:37:47 +0000
+          '@id': '14110919'
+        - '#text': <p>Ok, this new patch replicates branch_4x's <tt>Lucene43EdgeNGramTokenizer</tt>
+            to trunk (minus the diffs like Reader and Version that are no longer there
+            in trunk).  I think this should make the backport easy (so it will just
+            be making <tt>Lucene43NGramTokenizer</tt> final).</p>
+          '@author': rjernst
+          '@created': Tue, 26 Aug 2014 19:21:18 +0000
+          '@id': '14111169'
+        - '#text': '<p>Commit 1620759 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=rjernst"
+            class="user-hover" rel="rjernst">rjernst</a> in branch ''dev/trunk''<br/>
+
+            [ <a href="https://svn.apache.org/r1620759" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1620759</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-5908" title="Assertion
+            fails for Lucene43NGramTokenizer" class="issue-link" data-issue-key="LUCENE-5908"><del>LUCENE-5908</del></a>:
+            Fix Lucene43NGramTokenizer to be final</p>'
+          '@author': jira-bot
+          '@created': Tue, 26 Aug 2014 23:17:51 +0000
+          '@id': '14111537'
+        - '#text': '<p>Commit 1620760 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=rjernst"
+            class="user-hover" rel="rjernst">rjernst</a> in branch ''dev/branches/branch_4x''<br/>
+
+            [ <a href="https://svn.apache.org/r1620760" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1620760</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-5908" title="Assertion
+            fails for Lucene43NGramTokenizer" class="issue-link" data-issue-key="LUCENE-5908"><del>LUCENE-5908</del></a>:
+            Fix Lucene43NGramTokenizer to be final (merge 1620759)</p>'
+          '@author': jira-bot
+          '@created': Tue, 26 Aug 2014 23:39:20 +0000
+          '@id': '14111573'
+        - '#text': '<p>Commit 1620762 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=rjernst"
+            class="user-hover" rel="rjernst">rjernst</a> in branch ''dev/branches/lucene_solr_4_10''<br/>
+
+            [ <a href="https://svn.apache.org/r1620762" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1620762</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-5908" title="Assertion
+            fails for Lucene43NGramTokenizer" class="issue-link" data-issue-key="LUCENE-5908"><del>LUCENE-5908</del></a>:
+            Backport to 4.10 (merged 1620760)</p>'
+          '@author': jira-bot
+          '@created': Wed, 27 Aug 2014 00:04:36 +0000
+          '@id': '14111617'
+        - '#text': '<p>This issue was moved to GitHub issue: <a href="https://github.com/apache/lucene/issues/6970"
+            class="external-link" target="_blank" rel="nofollow noopener">#6970</a>.</p>'
+          '@author': tomoko uchida
+          '@created': Sun, 28 Aug 2022 14:14:49 +0000
+          '@id': '17592120'
+      created: Tue, 26 Aug 2014 15:29:54 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '2.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: no_permission
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 2 years, 38 weeks, 6 days ago
+        - '@id': customfield_12310120
+          '@key': com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes
+          customfieldname: Lucene Fields
+          customfieldvalues:
+            customfieldvalue:
+              '#text': New
+              '@key': '10121'
+        - '@id': customfield_12313320
+          '@key': com.atlassian.jira.toolkit:message
+          customfieldname: Lucene Mailing List Info
+          customfieldvalues: null
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|i1zcfz:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+      description: <p>As a side effect from <a href="https://issues.apache.org/jira/browse/LUCENE-5859"
+        title="Remove Version from Analyzer constructors" class="issue-link" data-issue-key="LUCENE-5859"><del>LUCENE-5859</del></a>,
+        <tt>Lucene43NGramTokenizer</tt> was made not final.  This can trip an assert
+        we have that <tt>Tokenizer</tt> need to either be final, or have their <tt>incrementToken()</tt>
+        function be final.</p>
+      due: null
+      environment: null
+      fixVersion:
+      - '4.10'
+      - '6.0'
+      key:
+        '#text': LUCENE-5908
+        '@id': '12736823'
+      labels: null
+      link: https://issues.apache.org/jira/browse/LUCENE-5908
+      priority:
+        '#text': Major
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/major.svg
+        '@id': '3'
+      project:
+        '#text': Lucene - Core
+        '@id': '12310110'
+        '@key': LUCENE
+      reporter:
+        '#text': Ryan Ernst
+        '@username': rjernst
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Wed, 27 Aug 2014 05:16:31 +0000
+      status:
+        '#text': Resolved
+        '@description': A resolution has been taken, and it is awaiting verification
+          by reporter. From here issues are either reopened, or are closed.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/resolved.png
+        '@id': '5'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: Assertion fails for Lucene43NGramTokenizer
+      title: '[LUCENE-5908] Assertion fails for Lucene43NGramTokenizer'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Sun, 28 Aug 2022 14:14:49 +0000
+      votes: '0'
+      watches: '2'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA
