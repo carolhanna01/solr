@@ -100,6 +100,16 @@ class MultiTermHighlighting {
     } else if (lookInSpan && query instanceof SpanMultiTermQueryWrapper) {
       list.addAll(Arrays.asList(extractAutomata(((SpanMultiTermQueryWrapper<?>) query).getWrappedQuery(),
           fieldMatcher, lookInSpan, preRewriteFunc)));
+    } else if (query instanceof AutomatonQuery) {
+      final AutomatonQuery aq = (AutomatonQuery) query;
+      if (fieldMatcher.test(aq.getField())) {
+        list.add(new CharacterRunAutomaton(aq.getAutomaton()) {
+          @Override
+          public String toString() {
+            return aq.toString();
+          }
+        });
+      }
     } else if (query instanceof PrefixQuery) {
       final PrefixQuery pq = (PrefixQuery) query;
       Term prefix = pq.getPrefix();
@@ -184,16 +194,6 @@ class MultiTermHighlighting {
           @Override
           public String toString() {
             return tq.toString();
-          }
-        });
-      }
-    } else if (query instanceof AutomatonQuery) {
-      final AutomatonQuery aq = (AutomatonQuery) query;
-      if (fieldMatcher.test(aq.getField())) {
-        list.add(new CharacterRunAutomaton(aq.getAutomaton()) {
-          @Override
-          public String toString() {
-            return aq.toString();
           }
         });
       }
