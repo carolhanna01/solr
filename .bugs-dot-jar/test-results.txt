@@ -1,0 +1,475 @@
+Buildfile: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/highlighter/build.xml
+
+clean:
+   [delete] Deleting directory /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: Apache Ivy 2.4.0 - 20141213170938 :: http://ant.apache.org/ivy/ ::
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+init:
+
+test:
+
+-clover.disable:
+
+ivy-availability-check:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+compile-test:
+
+check-memory-uptodate:
+
+jar-memory:
+
+check-queries-uptodate:
+
+jar-queries:
+
+check-join-uptodate:
+
+jar-join:
+
+check-analyzers-common-uptodate:
+
+jar-analyzers-common:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+common.compile-core:
+    [mkdir] Created dir: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/classes/java
+    [javac] Compiling 79 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/classes/java
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Creating empty /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/classes/java/org/apache/lucene/search/highlight/package-info.class
+    [javac] Creating empty /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/classes/java/org/apache/lucene/search/uhighlight/package-info.class
+    [javac] Creating empty /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/classes/java/org/apache/lucene/search/postingshighlight/package-info.class
+    [javac] Creating empty /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/classes/java/org/apache/lucene/search/vectorhighlight/package-info.class
+
+compile-core:
+
+compile-test-framework:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+init:
+
+compile-lucene-core:
+
+compile-codecs:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+common.compile-core:
+
+compile-core:
+
+common.compile-test:
+    [mkdir] Created dir: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/classes/test
+    [javac] Compiling 34 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/classes/test
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/highlighter/src/test/org/apache/lucene/search/uhighlight/TestUnifiedHighlighterMTQ.java:997: warning: [rawtypes] found raw type: SpanMultiTermQueryWrapper
+    [javac]     SpanMultiTermQueryWrapper wildcardQueryWrapper = new SpanMultiTermQueryWrapper<>(wildcardQuery);
+    [javac]     ^
+    [javac]   missing type arguments for generic class SpanMultiTermQueryWrapper<Q>
+    [javac]   where Q is a type-variable:
+    [javac]     Q extends MultiTermQuery declared in class SpanMultiTermQueryWrapper
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+     [copy] Copying 2 files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/classes/test
+
+install-junit4-taskdef:
+
+validate:
+
+resolve-groovy:
+[ivy:cachepath] :: resolving dependencies :: org.codehaus.groovy#groovy-all-caller;working
+[ivy:cachepath] 	confs: [default]
+[ivy:cachepath] 	found org.codehaus.groovy#groovy-all;2.4.8 in public
+[ivy:cachepath] :: resolution report :: resolve 10ms :: artifacts dl 1ms
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+	---------------------------------------------------------------------
+
+-init-totals:
+
+-test:
+    [mkdir] Created dir: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/test
+    [mkdir] Created dir: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/highlighter/test/temp
+   [junit4] <JUnit4> says 你好! Master seed: 5766D8434B042CDC
+   [junit4] Executing 32 suites with 4 JVMs.
+   [junit4] 
+   [junit4] Started J0 PID(480930@localhost).
+   [junit4] Started J2 PID(480931@localhost).
+   [junit4] Started J1 PID(480928@localhost).
+   [junit4] Started J3 PID(480929@localhost).
+   [junit4] Suite: org.apache.lucene.search.postingshighlight.TestCustomSeparatorBreakIterator
+   [junit4] Completed [1/32] on J1 in 0.59s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.BreakIteratorBoundaryScannerTest
+   [junit4] Completed [2/32] on J2 in 0.55s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.uhighlight.visibility.TestUnifiedHighlighterExtensibility
+   [junit4] Completed [3/32] on J2 in 0.28s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.SingleFragListBuilderTest
+   [junit4] Completed [4/32] on J1 in 0.87s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.FieldQueryTest
+   [junit4] Completed [5/32] on J3 in 1.52s, 30 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.uhighlight.TestSplittingBreakIterator
+   [junit4] Completed [6/32] on J1 in 0.07s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.FieldPhraseListTest
+   [junit4] Completed [7/32] on J3 in 0.34s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.IndexTimeSynonymTest
+   [junit4] Completed [8/32] on J1 in 0.45s, 17 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.uhighlight.TestUnifiedHighlighterTermVec
+   [junit4] Completed [9/32] on J1 in 0.31s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.postingshighlight.TestPostingsHighlighter
+   [junit4] Completed [10/32] on J2 in 2.03s, 32 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.postingshighlight.TestMultiTermHighlighting
+   [junit4] Completed [11/32] on J2 in 0.64s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.uhighlight.TestUnifiedHighlighterStrictPhrases
+   [junit4] Completed [12/32] on J3 in 2.06s, 52 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestUnifiedHighlighterMTQ -Dtests.method=testRussianPrefixQuery -Dtests.seed=5766D8434B042CDC -Dtests.slow=true -Dtests.locale=ar-DZ -Dtests.timezone=America/St_Vincent -Dtests.asserts=true -Dtests.file.encoding=ISO-8859-1
+   [junit4] ERROR   0.06s J3 | TestUnifiedHighlighterMTQ.testRussianPrefixQuery {p0=stored,indexed,tokenized,indexOptions=DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS} <<<
+   [junit4]    > Throwable #1: org.junit.ComparisonFailure: expected:<[[<b>я</b>]]> but was:<[[я]]>
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery(TestUnifiedHighlighterMTQ.java:1074)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)Throwable #2: java.lang.RuntimeException: MockDirectoryWrapper: cannot close: there are still 1 open files: {_0.cfs=1}
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.close(MockDirectoryWrapper.java:841)
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.doAfter(TestUnifiedHighlighterMTQ.java:98)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4]    > Caused by: java.lang.RuntimeException: unclosed IndexInput: _0.cfs
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.addFileHandle(MockDirectoryWrapper.java:732)
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.openInput(MockDirectoryWrapper.java:776)
+   [junit4]    > 	at org.apache.lucene.codecs.lucene50.Lucene50CompoundReader.<init>(Lucene50CompoundReader.java:78)
+   [junit4]    > 	at org.apache.lucene.codecs.lucene50.Lucene50CompoundFormat.getCompoundReader(Lucene50CompoundFormat.java:71)
+   [junit4]    > 	at org.apache.lucene.index.SegmentCoreReaders.<init>(SegmentCoreReaders.java:100)
+   [junit4]    > 	at org.apache.lucene.index.SegmentReader.<init>(SegmentReader.java:77)
+   [junit4]    > 	at org.apache.lucene.index.ReadersAndUpdates.getReader(ReadersAndUpdates.java:143)
+   [junit4]    > 	at org.apache.lucene.index.ReadersAndUpdates.getReadOnlyClone(ReadersAndUpdates.java:195)
+   [junit4]    > 	at org.apache.lucene.index.StandardDirectoryReader.open(StandardDirectoryReader.java:105)
+   [junit4]    > 	at org.apache.lucene.index.IndexWriter.getReader(IndexWriter.java:474)
+   [junit4]    > 	at org.apache.lucene.index.RandomIndexWriter.getReader(RandomIndexWriter.java:385)
+   [junit4]    > 	at org.apache.lucene.index.RandomIndexWriter.getReader(RandomIndexWriter.java:313)
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery(TestUnifiedHighlighterMTQ.java:1066)
+   [junit4]    > 	... 28 more
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestUnifiedHighlighterMTQ -Dtests.method=testRussianPrefixQuery -Dtests.seed=5766D8434B042CDC -Dtests.slow=true -Dtests.locale=ar-DZ -Dtests.timezone=America/St_Vincent -Dtests.asserts=true -Dtests.file.encoding=ISO-8859-1
+   [junit4] ERROR   0.02s J3 | TestUnifiedHighlighterMTQ.testRussianPrefixQuery {p0=stored,indexed,tokenized} <<<
+   [junit4]    > Throwable #1: org.junit.ComparisonFailure: expected:<[[<b>я</b>]]> but was:<[[я]]>
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery(TestUnifiedHighlighterMTQ.java:1074)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)Throwable #2: java.lang.RuntimeException: MockDirectoryWrapper: cannot close: there are still 1 open files: {_0.cfs=1}
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.close(MockDirectoryWrapper.java:841)
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.doAfter(TestUnifiedHighlighterMTQ.java:98)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4]    > Caused by: java.lang.RuntimeException: unclosed IndexInput: _0.cfs
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.addFileHandle(MockDirectoryWrapper.java:732)
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.openInput(MockDirectoryWrapper.java:776)
+   [junit4]    > 	at org.apache.lucene.codecs.lucene50.Lucene50CompoundReader.<init>(Lucene50CompoundReader.java:78)
+   [junit4]    > 	at org.apache.lucene.codecs.lucene50.Lucene50CompoundFormat.getCompoundReader(Lucene50CompoundFormat.java:71)
+   [junit4]    > 	at org.apache.lucene.index.SegmentCoreReaders.<init>(SegmentCoreReaders.java:100)
+   [junit4]    > 	at org.apache.lucene.index.SegmentReader.<init>(SegmentReader.java:77)
+   [junit4]    > 	at org.apache.lucene.index.ReadersAndUpdates.getReader(ReadersAndUpdates.java:143)
+   [junit4]    > 	at org.apache.lucene.index.ReadersAndUpdates.getReadOnlyClone(ReadersAndUpdates.java:195)
+   [junit4]    > 	at org.apache.lucene.index.StandardDirectoryReader.open(StandardDirectoryReader.java:105)
+   [junit4]    > 	at org.apache.lucene.index.IndexWriter.getReader(IndexWriter.java:474)
+   [junit4]    > 	at org.apache.lucene.index.RandomIndexWriter.getReader(RandomIndexWriter.java:385)
+   [junit4]    > 	at org.apache.lucene.index.RandomIndexWriter.getReader(RandomIndexWriter.java:313)
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery(TestUnifiedHighlighterMTQ.java:1066)
+   [junit4]    > 	... 28 more
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestUnifiedHighlighterMTQ -Dtests.method=testRussianPrefixQuery -Dtests.seed=5766D8434B042CDC -Dtests.slow=true -Dtests.locale=ar-DZ -Dtests.timezone=America/St_Vincent -Dtests.asserts=true -Dtests.file.encoding=ISO-8859-1
+   [junit4] ERROR   0.02s J3 | TestUnifiedHighlighterMTQ.testRussianPrefixQuery {p0=stored,indexed,tokenized,termVector,termVectorOffsets,termVectorPosition} <<<
+   [junit4]    > Throwable #1: org.junit.ComparisonFailure: expected:<[[<b>я</b>]]> but was:<[[я]]>
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery(TestUnifiedHighlighterMTQ.java:1074)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)Throwable #2: java.lang.RuntimeException: MockDirectoryWrapper: cannot close: there are still 1 open files: {_0.cfs=1}
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.close(MockDirectoryWrapper.java:841)
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.doAfter(TestUnifiedHighlighterMTQ.java:98)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4]    > Caused by: java.lang.RuntimeException: unclosed IndexInput: _0.cfs
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.addFileHandle(MockDirectoryWrapper.java:732)
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.openInput(MockDirectoryWrapper.java:776)
+   [junit4]    > 	at org.apache.lucene.codecs.lucene50.Lucene50CompoundReader.<init>(Lucene50CompoundReader.java:78)
+   [junit4]    > 	at org.apache.lucene.codecs.lucene50.Lucene50CompoundFormat.getCompoundReader(Lucene50CompoundFormat.java:71)
+   [junit4]    > 	at org.apache.lucene.index.SegmentCoreReaders.<init>(SegmentCoreReaders.java:100)
+   [junit4]    > 	at org.apache.lucene.index.SegmentReader.<init>(SegmentReader.java:77)
+   [junit4]    > 	at org.apache.lucene.index.ReadersAndUpdates.getReader(ReadersAndUpdates.java:143)
+   [junit4]    > 	at org.apache.lucene.index.ReadersAndUpdates.getReadOnlyClone(ReadersAndUpdates.java:195)
+   [junit4]    > 	at org.apache.lucene.index.StandardDirectoryReader.open(StandardDirectoryReader.java:105)
+   [junit4]    > 	at org.apache.lucene.index.IndexWriter.getReader(IndexWriter.java:474)
+   [junit4]    > 	at org.apache.lucene.index.RandomIndexWriter.getReader(RandomIndexWriter.java:385)
+   [junit4]    > 	at org.apache.lucene.index.RandomIndexWriter.getReader(RandomIndexWriter.java:313)
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery(TestUnifiedHighlighterMTQ.java:1066)
+   [junit4]    > 	... 28 more
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestUnifiedHighlighterMTQ -Dtests.method=testRussianPrefixQuery -Dtests.seed=5766D8434B042CDC -Dtests.slow=true -Dtests.locale=ar-DZ -Dtests.timezone=America/St_Vincent -Dtests.asserts=true -Dtests.file.encoding=ISO-8859-1
+   [junit4] ERROR   0.04s J3 | TestUnifiedHighlighterMTQ.testRussianPrefixQuery {p0=stored,indexed,tokenized,termVector,indexOptions=DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS} <<<
+   [junit4]    > Throwable #1: org.junit.ComparisonFailure: expected:<[[<b>я</b>]]> but was:<[[я]]>
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery(TestUnifiedHighlighterMTQ.java:1074)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)Throwable #2: java.lang.RuntimeException: MockDirectoryWrapper: cannot close: there are still 1 open files: {_0.cfs=1}
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.close(MockDirectoryWrapper.java:841)
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.doAfter(TestUnifiedHighlighterMTQ.java:98)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4]    > Caused by: java.lang.RuntimeException: unclosed IndexInput: _0.cfs
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.addFileHandle(MockDirectoryWrapper.java:732)
+   [junit4]    > 	at org.apache.lucene.store.MockDirectoryWrapper.openInput(MockDirectoryWrapper.java:776)
+   [junit4]    > 	at org.apache.lucene.codecs.lucene50.Lucene50CompoundReader.<init>(Lucene50CompoundReader.java:78)
+   [junit4]    > 	at org.apache.lucene.codecs.lucene50.Lucene50CompoundFormat.getCompoundReader(Lucene50CompoundFormat.java:71)
+   [junit4]    > 	at org.apache.lucene.index.SegmentCoreReaders.<init>(SegmentCoreReaders.java:100)
+   [junit4]    > 	at org.apache.lucene.index.SegmentReader.<init>(SegmentReader.java:77)
+   [junit4]    > 	at org.apache.lucene.index.ReadersAndUpdates.getReader(ReadersAndUpdates.java:143)
+   [junit4]    > 	at org.apache.lucene.index.ReadersAndUpdates.getReadOnlyClone(ReadersAndUpdates.java:195)
+   [junit4]    > 	at org.apache.lucene.index.StandardDirectoryReader.open(StandardDirectoryReader.java:105)
+   [junit4]    > 	at org.apache.lucene.index.IndexWriter.getReader(IndexWriter.java:474)
+   [junit4]    > 	at org.apache.lucene.index.RandomIndexWriter.getReader(RandomIndexWriter.java:385)
+   [junit4]    > 	at org.apache.lucene.index.RandomIndexWriter.getReader(RandomIndexWriter.java:313)
+   [junit4]    > 	at org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery(TestUnifiedHighlighterMTQ.java:1066)
+   [junit4]    > 	... 28 more
+   [junit4]   2> NOTE: test params are: codec=Asserting(Lucene70): {id=PostingsFormat(name=LuceneVarGapDocFreqInterval), body=PostingsFormat(name=Direct), title=Lucene50(blocksize=128)}, docValues:{}, maxPointsInLeafNode=177, maxMBSortInHeap=5.9883824518545135, sim=RandomSimilarity(queryNorm=true): {id=DFR I(ne)B3(800.0), body=DFR I(n)B1, title=DFR I(F)BZ(0.3)}, locale=ar-DZ, timezone=America/St_Vincent
+   [junit4]   2> NOTE: Linux 6.8.0-59-generic amd64/Private Build 1.8.0_452 (64-bit)/cpus=8,threads=1,free=308460696,total=341835776
+   [junit4]   2> NOTE: All tests run in this JVM: [FieldQueryTest, FieldPhraseListTest, TestUnifiedHighlighterStrictPhrases, TestUnifiedHighlighterMTQ]
+   [junit4] Completed [13/32 (1!)] on J3 in 2.90s, 92 tests, 4 errors <<< FAILURES!
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.postingshighlight.TestWholeBreakIterator
+   [junit4] Completed [14/32 (1!)] on J3 in 0.06s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.highlight.HighlighterTest
+   [junit4] Completed [15/32 (1!)] on J2 in 3.67s, 58 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.uhighlight.TestUnifiedHighlighterReanalysis
+   [junit4] Completed [16/32 (1!)] on J2 in 0.09s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.FastVectorHighlighterTest
+   [junit4] Completed [17/32 (1!)] on J3 in 1.34s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.highlight.MissesTest
+   [junit4] Completed [18/32 (1!)] on J3 in 0.08s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.highlight.TokenSourcesTest
+   [junit4] Completed [19/32 (1!)] on J3 in 0.58s, 17 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.SimpleFragListBuilderTest
+   [junit4] Completed [20/32 (1!)] on J3 in 0.31s, 13 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.highlight.HighlighterPhraseTest
+   [junit4] Completed [21/32 (1!)] on J3 in 0.15s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.SimpleFragmentsBuilderTest
+   [junit4] Completed [22/32 (1!)] on J3 in 0.32s, 12 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.uhighlight.TestUnifiedHighlighter
+   [junit4] Completed [23/32 (1!)] on J2 in 3.21s, 128 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.WeightedFragListBuilderTest
+   [junit4] Completed [24/32 (1!)] on J2 in 0.12s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.FieldTermStackTest
+   [junit4] Completed [25/32 (1!)] on J3 in 0.29s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.highlight.custom.HighlightCustomQueryTest
+   [junit4] Completed [26/32 (1!)] on J2 in 0.05s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.ScoreOrderFragmentsBuilderTest
+   [junit4] Completed [27/32 (1!)] on J3 in 0.04s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.vectorhighlight.SimpleBoundaryScannerTest
+   [junit4] Completed [28/32 (1!)] on J2 in 0.03s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.highlight.OffsetLimitTokenFilterTest
+   [junit4] Completed [29/32 (1!)] on J3 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.uhighlight.LengthGoalBreakIteratorTest
+   [junit4] Completed [30/32 (1!)] on J2 in 0.06s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.postingshighlight.TestPostingsHighlighterRanking
+   [junit4] Completed [31/32 (1!)] on J0 in 12.05s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.search.uhighlight.TestUnifiedHighlighterRanking
+   [junit4] Completed [32/32 (1!)] on J1 in 11.36s, 3 tests
+   [junit4] 
+   [junit4] 
+   [junit4] Tests with failures [seed: 5766D8434B042CDC]:
+   [junit4]   - org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery {p0=stored,indexed,tokenized,indexOptions=DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS}
+   [junit4]   - org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery {p0=stored,indexed,tokenized}
+   [junit4]   - org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery {p0=stored,indexed,tokenized,termVector,termVectorOffsets,termVectorPosition}
+   [junit4]   - org.apache.lucene.search.uhighlight.TestUnifiedHighlighterMTQ.testRussianPrefixQuery {p0=stored,indexed,tokenized,termVector,indexOptions=DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS}
+   [junit4] 
+   [junit4] 
+   [junit4] JVM J0:     0.59 ..    13.37 =    12.78s
+   [junit4] JVM J1:     0.59 ..    15.02 =    14.43s
+   [junit4] JVM J2:     0.60 ..    13.07 =    12.48s
+   [junit4] JVM J3:     0.59 ..    12.95 =    12.36s
+   [junit4] Execution time total: 15 seconds
+   [junit4] Tests summary: 32 suites, 565 tests, 4 errors
