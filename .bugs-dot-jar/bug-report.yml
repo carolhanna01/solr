@@ -1,0 +1,176 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      assignee:
+        '#text': Unassigned
+        '@username': '-1'
+      attachments:
+        attachment:
+          '@author': rcmuir
+          '@created': Thu, 19 Jun 2014 03:12:05 +0000
+          '@id': '12651352'
+          '@name': LUCENE-5777.patch
+          '@size': '4081'
+      comments:
+        comment:
+        - '#text': '<p>Simple patch with a test.</p>
+
+
+            <p>I also ran TestAllDictionaries/TestAllDictionaries2 (all thunderbird
+            and openoffice respectively).</p>'
+          '@author': rcmuir
+          '@created': Thu, 19 Jun 2014 03:12:05 +0000
+          '@id': '14036893'
+        - '#text': '<p>Commit 1603851 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=rcmuir"
+            class="user-hover" rel="rcmuir">rcmuir</a> in branch ''dev/trunk''<br/>
+
+            [ <a href="https://svn.apache.org/r1603851" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1603851</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-5777" title="double
+            escaping of dash in hunspell conditions" class="issue-link" data-issue-key="LUCENE-5777"><del>LUCENE-5777</del></a>:
+            fix double escaping of dash in hunspell conditions</p>'
+          '@author': jira-bot
+          '@created': Thu, 19 Jun 2014 12:10:42 +0000
+          '@id': '14037285'
+        - '#text': '<p>Commit 1603853 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=rcmuir"
+            class="user-hover" rel="rcmuir">rcmuir</a> in branch ''dev/branches/branch_4x''<br/>
+
+            [ <a href="https://svn.apache.org/r1603853" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1603853</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-5777" title="double
+            escaping of dash in hunspell conditions" class="issue-link" data-issue-key="LUCENE-5777"><del>LUCENE-5777</del></a>:
+            fix double escaping of dash in hunspell conditions</p>'
+          '@author': jira-bot
+          '@created': Thu, 19 Jun 2014 12:13:31 +0000
+          '@id': '14037289'
+        - '#text': '<p>Commit 1603856 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=rcmuir"
+            class="user-hover" rel="rcmuir">rcmuir</a> in branch ''dev/branches/lucene_solr_4_9''<br/>
+
+            [ <a href="https://svn.apache.org/r1603856" class="external-link" target="_blank"
+            rel="nofollow noopener">https://svn.apache.org/r1603856</a> ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-5777" title="double
+            escaping of dash in hunspell conditions" class="issue-link" data-issue-key="LUCENE-5777"><del>LUCENE-5777</del></a>:
+            fix double escaping of dash in hunspell conditions</p>'
+          '@author': jira-bot
+          '@created': Thu, 19 Jun 2014 12:16:24 +0000
+          '@id': '14037291'
+        - '#text': '<p>This issue was moved to GitHub issue: <a href="https://github.com/apache/lucene/issues/6839"
+            class="external-link" target="_blank" rel="nofollow noopener">#6839</a>.</p>'
+          '@author': tomoko uchida
+          '@created': Sun, 28 Aug 2022 14:10:41 +0000
+          '@id': '17591988'
+      created: Thu, 19 Jun 2014 03:11:19 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '1.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: no_permission
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '400598'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 2 years, 38 weeks, 6 days ago
+        - '@id': customfield_12310120
+          '@key': com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes
+          customfieldname: Lucene Fields
+          customfieldvalues:
+            customfieldvalue:
+              '#text': New
+              '@key': '10121'
+        - '@id': customfield_12313320
+          '@key': com.atlassian.jira.toolkit:message
+          customfieldname: Lucene Mailing List Info
+          customfieldvalues: null
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|i1wyiv:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '400692'
+      description: '<p>This bug was previously masked by <a href="https://issues.apache.org/jira/browse/LUCENE-5768"
+        title="hunspell condition check is buggy" class="issue-link" data-issue-key="LUCENE-5768"><del>LUCENE-5768</del></a>.</p>
+
+
+        <p>Basically ''-'' doesnt mean anything special (e.g. what it normally means
+        for a regex), so we usually have to escape it. but some dictionaries like
+        pt_PT already escape it, so now that our parsing works correctly, we are undoing
+        that and creating a bad condition.</p>'
+      due: null
+      environment: null
+      fixVersion:
+      - '4.9'
+      - '6.0'
+      key:
+        '#text': LUCENE-5777
+        '@id': '12722407'
+      labels: null
+      link: https://issues.apache.org/jira/browse/LUCENE-5777
+      priority:
+        '#text': Major
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/major.svg
+        '@id': '3'
+      project:
+        '#text': Lucene - Core
+        '@id': '12310110'
+        '@key': LUCENE
+      reporter:
+        '#text': Robert Muir
+        '@username': rcmuir
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Thu, 19 Jun 2014 12:16:35 +0000
+      status:
+        '#text': Resolved
+        '@description': A resolution has been taken, and it is awaiting verification
+          by reporter. From here issues are either reopened, or are closed.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/resolved.png
+        '@id': '5'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: double escaping of dash in hunspell conditions
+      title: '[LUCENE-5777] double escaping of dash in hunspell conditions'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Sun, 28 Aug 2022 14:10:41 +0000
+      votes: '0'
+      watches: '1'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA

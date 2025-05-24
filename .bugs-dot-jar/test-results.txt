@@ -1,0 +1,1143 @@
+Buildfile: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/build.xml
+     [echo] Building analyzers-common...
+
+clean:
+   [delete] Deleting directory /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/analysis/common
+
+ivy-availability-check:
+     [echo] Building analyzers-common...
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: Apache Ivy 2.4.0 - 20141213170938 :: http://ant.apache.org/ivy/ ::
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+init:
+
+test:
+     [echo] Building analyzers-common...
+
+-clover.disable:
+
+ivy-availability-check:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+compile-test:
+     [echo] Building analyzers-common...
+
+ivy-availability-check:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+    [mkdir] Created dir: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/analysis/common/classes/java
+    [javac] Compiling 384 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/analysis/common/classes/java
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31257: warning: [fallthrough] possible fall-through into case
+    [javac]         case 55: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31264: warning: [fallthrough] possible fall-through into case
+    [javac]         case 56: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31276: warning: [fallthrough] possible fall-through into case
+    [javac]         case 58: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31310: warning: [fallthrough] possible fall-through into case
+    [javac]         case 59: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31329: warning: [fallthrough] possible fall-through into case
+    [javac]         case 61: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31339: warning: [fallthrough] possible fall-through into case
+    [javac]         case 62: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31343: warning: [fallthrough] possible fall-through into case
+    [javac]         case 63: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31348: warning: [fallthrough] possible fall-through into case
+    [javac]         case 64: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31352: warning: [fallthrough] possible fall-through into case
+    [javac]         case 65: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31356: warning: [fallthrough] possible fall-through into case
+    [javac]         case 66: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31365: warning: [fallthrough] possible fall-through into case
+    [javac]         case 67: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31369: warning: [fallthrough] possible fall-through into case
+    [javac]         case 68: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31373: warning: [fallthrough] possible fall-through into case
+    [javac]         case 69: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31377: warning: [fallthrough] possible fall-through into case
+    [javac]         case 70: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31387: warning: [fallthrough] possible fall-through into case
+    [javac]         case 71: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31397: warning: [fallthrough] possible fall-through into case
+    [javac]         case 72: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31401: warning: [fallthrough] possible fall-through into case
+    [javac]         case 73: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31407: warning: [fallthrough] possible fall-through into case
+    [javac]         case 74: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31413: warning: [fallthrough] possible fall-through into case
+    [javac]         case 75: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31417: warning: [fallthrough] possible fall-through into case
+    [javac]         case 76: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31444: warning: [fallthrough] possible fall-through into case
+    [javac]         case 79: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31458: warning: [fallthrough] possible fall-through into case
+    [javac]         case 81: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31462: warning: [fallthrough] possible fall-through into case
+    [javac]         case 82: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31472: warning: [fallthrough] possible fall-through into case
+    [javac]         case 83: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31507: warning: [fallthrough] possible fall-through into case
+    [javac]         case 84: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31515: warning: [fallthrough] possible fall-through into case
+    [javac]         case 85: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31540: warning: [fallthrough] possible fall-through into case
+    [javac]         case 87: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31544: warning: [fallthrough] possible fall-through into case
+    [javac]         case 88: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31568: warning: [fallthrough] possible fall-through into case
+    [javac]         case 90: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31572: warning: [fallthrough] possible fall-through into case
+    [javac]         case 91: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31576: warning: [fallthrough] possible fall-through into case
+    [javac]         case 92: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31580: warning: [fallthrough] possible fall-through into case
+    [javac]         case 93: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31584: warning: [fallthrough] possible fall-through into case
+    [javac]         case 94: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31588: warning: [fallthrough] possible fall-through into case
+    [javac]         case 95: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31592: warning: [fallthrough] possible fall-through into case
+    [javac]         case 96: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31596: warning: [fallthrough] possible fall-through into case
+    [javac]         case 97: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31606: warning: [fallthrough] possible fall-through into case
+    [javac]         case 98: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31616: warning: [fallthrough] possible fall-through into case
+    [javac]         case 99: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31629: warning: [fallthrough] possible fall-through into case
+    [javac]         case 100: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31737: warning: [fallthrough] possible fall-through into case
+    [javac]         case 104: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31770: warning: [fallthrough] possible fall-through into case
+    [javac]         case 105: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/charfilter/HTMLStripCharFilter.java:31806: warning: [fallthrough] possible fall-through into case
+    [javac]         case 106: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java:160: warning: [rawtypes] found raw type: Arc
+    [javac]   final FST.Arc<IntsRef> prefixArcs[] = new FST.Arc[3];
+    [javac]                                                ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java:164: warning: [rawtypes] found raw type: Arc
+    [javac]   final FST.Arc<IntsRef> suffixArcs[] = new FST.Arc[3];
+    [javac]                                                ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/tartarus/snowball/Among.java:46: warning: [rawtypes] found raw type: Class
+    [javac]   private static final Class<?>[] EMPTY_PARAMS = new Class[0];
+    [javac]                                                      ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/standard/UAX29URLEmailTokenizerImpl.java:9442: warning: [fallthrough] possible fall-through into case
+    [javac]         case 15: break;
+    [javac]         ^
+    [javac] /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/analysis/common/src/java/org/apache/lucene/analysis/standard/UAX29URLEmailTokenizerImpl.java:9490: warning: [fallthrough] possible fall-through into case
+    [javac]         case 26: break;
+    [javac]         ^
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 47 warnings
+     [copy] Copying 38 files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/analysis/common/classes/java
+
+compile-test-framework:
+
+ivy-availability-check:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+init:
+
+compile-lucene-core:
+
+compile-codecs:
+     [echo] Building codecs...
+
+ivy-availability-check:
+     [echo] Building codecs...
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+common.compile-core:
+
+compile-core:
+
+common.compile-test:
+    [mkdir] Created dir: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/analysis/common/classes/test
+    [javac] Compiling 259 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/analysis/common/classes/test
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [copy] Copying 88 files to /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/analysis/common/classes/test
+
+install-junit4-taskdef:
+
+validate:
+
+resolve-groovy:
+[ivy:cachepath] :: resolving dependencies :: org.codehaus.groovy#groovy-all-caller;working
+[ivy:cachepath] 	confs: [default]
+[ivy:cachepath] 	found org.codehaus.groovy#groovy-all;2.3.1 in public
+[ivy:cachepath] :: resolution report :: resolve 24ms :: artifacts dl 2ms
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+	---------------------------------------------------------------------
+
+-init-totals:
+
+-test:
+    [mkdir] Created dir: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/analysis/common/test
+    [mkdir] Created dir: /home/carol/Desktop/benchmark/bugs-dot-jar/solr/lucene/build/analysis/common/test/temp
+   [junit4] <JUnit4> says g'day! Master seed: 35090A193CDAB816
+   [junit4] Executing 255 suites with 4 JVMs.
+   [junit4] 
+   [junit4] Started J1 PID(557751@JustynaProBook).
+   [junit4] Started J3 PID(557750@JustynaProBook).
+   [junit4] Started J0 PID(557752@JustynaProBook).
+   [junit4] Started J2 PID(557753@JustynaProBook).
+   [junit4] Suite: org.apache.lucene.analysis.sv.TestSwedishLightStemFilterFactory
+   [junit4] Completed on J2 in 1.91s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.sv.TestSwedishAnalyzer
+   [junit4] Completed on J1 in 2.74s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.lv.TestLatvianAnalyzer
+   [junit4] Completed on J3 in 2.64s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.payloads.NumericPayloadTokenFilterTest
+   [junit4] Completed on J1 in 0.23s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pattern.TestPatternCaptureGroupTokenFilter
+   [junit4] Completed on J3 in 1.64s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.sv.TestSwedishLightStemFilter
+   [junit4] Completed on J0 in 4.73s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pattern.TestPatternReplaceFilterFactory
+   [junit4] Completed on J0 in 0.36s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestStemmer
+   [junit4] Completed on J3 in 0.81s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestFlagLong
+   [junit4] Completed on J3 in 0.13s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.en.TestKStemmer
+   [junit4] Completed on J1 in 2.23s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestKeywordMarkerFilterFactory
+   [junit4] Completed on J3 in 0.59s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestLimitTokenCountFilterFactory
+   [junit4] Completed on J1 in 0.64s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ckb.TestSoraniStemFilterFactory
+   [junit4] Completed on J3 in 0.14s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestRemoveDuplicatesTokenFilterFactory
+   [junit4] Completed on J3 in 0.13s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.it.TestItalianAnalyzer
+   [junit4] Completed on J3 in 0.98s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.path.TestReversePathHierarchyTokenizer
+   [junit4] Completed on J1 in 1.30s, 14 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fr.TestFrenchMinimalStemFilter
+   [junit4] Completed on J0 in 2.70s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestLimitTokenCountAnalyzer
+   [junit4] Completed on J0 in 1.87s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.compound.TestCompoundWordTokenFilter
+   [junit4] Completed on J1 in 2.46s, 12 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestTruncateTokenFilter
+   [junit4] Completed on J0 in 0.10s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.synonym.TestSolrSynonymParser
+   [junit4] Completed on J1 in 0.45s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.lv.TestLatvianStemFilterFactory
+   [junit4] Completed on J1 in 0.08s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.cz.TestCzechStemmer
+   [junit4] Completed on J0 in 0.46s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.el.TestGreekStemFilterFactory
+   [junit4] Completed on J1 in 0.10s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.charfilter.TestMappingCharFilterFactory
+   [junit4] Completed on J1 in 0.09s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.payloads.DelimitedPayloadTokenFilterTest
+   [junit4] Completed on J1 in 0.10s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.th.TestThaiTokenizerFactory
+   [junit4] Completed on J0 in 0.29s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.id.TestIndonesianStemmer
+   [junit4] Completed on J0 in 0.09s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.es.TestSpanishLightStemFilter
+   [junit4] Completed on J3 in 3.62s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestTypeTokenFilter
+   [junit4] Completed on J1 in 0.07s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fi.TestFinnishAnalyzer
+   [junit4] Completed on J0 in 0.79s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestUAX29URLEmailAnalyzer
+   [junit4] Completed on J1 in 1.26s, 32 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ngram.EdgeNGramTokenizerTest
+   [junit4] Completed on J2 in 11.24s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.de.TestGermanLightStemFilterFactory
+   [junit4] Completed on J2 in 0.13s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.id.TestIndonesianStemFilterFactory
+   [junit4] Completed on J2 in 0.14s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestKeywordMarkerFilter
+   [junit4] Completed on J2 in 0.13s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.cjk.TestCJKBigramFilterFactory
+   [junit4] Completed on J2 in 0.24s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestSegmentingTokenizerBase
+   [junit4] Completed on J3 in 4.44s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestClassicAnalyzer
+   [junit4] Completed on J0 in 4.18s, 29 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.no.TestNorwegianLightStemFilter
+   [junit4] Completed on J0 in 0.48s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestCharArrayIterator
+   [junit4] Completed on J3 in 1.01s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.de.TestGermanStemFilter
+   [junit4] Completed on J0 in 0.43s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.da.TestDanishAnalyzer
+   [junit4] Completed on J3 in 0.65s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.en.TestKStemFilterFactory
+   [junit4] Completed on J0 in 0.46s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestStemmerOverrideFilter
+   [junit4] Completed on J0 in 0.30s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.tr.TestApostropheFilterFactory
+   [junit4] Completed on J0 in 0.08s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestTrimFilter
+   [junit4] Completed on J0 in 0.38s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.commongrams.TestCommonGramsQueryFilterFactory
+   [junit4] Completed on J0 in 0.09s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestDoubleEscape
+   [junit4]   2> NOTE: test params are: codec=Lucene42, sim=RandomSimilarityProvider(queryNorm=false,coord=yes): {}, locale=fr_CA, timezone=America/Lima
+   [junit4]   2> NOTE: Linux 6.8.0-59-generic amd64/Private Build 1.8.0_452 (64-bit)/cpus=8,threads=1,free=315161088,total=339738624
+   [junit4]   2> NOTE: All tests run in this JVM: [TestSwedishLightStemFilter, TestPatternReplaceFilterFactory, TestFrenchMinimalStemFilter, TestLimitTokenCountAnalyzer, TestTruncateTokenFilter, TestCzechStemmer, TestThaiTokenizerFactory, TestIndonesianStemmer, TestFinnishAnalyzer, TestClassicAnalyzer, TestNorwegianLightStemFilter, TestGermanStemFilter, TestKStemFilterFactory, TestStemmerOverrideFilter, TestApostropheFilterFactory, TestTrimFilter, TestCommonGramsQueryFilterFactory, TestDoubleEscape]
+   [junit4]   2> NOTE: reproduce with: ant test  -Dtestcase=TestDoubleEscape -Dtests.seed=35090A193CDAB816 -Dtests.slow=true -Dtests.locale=fr_CA -Dtests.timezone=America/Lima -Dtests.file.encoding=ISO-8859-1
+   [junit4] ERROR   0.00s J0 | TestDoubleEscape (suite) <<<
+   [junit4]    > Throwable #1: java.lang.IllegalArgumentException: expected ']' at position 10
+   [junit4]    > 	at __randomizedtesting.SeedInfo.seed([35090A193CDAB816]:0)
+   [junit4]    > 	at org.apache.lucene.util.automaton.RegExp.parseCharClassExp(RegExp.java:909)
+   [junit4]    > 	at org.apache.lucene.util.automaton.RegExp.parseComplExp(RegExp.java:900)
+   [junit4]    > 	at org.apache.lucene.util.automaton.RegExp.parseRepeatExp(RegExp.java:870)
+   [junit4]    > 	at org.apache.lucene.util.automaton.RegExp.parseConcatExp(RegExp.java:863)
+   [junit4]    > 	at org.apache.lucene.util.automaton.RegExp.parseConcatExp(RegExp.java:865)
+   [junit4]    > 	at org.apache.lucene.util.automaton.RegExp.parseInterExp(RegExp.java:856)
+   [junit4]    > 	at org.apache.lucene.util.automaton.RegExp.parseUnionExp(RegExp.java:850)
+   [junit4]    > 	at org.apache.lucene.util.automaton.RegExp.<init>(RegExp.java:404)
+   [junit4]    > 	at org.apache.lucene.analysis.hunspell.Dictionary.parseAffix(Dictionary.java:450)
+   [junit4]    > 	at org.apache.lucene.analysis.hunspell.Dictionary.readAffixFile(Dictionary.java:284)
+   [junit4]    > 	at org.apache.lucene.analysis.hunspell.Dictionary.<init>(Dictionary.java:189)
+   [junit4]    > 	at org.apache.lucene.analysis.hunspell.StemmerTestBase.init(StemmerTestBase.java:58)
+   [junit4]    > 	at org.apache.lucene.analysis.hunspell.StemmerTestBase.init(StemmerTestBase.java:36)
+   [junit4]    > 	at org.apache.lucene.analysis.hunspell.TestDoubleEscape.beforeClass(TestDoubleEscape.java:25)
+   [junit4]    > 	at java.lang.Thread.run(Thread.java:750)
+   [junit4] Completed on J0 in 0.41s, 0 tests, 1 error <<< FAILURES!
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestPrefixAwareTokenFilter
+   [junit4] Completed on J0 in 0.07s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.gl.TestGalicianAnalyzer
+   [junit4] Completed on J0 in 1.14s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.no.TestNorwegianAnalyzer
+   [junit4] Completed on J0 in 0.70s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestRemoveDuplicatesTokenFilter
+   [junit4] Completed on J1 in 10.46s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.synonym.TestSynonymFilterFactory
+   [junit4] Completed on J1 in 0.23s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.synonym.TestSynonymMapFilter
+   [junit4] Completed on J2 in 8.94s, 21 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestStopFilter
+   [junit4] Completed on J2 in 0.09s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.no.TestNorwegianMinimalStemFilter
+   [junit4] Completed on J1 in 0.45s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.bg.TestBulgarianAnalyzer
+   [junit4] Completed on J1 in 0.71s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ca.TestCatalanAnalyzer
+   [junit4] Completed on J2 in 1.00s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestFlagNum
+   [junit4] Completed on J1 in 0.35s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestPerFieldAnalyzerWrapper
+   [junit4] Completed on J1 in 0.07s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fr.TestFrenchMinimalStemFilterFactory
+   [junit4] Completed on J1 in 0.10s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fi.TestFinnishLightStemFilter
+   [junit4] Completed on J0 in 4.74s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestHunspellStemFilterFactory
+   [junit4] Completed on J0 in 0.18s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pattern.TestPatternTokenizer
+   [junit4] Completed on J1 in 1.32s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.el.TestGreekStemmer
+   [junit4] Completed on J1 in 0.28s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestMorph
+   [junit4] Completed on J1 in 0.08s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.wikipedia.TestWikipediaTokenizerFactory
+   [junit4] Completed on J1 in 0.12s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.collation.TestCollationKeyAnalyzer
+   [junit4] Completed on J0 in 1.60s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestEscaped
+   [junit4] Completed on J0 in 0.10s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestHunspellStemFilter
+   [junit4] Completed on J1 in 0.78s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestCondition2
+   [junit4] Completed on J0 in 0.09s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ngram.EdgeNGramTokenFilterTest
+   [junit4] Completed on J2 in 4.42s, 14 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.commongrams.CommonGramsFilterTest
+   [junit4] Completed on J2 in 1.29s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.commongrams.TestCommonGramsFilterFactory
+   [junit4] Completed on J2 in 0.13s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.cjk.TestCJKAnalyzer
+   [junit4] Completed on J1 in 3.16s, 17 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.payloads.TypeAsPayloadTokenFilterTest
+   [junit4] Completed on J1 in 0.05s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestPrefixAndSuffixAwareTokenFilter
+   [junit4] Completed on J1 in 0.06s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pt.TestPortugueseStemFilterFactory
+   [junit4] Completed on J1 in 0.12s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestCircumfix
+   [junit4] Completed on J1 in 0.07s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestASCIIFoldingFilter
+   [junit4] Completed on J2 in 0.65s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.en.TestEnglishMinimalStemFilterFactory
+   [junit4] Completed on J1 in 0.07s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.tr.TestTurkishAnalyzer
+   [junit4] Completed on J2 in 0.70s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestDuelingAnalyzers
+   [junit4] Completed on J0 in 4.91s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pattern.TestPatternTokenizerFactory
+   [junit4] Completed on J0 in 0.08s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestScandinavianNormalizationFilterFactory
+   [junit4] Completed on J0 in 0.09s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestEmptyTokenStream
+   [junit4] Completed on J2 in 1.05s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.bg.TestBulgarianStemFilterFactory
+   [junit4] Completed on J2 in 0.10s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ga.TestIrishLowerCaseFilter
+   [junit4] Completed on J2 in 0.08s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.in.TestIndicNormalizer
+   [junit4] Completed on J2 in 0.08s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.shingle.ShingleAnalyzerWrapperTest
+   [junit4] Completed on J0 in 0.56s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestDependencies
+   [junit4] Completed on J0 in 0.11s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.en.TestEnglishAnalyzer
+   [junit4] Completed on J2 in 0.57s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestLengthFilterFactory
+   [junit4] Completed on J2 in 0.06s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestStopFilterFactory
+   [junit4] Completed on J2 in 0.06s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fr.TestFrenchLightStemFilter
+   [junit4] Completed on J0 in 2.50s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hu.TestHungarianLightStemFilter
+   [junit4] Completed on J2 in 2.21s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.collation.TestCollationDocValuesField
+   [junit4] Completed on J2 in 3.26s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.gl.TestGalicianStemFilter
+   [junit4] Completed on J2 in 1.36s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fa.TestPersianNormalizationFilter
+   [junit4] Completed on J2 in 0.12s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.charfilter.TestHTMLStripCharFilterFactory
+   [junit4] Completed on J2 in 0.28s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestRandomChains
+   [junit4] Completed on J3 in 37.45s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.tr.TestTurkishLowerCaseFilter
+   [junit4] Completed on J3 in 0.09s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestLimitTokenPositionFilter
+   [junit4] Completed on J3 in 0.07s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestBugInSomething
+   [junit4] Completed on J0 in 22.46s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.th.TestThaiAnalyzer
+   [junit4] Completed on J3 in 3.93s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.cz.TestCzechAnalyzer
+   [junit4] Completed on J3 in 0.51s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fa.TestPersianAnalyzer
+   [junit4] Completed on J3 in 0.45s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestCondition
+   [junit4] Completed on J3 in 0.05s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ru.TestRussianAnalyzer
+   [junit4] Completed on J3 in 0.47s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestFactories
+   [junit4] Completed on J1 in 29.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.de.TestGermanNormalizationFilter
+   [junit4] Completed on J3 in 0.20s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestLucene47WordDelimiterFilter
+   [junit4] Completed on J3 in 3.63s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.gl.TestGalicianStemFilterFactory
+   [junit4] Completed on J3 in 0.05s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.no.TestNorwegianLightStemFilterFactory
+   [junit4] Completed on J3 in 0.06s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.compound.TestDictionaryCompoundWordTokenFilterFactory
+   [junit4] Completed on J3 in 0.06s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestSingleTokenTokenFilter
+   [junit4] Completed on J3 in 0.04s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.en.TestPorterStemFilter
+   [junit4] Completed on J3 in 1.88s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.el.TestGreekLowerCaseFilterFactory
+   [junit4] Completed on J3 in 0.06s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pattern.TestPatternReplaceCharFilterFactory
+   [junit4] Completed on J3 in 0.07s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.th.TestThaiWordFilterFactory
+   [junit4] Completed on J3 in 0.08s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.reverse.TestReverseStringFilterFactory
+   [junit4] Completed on J3 in 0.04s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestLimitTokenCountFilter
+   [junit4] Completed on J3 in 0.05s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestStandardAnalyzer
+   [junit4] Completed on J1 in 6.22s, 32 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestUAX29URLEmailTokenizer
+   [junit4] Completed on J3 in 2.95s, 35 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ngram.NGramTokenizerTest
+   [junit4] Completed on J2 in 35.61s, 14 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.snowball.TestSnowball
+   [junit4] Completed on J3 in 8.90s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.it.TestItalianLightStemFilter
+   [junit4] Completed on J2 in 2.12s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pt.TestPortugueseAnalyzer
+   [junit4] Completed on J2 in 0.38s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fi.TestFinnishLightStemFilterFactory
+   [junit4] Completed on J2 in 0.05s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.cz.TestCzechStemFilterFactory
+   [junit4] Completed on J2 in 0.05s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.snowball.TestSnowballVocab
+   [junit4] Completed on J0 in 21.71s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestWordDelimiterFilter
+   [junit4] Completed on J1 in 15.58s, 13 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.shingle.ShingleFilterTest
+   [junit4] Completed on J2 in 4.32s, 44 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pattern.TestPatternReplaceCharFilter
+   [junit4] Completed on J3 in 6.60s, 14 tests, 1 skipped
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ngram.NGramTokenFilterTest
+   [junit4] Completed on J1 in 2.92s, 14 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestAnalyzers
+   [junit4] Completed on J0 in 6.28s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.cjk.TestCJKBigramFilter
+   [junit4] Completed on J3 in 1.75s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.de.TestGermanLightStemFilter
+   [junit4] Completed on J1 in 1.77s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.charfilter.TestMappingCharFilter
+   [junit4] Completed on J2 in 3.91s, 18 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pt.TestPortugueseStemFilter
+   [junit4] Completed on J0 in 2.15s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.de.TestGermanMinimalStemFilter
+   [junit4] Completed on J1 in 1.72s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.wikipedia.WikipediaTokenizerTest
+   [junit4] Completed on J2 in 1.55s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ru.TestRussianLightStemFilter
+   [junit4] Completed on J3 in 2.67s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.charfilter.HTMLStripCharFilterTest
+   [junit4] Completed on J0 in 1.57s, 31 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestRollingCharBuffer
+   [junit4] Completed on J1 in 1.60s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestAllAnalyzersHaveFactories
+   [junit4] Completed on J2 in 1.55s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.br.TestBrazilianStemmer
+   [junit4] Completed on J1 in 0.46s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestKeepWordFilter
+   [junit4] Completed on J1 in 0.18s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pt.TestPortugueseLightStemFilter
+   [junit4] Completed on J3 in 1.66s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.path.TestPathHierarchyTokenizer
+   [junit4] Completed on J2 in 0.90s, 17 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pt.TestPortugueseMinimalStemFilter
+   [junit4] Completed on J0 in 1.67s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ckb.TestSoraniStemFilter
+   [junit4] Completed on J3 in 0.41s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestCharTokenizers
+   [junit4] Completed on J1 in 0.54s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.en.TestEnglishMinimalStemFilter
+   [junit4] Completed on J2 in 0.12s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hy.TestArmenianAnalyzer
+   [junit4] Completed on J0 in 0.30s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.eu.TestBasqueAnalyzer
+   [junit4] Completed on J3 in 0.36s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ga.TestIrishAnalyzer
+   [junit4] Completed on J1 in 0.41s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.nl.TestDutchStemmer
+   [junit4] Completed on J2 in 0.63s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.gl.TestGalicianMinimalStemFilter
+   [junit4] Completed on J0 in 0.28s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.reverse.TestReverseStringFilter
+   [junit4] Completed on J3 in 0.27s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestKeywordAnalyzer
+   [junit4] Completed on J1 in 0.30s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pattern.TestPatternReplaceFilter
+   [junit4] Completed on J2 in 0.44s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.el.GreekAnalyzerTest
+   [junit4] Completed on J0 in 0.33s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestScandinavianNormalizationFilter
+   [junit4] Completed on J3 in 0.42s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hi.TestHindiAnalyzer
+   [junit4] Completed on J1 in 0.51s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestHyphenatedWordsFilter
+   [junit4] Completed on J2 in 0.37s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hu.TestHungarianAnalyzer
+   [junit4] Completed on J0 in 0.32s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestCapitalizationFilter
+   [junit4] Completed on J3 in 0.28s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.query.QueryAutoStopWordAnalyzerTest
+   [junit4] Completed on J1 in 0.15s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.de.TestGermanAnalyzer
+   [junit4] Completed on J2 in 0.26s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ar.TestArabicAnalyzer
+   [junit4] Completed on J0 in 0.35s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.es.TestSpanishAnalyzer
+   [junit4] Completed on J3 in 0.29s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ro.TestRomanianAnalyzer
+   [junit4] Completed on J1 in 0.28s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ckb.TestSoraniAnalyzer
+   [junit4] Completed on J2 in 0.24s, 6 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fr.TestFrenchAnalyzer
+   [junit4] Completed on J0 in 0.24s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fa.TestPersianCharFilter
+   [junit4] Completed on J3 in 0.22s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.compound.TestHyphenationCompoundWordTokenFilterFactory
+   [junit4] Completed on J3 in 0.07s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.id.TestIndonesianAnalyzer
+   [junit4] Completed on J1 in 0.25s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.cjk.TestCJKWidthFilter
+   [junit4] Completed on J2 in 0.32s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestCodepointCountFilter
+   [junit4] Completed on J0 in 0.26s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestScandinavianFoldingFilter
+   [junit4] Completed on J3 in 0.23s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestDictionary
+   [junit4] Completed on J1 in 0.13s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.sinks.TestTeeSinkTokenFilter
+   [junit4] Completed on J2 in 0.10s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.standard.TestUAX29URLEmailTokenizerFactory
+   [junit4] Completed on J0 in 0.09s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestCharArrayMap
+   [junit4] Completed on J3 in 0.07s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.shingle.TestShingleFilterFactory
+   [junit4] Completed on J1 in 0.07s, 14 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.en.TestPorterStemFilterFactory
+   [junit4] Completed on J2 in 0.03s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ar.TestArabicStemFilter
+   [junit4] Completed on J0 in 0.07s, 23 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestKeepFilterFactory
+   [junit4] Completed on J3 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestCharArraySet
+   [junit4] Completed on J1 in 0.05s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestCapitalizationFilterFactory
+   [junit4] Completed on J2 in 0.07s, 23 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ngram.TestNGramFilters
+   [junit4] Completed on J0 in 0.03s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.standard.TestStandardFactories
+   [junit4] Completed on J3 in 0.05s, 11 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.synonym.TestWordnetSynonymParser
+   [junit4] Completed on J1 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestCharacterUtils
+   [junit4] Completed on J2 in 0.02s, 9 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.bg.TestBulgarianStemmer
+   [junit4] Completed on J0 in 0.02s, 7 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.lv.TestLatvianStemmer
+   [junit4] Completed on J3 in 0.03s, 10 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.br.TestBrazilianStemFilterFactory
+   [junit4] Completed on J1 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.sinks.DateRecognizerSinkTokenizerTest
+   [junit4] Completed on J2 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hu.TestHungarianLightStemFilterFactory
+   [junit4] Completed on J0 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.de.TestGermanNormalizationFilterFactory
+   [junit4] Completed on J3 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestTwoFold
+   [junit4] Completed on J1 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestElisionFilterFactory
+   [junit4] Completed on J2 in 0.01s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.es.TestSpanishLightStemFilterFactory
+   [junit4] Completed on J0 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.no.TestNorwegianMinimalStemFilterFactory
+   [junit4] Completed on J3 in 0.02s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hi.TestHindiNormalizer
+   [junit4] Completed on J1 in 0.02s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestComplexPrefix
+   [junit4] Completed on J2 in 0.05s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestCodepointCountFilterFactory
+   [junit4] Completed on J0 in 0.02s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestAnalysisSPILoader
+   [junit4] Completed on J3 in 0.04s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestTypeTokenFilterFactory
+   [junit4] Completed on J1 in 0.02s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestOptionalCondition
+   [junit4] Completed on J2 in 0.03s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.core.TestStopAnalyzer
+   [junit4] Completed on J0 in 0.02s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fr.TestFrenchLightStemFilterFactory
+   [junit4] Completed on J3 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestFilesystemResourceLoader
+   [junit4] Completed on J1 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.tr.TestApostropheFilter
+   [junit4] Completed on J2 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ckb.TestSoraniNormalizationFilter
+   [junit4] Completed on J0 in 0.02s, 8 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.synonym.TestMultiWordSynonyms
+   [junit4] Completed on J3 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.cjk.TestCJKWidthFilterFactory
+   [junit4] Completed on J1 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ckb.TestSoraniNormalizationFilterFactory
+   [junit4] Completed on J2 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestHomonyms
+   [junit4] Completed on J0 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ru.TestRussianLightStemFilterFactory
+   [junit4] Completed on J3 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestCaseInsensitive
+   [junit4] Completed on J1 in 0.03s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ar.TestArabicNormalizationFilter
+   [junit4] Completed on J2 in 0.05s, 15 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestLimitTokenPositionFilterFactory
+   [junit4] Completed on J0 in 0.03s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.gl.TestGalicianMinimalStemFilterFactory
+   [junit4] Completed on J3 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestConv
+   [junit4] Completed on J1 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.de.TestGermanMinimalStemFilterFactory
+   [junit4] Completed on J2 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestStemmerOverrideFilterFactory
+   [junit4] Completed on J0 in 0.02s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestTrimFilterFactory
+   [junit4] Completed on J3 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestLengthFilter
+   [junit4] Completed on J1 in 0.01s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.sinks.TokenRangeSinkTokenizerTest
+   [junit4] Completed on J2 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ga.TestIrishLowerCaseFilterFactory
+   [junit4] Completed on J0 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hi.TestHindiFilters
+   [junit4] Completed on J3 in 0.02s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestIgnore
+   [junit4] Completed on J1 in 0.02s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hunspell.TestTwoSuffixes
+   [junit4] Completed on J2 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.snowball.TestSnowballPorterFilterFactory
+   [junit4] Completed on J0 in 0.01s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.hi.TestHindiStemmer
+   [junit4] Completed on J3 in 0.09s, 5 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestTruncateTokenFilterFactory
+   [junit4] Completed on J1 in 0.02s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.de.TestGermanStemFilterFactory
+   [junit4] Completed on J2 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pt.TestPortugueseLightStemFilterFactory
+   [junit4] Completed on J0 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.it.TestItalianLightStemFilterFactory
+   [junit4] Completed on J3 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.payloads.TestDelimitedPayloadTokenFilterFactory
+   [junit4] Completed on J1 in 0.01s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestKeywordRepeatFilter
+   [junit4] Completed on J2 in 0.02s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestElision
+   [junit4] Completed on J0 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.ar.TestArabicFilters
+   [junit4] Completed on J3 in 0.01s, 4 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.miscellaneous.TestScandinavianFoldingFilterFactory
+   [junit4] Completed on J1 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.tr.TestTurkishLowerCaseFilterFactory
+   [junit4] Completed on J2 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.util.TestWordlistLoader
+   [junit4] Completed on J0 in 0.01s, 3 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.sinks.TokenTypeSinkTokenizerTest
+   [junit4] Completed on J3 in 0.01s, 1 test
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.fa.TestPersianNormalizationFilterFactory
+   [junit4] Completed on J1 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.pt.TestPortugueseMinimalStemFilterFactory
+   [junit4] Completed on J2 in 0.01s, 2 tests
+   [junit4] 
+   [junit4] Suite: org.apache.lucene.analysis.payloads.TokenOffsetPayloadTokenFilterTest
+   [junit4] Completed on J0 in 0.01s, 1 test
+   [junit4] 
+   [junit4] 
+   [junit4] Tests with failures:
+   [junit4]   - org.apache.lucene.analysis.hunspell.TestDoubleEscape (suite)
+   [junit4] 
+   [junit4] 
+   [junit4] JVM J0:     1.59 ..   103.03 =   101.43s
+   [junit4] JVM J1:     1.59 ..   102.92 =   101.33s
+   [junit4] JVM J2:     1.80 ..   102.98 =   101.18s
+   [junit4] JVM J3:     1.59 ..   102.85 =   101.26s
+   [junit4] Execution time total: 1 minute 43 seconds
+   [junit4] Tests summary: 255 suites, 1343 tests, 1 suite-level error, 1 ignored
