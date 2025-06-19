@@ -24,6 +24,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -749,6 +750,7 @@ public class MemoryIndex {
     
     private MemoryIndexReader() {
       super(); // avoid as much superclass baggage as possible
+      readerFinishedListeners = Collections.synchronizedSet(new HashSet<ReaderFinishedListener>());
     }
     
     private Info getInfo(String fieldName) {

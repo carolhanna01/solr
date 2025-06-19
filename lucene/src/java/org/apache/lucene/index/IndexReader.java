@@ -24,18 +24,16 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.DocumentStoredFieldVisitor;
+import org.apache.lucene.search.FieldCache; // javadocs
 import org.apache.lucene.search.SearcherManager; // javadocs
 import org.apache.lucene.store.*;
 import org.apache.lucene.util.ArrayUtil;
 import org.apache.lucene.util.Bits;
 import org.apache.lucene.util.BytesRef;
-import org.apache.lucene.util.MapBackedSet;
 import org.apache.lucene.util.CommandLineUtil;
 import org.apache.lucene.util.ReaderUtil;         // for javadocs
 
@@ -75,38 +73,60 @@ public abstract class IndexReader implements Cloneable,Closeable {
 
   /**
    * A custom listener that's invoked when the IndexReader
-   * is closed.
+   * is finished.
+   *
+   * <p>For a SegmentReader, this listener is called only
+   * once all SegmentReaders sharing the same core are
+   * closed.  At this point it is safe for apps to evict
+   * this reader from any caches keyed on {@link
+   * #getCoreCacheKey}.  This is the same interface that
+   * {@link FieldCache} uses, internally, to evict
+   * entries.</p>
+   *
+   * <p>For other readers, this listener is called when they
+   * are closed.</p>
    *
    * @lucene.experimental
    */
-  public static interface ReaderClosedListener {
-    public void onClose(IndexReader reader);
+  public static interface ReaderFinishedListener {
+    public void finished(IndexReader reader);
   }
 
-  private final Set<ReaderClosedListener> readerClosedListeners = 
-      new MapBackedSet<ReaderClosedListener>(new ConcurrentHashMap<ReaderClosedListener, Boolean>());
+  // Impls must set this if they may call add/removeReaderFinishedListener:
+  protected volatile Collection<ReaderFinishedListener> readerFinishedListeners;
 
-  /** Expert: adds a {@link ReaderClosedListener}.  The
-   * provided listener will be invoked when this reader is closed.
+  /** Expert: adds a {@link ReaderFinishedListener}.  The
+   * provided listener is also added to any sub-readers, if
+   * this is a composite reader.  Also, any reader reopened
+   * or cloned from this one will also copy the listeners at
+   * the time of reopen.
    *
    * @lucene.experimental */
-  public final void addReaderClosedListener(ReaderClosedListener listener) {
+  public void addReaderFinishedListener(ReaderFinishedListener listener) {
     ensureOpen();
-    readerClosedListeners.add(listener);
+    readerFinishedListeners.add(listener);
   }
 
-  /** Expert: remove a previously added {@link ReaderClosedListener}.
+  /** Expert: remove a previously added {@link ReaderFinishedListener}.
    *
    * @lucene.experimental */
-  public final void removeReaderClosedListener(ReaderClosedListener listener) {
+  public void removeReaderFinishedListener(ReaderFinishedListener listener) {
     ensureOpen();
-    readerClosedListeners.remove(listener);
+    readerFinishedListeners.remove(listener);
   }
 
-  private final void notifyReaderClosedListeners() {
-    for(ReaderClosedListener listener : readerClosedListeners) {
-      listener.onClose(this);
+  protected void notifyReaderFinishedListeners() {
+    // Defensive (should never be null -- all impls must set
+    // this):
+    if (readerFinishedListeners != null) {
+      for(ReaderFinishedListener listener : readerFinishedListeners) {
+        listener.finished(this);
+      }
     }
+  }
+
+  protected void readerFinished() {
+    notifyReaderFinishedListeners();
   }
 
   /**
@@ -247,7 +267,7 @@ public abstract class IndexReader implements Cloneable,Closeable {
           refCount.incrementAndGet();
         }
       }
-      notifyReaderClosedListeners();
+      readerFinished();
     } else if (rc < 0) {
       throw new IllegalStateException("too many decRef calls: refCount is " + rc + " after decrement");
     }

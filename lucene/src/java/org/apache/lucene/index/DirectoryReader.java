@@ -25,10 +25,12 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.IOContext;
 import org.apache.lucene.util.IOUtils;
+import org.apache.lucene.util.MapBackedSet;
 
 /** 
  * An IndexReader which reads indexes with multiple segments.
@@ -41,12 +43,15 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
   private final boolean applyAllDeletes;
   
   DirectoryReader(SegmentReader[] readers, Directory directory, IndexWriter writer,
-    SegmentInfos sis, int termInfosIndexDivisor, boolean applyAllDeletes) throws IOException {
+    SegmentInfos sis, int termInfosIndexDivisor, boolean applyAllDeletes,
+    Collection<ReaderFinishedListener> readerFinishedListeners
+  ) throws IOException {
     super(readers);
     this.directory = directory;
     this.writer = writer;
     this.segmentInfos = sis;
     this.termInfosIndexDivisor = termInfosIndexDivisor;
+    this.readerFinishedListeners = readerFinishedListeners;
     this.applyAllDeletes = applyAllDeletes;
   }
 
@@ -55,6 +60,8 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
     return (IndexReader) new SegmentInfos.FindSegmentsFile(directory) {
       @Override
       protected Object doBody(String segmentFileName) throws CorruptIndexException, IOException {
+        final Collection<ReaderFinishedListener> readerFinishedListeners =
+          new MapBackedSet<ReaderFinishedListener>(new ConcurrentHashMap<ReaderFinishedListener,Boolean>());
         SegmentInfos sis = new SegmentInfos();
         sis.read(directory, segmentFileName);
         final SegmentReader[] readers = new SegmentReader[sis.size()];
@@ -63,6 +70,7 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
           boolean success = false;
           try {
             readers[i] = SegmentReader.get(sis.info(i), termInfosIndexDivisor, IOContext.READ);
+            readers[i].readerFinishedListeners = readerFinishedListeners;
             success = true;
           } catch(IOException ex) {
             prior = ex;
@@ -71,7 +79,8 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
               IOUtils.closeWhileHandlingException(prior, readers);
           }
         }
-        return new DirectoryReader(readers, directory, null, sis, termInfosIndexDivisor, false);
+        return new DirectoryReader(readers, directory, null, sis, termInfosIndexDivisor,
+          false, readerFinishedListeners);
       }
     }.run(commit);
   }
@@ -96,6 +105,7 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
         assert info.dir == dir;
         final SegmentReader reader = writer.readerPool.getReadOnlyClone(info, IOContext.READ);
         if (reader.numDocs() > 0 || writer.getKeepFullyDeletedSegments()) {
+          reader.readerFinishedListeners = writer.getReaderFinishedListeners();
           readers.add(reader);
           infosUpto++;
         } else {
@@ -111,12 +121,14 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
       }
     }
     return new DirectoryReader(readers.toArray(new SegmentReader[readers.size()]),
-      dir, writer, segmentInfos, writer.getConfig().getReaderTermsIndexDivisor(), applyAllDeletes);
+      dir, writer, segmentInfos, writer.getConfig().getReaderTermsIndexDivisor(),
+      applyAllDeletes, writer.getReaderFinishedListeners());
   }
 
   /** This constructor is only used for {@link #doOpenIfChanged()} */
   static DirectoryReader open(Directory directory, IndexWriter writer, SegmentInfos infos, SegmentReader[] oldReaders,
-    boolean doClone, int termInfosIndexDivisor) throws IOException {
+    boolean doClone, int termInfosIndexDivisor, Collection<ReaderFinishedListener> readerFinishedListeners
+  ) throws IOException {
     // we put the old SegmentReaders in a map, that allows us
     // to lookup a reader using its segment name
     final Map<String,Integer> segmentReaders = new HashMap<String,Integer>();
@@ -156,6 +168,7 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
 
           // this is a new reader; in case we hit an exception we can close it safely
           newReader = SegmentReader.get(infos.info(i), termInfosIndexDivisor, IOContext.READ);
+          newReader.readerFinishedListeners = readerFinishedListeners;
           readerShared[i] = false;
           newReaders[i] = newReader;
         } else {
@@ -166,6 +179,7 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
             readerShared[i] = true;
             newReaders[i].incRef();
           } else {
+            assert newReader.readerFinishedListeners == readerFinishedListeners;
             readerShared[i] = false;
             // Steal ref returned to us by reopenSegment:
             newReaders[i] = newReader;
@@ -198,8 +212,9 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
         if (prior != null) throw prior;
       }
     }    
-    return new DirectoryReader(newReaders, directory, writer, 
-        infos, termInfosIndexDivisor, false);
+    return new DirectoryReader(newReaders,
+      directory, writer, infos, termInfosIndexDivisor,
+      false, readerFinishedListeners);
   }
 
   /** {@inheritDoc} */
@@ -227,6 +242,7 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
   public final synchronized Object clone() {
     try {
       DirectoryReader newReader = doOpenIfChanged((SegmentInfos) segmentInfos.clone(), true, writer);
+      assert newReader.readerFinishedListeners != null;
       return newReader;
     } catch (Exception ex) {
       throw new RuntimeException(ex);
@@ -279,6 +295,7 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
       return null;
     }
 
+    reader.readerFinishedListeners = readerFinishedListeners;
     return reader;
   }
 
@@ -308,7 +325,7 @@ final class DirectoryReader extends BaseMultiReader<SegmentReader> {
   }
 
   private synchronized DirectoryReader doOpenIfChanged(SegmentInfos infos, boolean doClone, IndexWriter writer) throws CorruptIndexException, IOException {
-    return DirectoryReader.open(directory, writer, infos, subReaders, doClone, termInfosIndexDivisor);
+    return DirectoryReader.open(directory, writer, infos, subReaders, doClone, termInfosIndexDivisor, readerFinishedListeners);
   }
 
   /** Version number when this IndexReader was opened. */
