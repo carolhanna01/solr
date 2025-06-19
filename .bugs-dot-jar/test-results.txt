@@ -1,0 +1,1636 @@
+Buildfile: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build.xml
+
+jflex-uptodate-check:
+
+jflex-notice:
+
+javacc-uptodate-check:
+
+javacc-notice:
+
+init:
+
+clover.setup:
+
+clover.info:
+     [echo] 
+     [echo]       Clover not found. Code coverage reports disabled.
+     [echo]   	
+
+clover:
+
+common.compile-core:
+    [mkdir] Created dir: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/java
+    [javac] Compiling 575 source files to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/java
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/automaton/Automaton.java:433: warning: [rawtypes] found raw type: Set
+    [javac]     @SuppressWarnings("unchecked") Set<State> map[] = new Set[states.length];
+    [javac]                                                           ^
+    [javac]   missing type arguments for generic class Set<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in interface Set
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopDocs.java:122: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     final FieldComparator[] comparators;
+    [javac]           ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopDocs.java:148: warning: [rawtypes] found raw type: FieldComparator
+    [javac]       comparators = new FieldComparator[sortFields.length];
+    [javac]                         ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopDocs.java:166: warning: [rawtypes] found raw type: FieldComparator
+    [javac]         final FieldComparator comp = comparators[compIDX];
+    [javac]               ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/SortField.java:438: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public FieldComparator getComparator(final int numHits, final int sortPos) throws IOException {
+    [javac]          ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/cache/CachedArrayCreator.java:75: warning: [rawtypes] found raw type: Class
+    [javac]   public abstract Class getArrayType();
+    [javac]                   ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparatorSource.java:39: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public abstract FieldComparator newComparator(String fieldname, int numHits, int sortPos, boolean reversed)
+    [javac]                   ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:163: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public abstract FieldComparator setNextReader(AtomicReaderContext context) throws IOException;
+    [javac]                   ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:204: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     protected FieldComparator setup(T cached) {
+    [javac]               ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:251: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:322: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:382: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:458: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:514: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:592: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:656: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:733: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:784: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:847: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:944: warning: [rawtypes] found raw type: FieldComparator
+    [javac]       public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]              ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1223: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1227: warning: [rawtypes] found raw type: FieldComparator
+    [javac]       FieldComparator perSegComp;
+    [javac]       ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1339: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/index/codecs/BlockTreeTermsReader.java:500: warning: [rawtypes] found raw type: Arc
+    [javac]       @SuppressWarnings("unchecked") private FST.Arc<BytesRef>[] arcs = new FST.Arc[5];
+    [javac]                                                                                ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/index/codecs/BlockTreeTermsReader.java:819: warning: [rawtypes] found raw type: Arc
+    [javac]           @SuppressWarnings("unchecked") final FST.Arc<BytesRef>[] next = new FST.Arc[ArrayUtil.oversize(1+ord, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]                                                                                  ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/index/codecs/BlockTreeTermsReader.java:1191: warning: [rawtypes] found raw type: Arc
+    [javac]       @SuppressWarnings("unchecked") private FST.Arc<BytesRef>[] arcs = new FST.Arc[5];      
+    [javac]                                                                                ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/index/codecs/BlockTreeTermsReader.java:1341: warning: [rawtypes] found raw type: Arc
+    [javac]           @SuppressWarnings("unchecked") final FST.Arc<BytesRef>[] next = new FST.Arc[ArrayUtil.oversize(1+ord, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]                                                                                  ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/Builder.java:148: warning: [rawtypes] found raw type: UnCompiledNode
+    [javac]     @SuppressWarnings("unchecked") final UnCompiledNode<T>[] f = (UnCompiledNode<T>[]) new UnCompiledNode[10];
+    [javac]                                                                                            ^
+    [javac]   missing type arguments for generic class UnCompiledNode<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class UnCompiledNode
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/Builder.java:404: warning: [rawtypes] found raw type: UnCompiledNode
+    [javac]         new UnCompiledNode[ArrayUtil.oversize(input.length+1, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]             ^
+    [javac]   missing type arguments for generic class UnCompiledNode<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class UnCompiledNode
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/Builder.java:562: warning: [rawtypes] found raw type: Arc
+    [javac]       arcs = (Arc<T>[]) new Arc[1];
+    [javac]                             ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/Builder.java:593: warning: [rawtypes] found raw type: Arc
+    [javac]           new Arc[ArrayUtil.oversize(numArcs+1, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]               ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/FST.java:256: warning: [rawtypes] found raw type: Arc
+    [javac]     cachedRootArcs = (FST.Arc<T>[]) new FST.Arc[0x80];
+    [javac]                                            ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/FSTEnum.java:33: warning: [rawtypes] found raw type: Arc
+    [javac]   @SuppressWarnings("unchecked") protected FST.Arc<T>[] arcs = new FST.Arc[10];
+    [javac]                                                                       ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/FSTEnum.java:462: warning: [rawtypes] found raw type: Arc
+    [javac]         new FST.Arc[ArrayUtil.oversize(1+upto, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]                ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:43: warning: [rawtypes] found raw type: Cache
+    [javac]   private Map<Class<?>,Cache> caches;
+    [javac]                        ^
+    [javac]   missing type arguments for generic class Cache<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Cache
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:48: warning: [rawtypes] found raw type: Cache
+    [javac]     caches = new HashMap<Class<?>,Cache>(9);
+    [javac]                                   ^
+    [javac]   missing type arguments for generic class Cache<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Cache
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:65: warning: [rawtypes] found raw type: Cache
+    [javac]     for(Cache c : caches.values()) {
+    [javac]         ^
+    [javac]   missing type arguments for generic class Cache<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Cache
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:72: warning: [rawtypes] found raw type: Cache
+    [javac]     for(final Map.Entry<Class<?>,Cache> cacheEntry: caches.entrySet()) {
+    [javac]                                  ^
+    [javac]   missing type arguments for generic class Cache<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Cache
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:79: warning: [rawtypes] found raw type: Entry
+    [javac]             Entry entry = (Entry)mapEntry.getKey();
+    [javac]             ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:94: warning: [rawtypes] found raw type: EntryCreator
+    [javac]     private final EntryCreator custom;
+    [javac]                   ^
+    [javac]   missing type arguments for generic class EntryCreator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class EntryCreator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:98: warning: [rawtypes] found raw type: EntryCreator
+    [javac]                    EntryCreator custom,
+    [javac]                    ^
+    [javac]   missing type arguments for generic class EntryCreator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class EntryCreator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:145: warning: [rawtypes] found raw type: Entry
+    [javac]     protected Object createValue(IndexReader reader, Entry entryKey) throws IOException {
+    [javac]                                                      ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:241: warning: [rawtypes] found raw type: Entry
+    [javac]         Entry other = (Entry) o;
+    [javac]         ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:273: warning: [rawtypes] found raw type: Entry
+    [javac]     return (ByteValues)caches.get(Byte.TYPE).get(reader, new Entry(field, creator));
+    [javac]                                                              ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:289: warning: [rawtypes] found raw type: Entry
+    [javac]     return (ShortValues)caches.get(Short.TYPE).get(reader, new Entry(field, creator));
+    [javac]                                                                ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:304: warning: [rawtypes] found raw type: Entry
+    [javac]     return (IntValues)caches.get(Integer.TYPE).get(reader, new Entry(field, creator));
+    [javac]                                                                ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:319: warning: [rawtypes] found raw type: Entry
+    [javac]     return (FloatValues)caches.get(Float.TYPE).get(reader, new Entry(field, creator));
+    [javac]                                                                ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:333: warning: [rawtypes] found raw type: Entry
+    [javac]     return (LongValues)caches.get(Long.TYPE).get(reader, new Entry(field, creator));
+    [javac]                                                              ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:348: warning: [rawtypes] found raw type: Entry
+    [javac]     return (DoubleValues)caches.get(Double.TYPE).get(reader, new Entry(field, creator));
+    [javac]                                                                  ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:362: warning: [rawtypes] found raw type: Entry
+    [javac]     return (DocTermsIndex)caches.get(DocTermsIndex.class).get(reader, new Entry(field, creator));
+    [javac]                                                                           ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:378: warning: [rawtypes] found raw type: Entry
+    [javac]     return (DocTerms)caches.get(DocTerms.class).get(reader, new Entry(field, creator));
+    [javac]                                                                 ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheImpl.java:383: warning: [rawtypes] found raw type: Entry
+    [javac]     return (DocTermOrds) caches.get(DocTermOrds.class).get(reader, new Entry(field, new DocTermOrdsCreator(field, 0)));
+    [javac]                                                                        ^
+    [javac]   missing type arguments for generic class Entry<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Entry
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheRangeFilter.java:467: warning: [rawtypes] found raw type: FieldCacheRangeFilter
+    [javac]     FieldCacheRangeFilter other = (FieldCacheRangeFilter) o;
+    [javac]     ^
+    [javac]   missing type arguments for generic class FieldCacheRangeFilter<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldCacheRangeFilter
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/cache/ByteValuesCreator.java:54: warning: [rawtypes] found raw type: Class
+    [javac]   public Class getArrayType() {
+    [javac]          ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/cache/DoubleValuesCreator.java:54: warning: [rawtypes] found raw type: Class
+    [javac]   public Class getArrayType() {
+    [javac]          ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/cache/FloatValuesCreator.java:54: warning: [rawtypes] found raw type: Class
+    [javac]   public Class getArrayType() {
+    [javac]          ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/cache/ShortValuesCreator.java:54: warning: [rawtypes] found raw type: Class
+    [javac]   public Class getArrayType() {
+    [javac]          ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/cache/IntValuesCreator.java:54: warning: [rawtypes] found raw type: Class
+    [javac]   public Class getArrayType() {
+    [javac]          ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/cache/LongValuesCreator.java:54: warning: [rawtypes] found raw type: Class
+    [javac]   public Class getArrayType() {
+    [javac]          ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:142: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     comparators = new FieldComparator[numComparators];
+    [javac]                       ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:172: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public FieldComparator[] getComparators() {
+    [javac]          ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:180: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public void setComparator(int pos, FieldComparator comparator) {
+    [javac]                                      ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:187: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   protected final FieldComparator[] comparators;  // use setComparator to change this array
+    [javac]                   ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:188: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   protected FieldComparator firstComparator;      // this must always be equal to comparators[0]
+    [javac]             ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopFieldCollector.java:49: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     FieldComparator comparator;
+    [javac]     ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopFieldCollector.java:385: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     final FieldComparator[] comparators;
+    [javac]           ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/NumericRangeQuery.java:344: warning: [rawtypes] found raw type: NumericRangeQuery
+    [javac]       final NumericRangeQuery q=(NumericRangeQuery)o;
+    [javac]             ^
+    [javac]   missing type arguments for generic class NumericRangeQuery<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Number declared in class NumericRangeQuery
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/PhrasePositions.java:44: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     if (doc == postings.NO_MORE_DOCS) {
+    [javac]                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/PhrasePositions.java:52: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     if (doc == postings.NO_MORE_DOCS) {
+    [javac]                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/cache/SimpleEntryKey.java:23: warning: [rawtypes] found raw type: Class
+    [javac]   public final Class clazz;
+    [javac]                ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/cache/SimpleEntryKey.java:27: warning: [rawtypes] found raw type: Class
+    [javac]   public SimpleEntryKey( Class clazz, Object ... args ) {
+    [javac]                          ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/payloads/PayloadSpanUtil.java:135: warning: [rawtypes] found raw type: List
+    [javac]         @SuppressWarnings("unchecked") final List<Query>[] disjunctLists = new List[maxPosition + 1];
+    [javac]                                                                                ^
+    [javac]   missing type arguments for generic class List<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in interface List
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/spans/SpanMultiTermQueryWrapper.java:128: warning: [rawtypes] found raw type: SpanMultiTermQueryWrapper
+    [javac]     final SpanMultiTermQueryWrapper other = (SpanMultiTermQueryWrapper) obj;
+    [javac]           ^
+    [javac]   missing type arguments for generic class SpanMultiTermQueryWrapper<Q>
+    [javac]   where Q is a type-variable:
+    [javac]     Q extends MultiTermQuery declared in class SpanMultiTermQueryWrapper
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/automaton/MinimizationOperations.java:78: warning: [rawtypes] found raw type: ArrayList
+    [javac]       (ArrayList<State>[][]) new ArrayList[statesLen][sigmaLen];
+    [javac]                                  ^
+    [javac]   missing type arguments for generic class ArrayList<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class ArrayList
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/automaton/MinimizationOperations.java:80: warning: [rawtypes] found raw type: HashSet
+    [javac]       (HashSet<State>[]) new HashSet[statesLen];
+    [javac]                              ^
+    [javac]   missing type arguments for generic class HashSet<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class HashSet
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/automaton/MinimizationOperations.java:82: warning: [rawtypes] found raw type: ArrayList
+    [javac]       (ArrayList<State>[]) new ArrayList[statesLen];
+    [javac]                                ^
+    [javac]   missing type arguments for generic class ArrayList<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class ArrayList
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/mutable/MutableValue.java:20: warning: [rawtypes] found raw type: Comparable
+    [javac] public abstract class MutableValue implements Comparable {
+    [javac]                                               ^
+    [javac]   missing type arguments for generic class Comparable<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in interface Comparable
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/mutable/MutableValue.java:34: warning: [rawtypes] found raw type: Class
+    [javac]     Class c1 = this.getClass();
+    [javac]     ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/mutable/MutableValue.java:35: warning: [rawtypes] found raw type: Class
+    [javac]     Class c2 = other.getClass();
+    [javac]     ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/mutable/MutableValue.java:48: warning: [rawtypes] found raw type: Class
+    [javac]     Class c1 = this.getClass();
+    [javac]     ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/mutable/MutableValue.java:49: warning: [rawtypes] found raw type: Class
+    [javac]     Class c2 = other.getClass();
+    [javac]     ^
+    [javac]   missing type arguments for generic class Class<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Class
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 82 warnings
+
+compile-core:
+
+compile-test-framework:
+    [mkdir] Created dir: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/test-framework
+    [javac] Compiling 47 source files to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/test-framework
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 1 warning
+     [copy] Copying 2 files to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/test-framework
+
+compile-test:
+    [mkdir] Created dir: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/test
+    [javac] Compiling 278 source files to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/test
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/analysis/TestCachingTokenFilter.java:78: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     assertTrue(termPositions.nextDoc() != termPositions.NO_MORE_DOCS);
+    [javac]                                                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/analysis/TestCachingTokenFilter.java:86: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     assertTrue(termPositions.nextDoc() != termPositions.NO_MORE_DOCS);
+    [javac]                                                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/analysis/TestCachingTokenFilter.java:95: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     assertTrue(termPositions.nextDoc() != termPositions.NO_MORE_DOCS);
+    [javac]                                                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestCodecs.java:82: warning: [rawtypes] found raw type: Comparable
+    [javac]   class FieldData implements Comparable {
+    [javac]                              ^
+    [javac]   missing type arguments for generic class Comparable<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in interface Comparable
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestCodecs.java:134: warning: [rawtypes] found raw type: Comparable
+    [javac]   class TermData implements Comparable {
+    [javac]                             ^
+    [javac]   missing type arguments for generic class Comparable<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in interface Comparable
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestDirectoryReader.java:184: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     while (td.nextDoc() != td.NO_MORE_DOCS) ret += td.docID();
+    [javac]                              ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestDocumentWriter.java:136: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     assertTrue(termPositions.nextDoc() != termPositions.NO_MORE_DOCS);
+    [javac]                                                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestDocumentWriter.java:206: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     assertTrue(termPositions.nextDoc() != termPositions.NO_MORE_DOCS);
+    [javac]                                                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestDocumentWriter.java:250: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     assertTrue(termPositions.nextDoc() != termPositions.NO_MORE_DOCS);
+    [javac]                                                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestDocumentWriter.java:255: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     assertTrue(termPositions.nextDoc() != termPositions.NO_MORE_DOCS);
+    [javac]                                                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestDocumentWriter.java:261: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]     assertTrue(termPositions.nextDoc() != termPositions.NO_MORE_DOCS);
+    [javac]                                                        ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestIndexableField.java:319: warning: [rawtypes] found raw type: NumericRangeQuery
+    [javac]             NumericRangeQuery nrq = NumericRangeQuery.newIntRange(name, counter, counter, true, true);
+    [javac]             ^
+    [javac]   missing type arguments for generic class NumericRangeQuery<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Number declared in class NumericRangeQuery
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/index/TestMultiFields.java:133: warning: [static] static variable should be qualified by type name, DocIdSetIterator, instead of by an expression
+    [javac]         assertEquals(docsEnum.NO_MORE_DOCS, docsEnum.nextDoc());
+    [javac]                              ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/JustCompileSearch.java:135: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context)
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/JustCompileSearch.java:150: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator newComparator(String fieldname, int numHits,
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/TestCustomSearcherSort.java:54: warning: [static] static variable should be qualified by type name, LuceneTestCase, instead of by an expression
+    [javac]     RandomGen random = new RandomGen(this.random);
+    [javac]                                          ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/TestElevationComparator.java:144: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public FieldComparator newComparator(final String fieldname, final int numHits, int sortPos, boolean reversed) throws IOException {
+    [javac]          ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/TestElevationComparator.java:184: warning: [rawtypes] found raw type: FieldComparator
+    [javac]      public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]             ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/TestSort.java:573: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/TestSort.java:586: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator newComparator(String fieldname, int numHits, int sortPos, boolean reversed) {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/TestSubScorerFreqs.java:166: warning: [rawtypes] found raw type: Set
+    [javac]     Set<String>[] occurList = new Set[] {
+    [javac]                                   ^
+    [javac]   missing type arguments for generic class Set<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in interface Set
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/cache/TestEntryCreators.java:52: warning: [rawtypes] found raw type: CachedArrayCreator
+    [javac]     Class<? extends CachedArrayCreator> creator;
+    [javac]                     ^
+    [javac]   missing type arguments for generic class CachedArrayCreator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends CachedArray declared in class CachedArrayCreator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/cache/TestEntryCreators.java:57: warning: [rawtypes] found raw type: CachedArrayCreator
+    [javac]     public NumberTypeTester( String f, String func, Class<? extends CachedArrayCreator> creator, Class<? extends Parser> parser ) {
+    [javac]                                                                     ^
+    [javac]   missing type arguments for generic class CachedArrayCreator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends CachedArray declared in class CachedArrayCreator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/cache/TestEntryCreators.java:142: warning: [rawtypes] found raw type: Constructor
+    [javac]       Constructor constructor = tester.creator.getConstructor( String.class, tester.parser, Integer.TYPE );
+    [javac]       ^
+    [javac]   missing type arguments for generic class Constructor<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Constructor
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/search/cache/TestEntryCreators.java:143: warning: [rawtypes] found raw type: CachedArrayCreator
+    [javac]       CachedArrayCreator creator = (CachedArrayCreator)constructor.newInstance( tester.field, null, flags );
+    [javac]       ^
+    [javac]   missing type arguments for generic class CachedArrayCreator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends CachedArray declared in class CachedArrayCreator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/util/fst/TestFSTs.java:484: warning: [static] static method should be qualified by type name, LuceneTestCase, instead of by an expression
+    [javac]         IOContext context = t.newIOContext(random);
+    [javac]                              ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/util/fst/TestFSTs.java:910: warning: [rawtypes] found raw type: CountMinOutput
+    [javac]         final CountMinOutput cmo = prefixes.get(current.input);
+    [javac]               ^
+    [javac]   missing type arguments for generic class CountMinOutput<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class CountMinOutput
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/util/fst/TestFSTs.java:1096: warning: [rawtypes] found raw type: InputOutput
+    [javac]           final BytesRefFSTEnum.InputOutput fstSeekResult = fstEnum.seekCeil(randomTerm);
+    [javac]                                ^
+    [javac]   missing type arguments for generic class InputOutput<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class InputOutput
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test/org/apache/lucene/util/fst/TestFSTs.java:1136: warning: [rawtypes] found raw type: BytesRefFSTEnum
+    [javac]   private void assertSame(TermsEnum termsEnum, BytesRefFSTEnum fstEnum, boolean storeOrd) throws Exception {
+    [javac]                                                ^
+    [javac]   missing type arguments for generic class BytesRefFSTEnum<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class BytesRefFSTEnum
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 30 warnings
+     [copy] Copying 30 files to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/test
+
+compile-tools:
+    [mkdir] Created dir: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/tools
+    [javac] Compiling 2 source files to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/tools
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
+
+check-legal-lucene:
+     [java] ----------------------
+     [java] Starting on dir: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/lib
+     [java] WARNING: There may be missing NOTICE files in: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/lib.  Note, not all files require a NOTICE. Jar file count: 4 Notice Count: 3
+     [java] Found a license for every file in /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/lib
+
+validate-lucene:
+
+junit-mkdir:
+    [mkdir] Created dir: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/test
+
+junit-sequential:
+
+junit-parallel:
+    [junit] Testsuite: org.apache.lucene.analysis.tokenattributes.TestSimpleAttributeImpl
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.277 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.TestAssertions
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.376 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.document.TestBinaryDocument
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.49 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.TestSearch
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.925 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.analysis.tokenattributes.TestCharTermAttributeImpl
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 0.744 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.TestDemo
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.294 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.document.TestDateTools
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.063 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.TestMergeSchedulerExternal
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.353 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.Test2BPostings
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.019 sec
+    [junit] 
+    [junit] ------------- Standard Error -----------------
+    [junit] NOTE: Ignoring nightly-only test method 'test'
+    [junit] ------------- ---------------- ---------------
+    [junit] Testsuite: org.apache.lucene.analysis.TestMockAnalyzer
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.269 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestDocTermOrds
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 1.665 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.TestExternalCodecs
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.652 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.analysis.TestNumericTokenStream
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.066 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.TestSearchForDuplicates
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 2.149 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.analysis.TestCachingTokenFilter
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.125 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.analysis.TestToken
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 1.484 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.document.TestDocument
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.114 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestDirectoryReader
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 1.806 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.Test2BTerms
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] 
+    [junit] ------------- Standard Error -----------------
+    [junit] NOTE: Ignoring test method 'test2BTerms': Takes ~4 hours to run on a fast machine!!  And requires that you don't use PreFlex codec.
+    [junit] ------------- ---------------- ---------------
+    [junit] Testsuite: org.apache.lucene.index.TestCheckIndex
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.232 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestDocCount
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.159 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestFieldInfos
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.023 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestFilterIndexReader
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.045 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestDoc
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.305 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexCommit
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterLockRelease
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexFileDeleter
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.067 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestNoDeletionPolicy
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.127 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexReaderCloneNorms
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 1.757 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestOptimizeForever
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.539 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestParallelTermEnum
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.139 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestConsistentFieldNumbers
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 3.195 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestPayloadProcessorProvider
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.874 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestPayloads
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.235 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterMerging
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 2.239 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestAtomicUpdate
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 3.486 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestBinaryTerms
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.333 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestCodecs
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.16 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestPerFieldCodecSupport
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.939 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestAddIndexes
+    [junit] Tests run: 20, Failures: 0, Errors: 0, Time elapsed: 4.508 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestGlobalFieldNumbers
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 3.195 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestSameTokenSamePosition
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.052 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestSegmentTermEnum
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.058 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestTermsEnum2
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.581 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestConcurrentMergeScheduler
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 1.646 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestDocumentsWriterDeleteQueue
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.348 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterOptimize
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 3.252 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestNewestSegment
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.037 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.codecs.pulsing.Test10KPulsings
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 2.441 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestBooleanScorer
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.09 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestCachingSpanFilter
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.082 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestConstantScoreQuery
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.211 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestOmitTf
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.962 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestDateFilter
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.123 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestCompoundFile
+    [junit] Tests run: 17, Failures: 0, Errors: 0, Time elapsed: 3.905 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestFieldCacheRewriteMethod
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.33 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestMultiTermQueryRewrites
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.058 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestPrefixFilter
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.013 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestTermRangeQuery
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.167 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.cache.TestEntryCreators
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.194 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestDeletionPolicy
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 5.82 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexReaderOnDiskFull
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 4.755 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.payloads.TestPayloadNearQuery
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.283 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestFlushByRamOrCountsPolicy
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 2.975 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterOnDiskFull
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.66 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriter
+    [junit] Tests run: 41, Failures: 0, Errors: 0, Time elapsed: 8 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestPayloadSpans
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 1.028 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestSpansAdvanced
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.107 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestDirectory
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.021 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestPersistentSnapshotDeletionPolicy
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 2.55 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestUnicodeUtil
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.305 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestBackwardsCompatibility
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 10.883 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestPrefixCodedTerms
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.462 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.automaton.TestDeterminism
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.329 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestSegmentReader
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 1.035 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestUniqueTermCount
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.065 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestByteSlices
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.37 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.codecs.preflex.TestSurrogates
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.356 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.messages.TestNLS
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.02 sec
+    [junit] 
+    [junit] ------------- Standard Error -----------------
+    [junit] WARN: Message with key:Q0005E_MESSAGE_NOT_IN_BUNDLE and locale: ar_SA not found.
+    [junit] ------------- ---------------- ---------------
+    [junit] Testsuite: org.apache.lucene.index.TestDocsAndPositions
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.207 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestAutomatonQueryUnicode
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.061 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestDocumentWriter
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.164 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestFieldsReader
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.784 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestFlex
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.175 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexInput
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexReaderDelete
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.127 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestBoolean2
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 1.315 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestCachingCollector
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestMaxTermFrequency
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.249 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestCustomSearcherSort
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.25 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestDocIdSet
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestCrash
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 5.878 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestFilteredQuery
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.059 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestNot
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestPrefixRandom
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.563 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestNRTReaderWithThreads
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.214 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestOmitPositions
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.247 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexReader
+    [junit] Tests run: 31, Failures: 0, Errors: 0, Time elapsed: 7.034 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterConfig
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.038 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestParallelReader
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.354 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSearchWithThreads
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.615 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.fst.TestFSTs
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 4.925 sec
+    [junit] 
+    [junit] ------------- Standard Error -----------------
+    [junit] NOTE: Ignoring nightly-only test method 'testBigSet'
+    [junit] ------------- ---------------- ---------------
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterExceptions
+    [junit] Tests run: 21, Failures: 0, Errors: 0, Time elapsed: 7.241 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestStressIndexing
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.416 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.codecs.intblock.TestIntBlockCodec
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.026 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestFieldCacheTermsFilter
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.024 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestFilteredSearch
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.034 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestMultiPhraseQuery
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.358 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterReader
+    [junit] Tests run: 19, Failures: 0, Errors: 0, Time elapsed: 7.91 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestMultiReader
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.776 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestPositionIncrement
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.107 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestScoreCachingWrappingScorer
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.014 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSimilarityProvider
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.013 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSubScorerFreqs
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.04 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestTermRangeFilter
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.088 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestTimeLimitingCollector
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] 
+    [junit] ------------- Standard Error -----------------
+    [junit] NOTE: Ignoring test class 'TestTimeLimitingCollector': broken: see https://issues.apache.org/jira/browse/LUCENE-2822
+    [junit] ------------- ---------------- ---------------
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterMergePolicy
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 2.434 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIsCurrent
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.052 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexableField
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.726 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestLazyProxSkipping
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.503 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestNorms
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.461 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.packed.TestPackedInts
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 2.148 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestNeverDelete
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.22 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestNoMergeScheduler
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestMultiFields
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.451 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestRollback
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.041 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestTerm
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.014 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestRollingUpdates
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.343 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestOmitNorms
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.345 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestParallelReaderEmptyIndex
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.047 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestSegmentInfo
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestTermVectorsReader
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.211 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestTermVectors
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 3.217 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexReaderClone
+    [junit] Tests run: 20, Failures: 0, Errors: 0, Time elapsed: 5.68 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.payloads.TestPayloadTermQuery
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.256 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestSpanMultiTermQueryWrapper
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.092 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestSegmentMerger
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.716 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestSizeBoundedOptimize
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.095 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestSumDocFreq
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.068 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestAutomatonQuery
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.183 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestCachingWrapperFilter
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.096 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestThreadedOptimize
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.09 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestFieldCacheRangeFilter
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.407 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestSegmentTermDocs
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.513 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestMultiTermConstantScore
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.291 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestTransactions
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.881 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestMultiThreadTermVectors
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.268 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestStressIndexing2
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.547 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestHugeRamFile
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.702 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestCloseableThreadLocal
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestTermVectorsWriter
+    [junit] Tests run: 13, Failures: 0, Errors: 0, Time elapsed: 0.215 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestTransactionRollback
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.509 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.MultiCollectorTest
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.018 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestBooleanOr
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.352 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestComplexExplanationsOfNonMatches
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.099 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestDocBoost
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.016 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestTopDocsMerge
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 4.859 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestSpanExplanationsOfNonMatches
+    [junit] Tests run: 31, Failures: 0, Errors: 0, Time elapsed: 0.036 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestDocValuesScoring
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.056 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestElevationComparator
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.041 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestSpansAdvanced2
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.138 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestOpenBitSet
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 1.556 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestSetOnce
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.068 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestFuzzyQuery2
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.455 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.automaton.TestSpecialOperations
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.283 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestBooleanMinShouldMatch
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 2.461 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestPhraseQuery
+    [junit] Tests run: 17, Failures: 0, Errors: 0, Time elapsed: 0.63 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestScorerPerf
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.217 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexReaderReopen
+    [junit] Tests run: 16, Failures: 0, Errors: 0, Time elapsed: 4.461 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestTopDocsCollector
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.052 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestBufferedIndexInput
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 1.33 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestAttributeSource
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.029 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestBitUtil
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestIOUtils
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.02 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestFieldMaskingSpanQuery
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 0.169 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestSpanExplanations
+    [junit] Tests run: 31, Failures: 0, Errors: 0, Time elapsed: 0.138 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestLock
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.017 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestFieldCache
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.871 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestNumericUtils
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.646 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestMultiValuedNumericRangeQuery
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.514 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestPhrasePrefixQuery
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.02 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestPositiveScoresOnlyCollector
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestQueryWrapperFilter
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.065 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterCommit
+    [junit] Tests run: 12, Failures: 0, Errors: 0, Time elapsed: 1.361 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterOnJRECrash
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] 
+    [junit] ------------- Standard Error -----------------
+    [junit] NOTE: Ignoring nightly-only test method 'testNRTThreads'
+    [junit] ------------- ---------------- ---------------
+    [junit] Testsuite: org.apache.lucene.search.TestNumericRangeQuery64
+    [junit] Tests run: 33, Failures: 0, Errors: 0, Time elapsed: 4.547 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestQueryTermVector
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.014 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestTopScoreDocCollector
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestWildcardRandom
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.151 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.automaton.TestUTF32ToUTF8
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 1.179 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.similarities.TestSimilarity2
+    [junit] Testcase: testCrazySpans(org.apache.lucene.search.similarities.TestSimilarity2):	FAILED
+    [junit] (null)
+    [junit] junit.framework.AssertionFailedError
+    [junit] 	at org.apache.lucene.search.TopScoreDocCollector$InOrderTopScoreDocCollector.collect(TopScoreDocCollector.java:51)
+    [junit] 	at org.apache.lucene.search.Scorer.score(Scorer.java:60)
+    [junit] 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:552)
+    [junit] 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:419)
+    [junit] 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:376)
+    [junit] 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:296)
+    [junit] 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:285)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarity2.testCrazySpans(TestSimilarity2.java:244)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Tests run: 7, Failures: 1, Errors: 0, Time elapsed: 0.104 sec
+    [junit] 
+    [junit] ------------- Standard Error -----------------
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarity2 -Dtestmethod=testCrazySpans -Dtests.seed=-7e0ef1cfc347f057:172366eeecf101a6:-75914cf755ad1829
+    [junit] NOTE: test params are: codec=RandomCodecProvider: {foo=MockRandom}, sim=RandomSimilarityProvider(queryNorm=false,coord=false): {foo=DFR I(F)Z(0.3)}, locale=en_CA, timezone=Antarctica/McMurdo
+    [junit] NOTE: all tests run in this JVM:
+    [junit] [TestExternalCodecs, TestNumericTokenStream, TestAtomicUpdate, TestBinaryTerms, TestCodecs, TestConcurrentMergeScheduler, TestDocumentsWriterDeleteQueue, TestFlushByRamOrCountsPolicy, TestIndexWriterOnDiskFull, TestIndexWriterReader, TestIndexableField, TestNorms, TestRollingUpdates, TestSegmentMerger, TestSizeBoundedOptimize, TestSumDocFreq, TestAutomatonQuery, TestCachingWrapperFilter, TestFieldCacheRangeFilter, TestMultiTermConstantScore, TestMultiThreadTermVectors, TestNumericRangeQuery64, TestQueryTermVector, TestTopScoreDocCollector, TestWildcardRandom, TestSimilarity2]
+    [junit] NOTE: Linux 6.8.0-60-generic amd64/Private Build 1.8.0_452 (64-bit)/cpus=14,threads=1,free=371311128,total=528482304
+    [junit] ------------- ---------------- ---------------
+    [junit] TEST org.apache.lucene.search.similarities.TestSimilarity2 FAILED
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterUnicode
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.916 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestSpans
+    [junit] Tests run: 25, Failures: 0, Errors: 0, Time elapsed: 0.366 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestRegexpRandom2
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.495 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSimilarity
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.026 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestWildcard
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.08 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.payloads.TestPayloadExplanations
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.173 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestSpanFirstQuery
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestCopyBytes
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.562 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestByteBlockPool
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestPriorityQueue
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestRecyclingByteBlockAllocator
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.automaton.TestBasicOperations
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.083 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestMultiMMap
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 1.983 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterDelete
+    [junit] Tests run: 19, Failures: 0, Errors: 0, Time elapsed: 19.805 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestBitVector
+    [junit] Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 0.37 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestBytesRefHash
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.033 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestLongPostings
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.357 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestNoMergePolicy
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestPerSegmentDeletes
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.035 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestPositionBasedTermVectorMapper
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestStressAdvance
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.218 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestIndexWriterWithThreads
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 3.062 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestMultiLevelSkipList
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.056 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestLockFactory
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 5.156 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestCharsRef
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.016 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestRamUsageEstimator
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestSmallFloat
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.044 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestVersion
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestCollectionUtil
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.911 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestFieldCacheSanityChecker
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.361 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestStressNRT
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.151 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.automaton.TestCompiledAutomaton
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.33 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestNRTThreads
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.541 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.automaton.TestMinimize
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 1.619 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestTermsEnum
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 1.654 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestSnapshotDeletionPolicy
+    [junit] Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 1.108 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestTieredMergePolicy
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.129 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.TestTermdocPerf
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.values.TestDocValues
+    [junit] Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.111 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestDisjunctionMaxQuery
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.146 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestMatchAllDocsQuery
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestPrefixInBooleanQuery
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.086 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestRegexpQuery
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.033 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestRegexpRandom
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.052 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSimpleExplanationsOfNonMatches
+    [junit] Tests run: 69, Failures: 0, Errors: 0, Time elapsed: 0.061 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.index.values.TestDocValuesIndexing
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.511 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestBooleanQuery
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.028 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestComplexExplanations
+    [junit] Tests run: 22, Failures: 0, Errors: 0, Time elapsed: 0.353 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestDateSort
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.011 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestExplanations
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSloppyPhraseQuery
+    [junit] Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.522 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSpanQueryFilter
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.018 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestFuzzyQuery
+    [junit] Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.092 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestTermScorer
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.015 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.similarities.TestSimilarityBase
+    [junit] Testcase: testLLForIB(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] IB LL-D score not correct. expected:<4.178574562072754> but was:<4.2626800537109375>
+    [junit] junit.framework.AssertionFailedError: IB LL-D score not correct. expected:<4.178574562072754> but was:<4.2626800537109375>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testLLForIB(TestSimilarityBase.java:415)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testIneB2(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] DFR I(ne)B2 score not correct. expected:<5.747603416442871> but was:<6.23455286026001>
+    [junit] junit.framework.AssertionFailedError: DFR I(ne)B2 score not correct. expected:<5.747603416442871> but was:<6.23455286026001>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testIneB2(TestSimilarityBase.java:447)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testPL2(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] DFR PL2 score not correct. expected:<2.2923636436462402> but was:<2.2973411083221436>
+    [junit] junit.framework.AssertionFailedError: DFR PL2 score not correct. expected:<2.2923636436462402> but was:<2.2973411083221436>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testPL2(TestSimilarityBase.java:440)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testBEB1(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] DFR BeB1 score not correct. expected:<10.588262557983398> but was:<11.532365798950195>
+    [junit] junit.framework.AssertionFailedError: DFR BeB1 score not correct. expected:<10.588262557983398> but was:<11.532365798950195>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testBEB1(TestSimilarityBase.java:477)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testLMDirichlet(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] LM Dirichlet(2000.000000) score not correct. expected:<0.20055967569351196> but was:<0.20338088274002075>
+    [junit] junit.framework.AssertionFailedError: LM Dirichlet(2000.000000) score not correct. expected:<0.20055967569351196> but was:<0.20338088274002075>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testLMDirichlet(TestSimilarityBase.java:397)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testLMJelinekMercer(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] LM Jelinek-Mercer(0.100000) score not correct. expected:<4.717942237854004> but was:<4.732000827789307>
+    [junit] junit.framework.AssertionFailedError: LM Jelinek-Mercer(0.100000) score not correct. expected:<4.717942237854004> but was:<4.732000827789307>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testLMJelinekMercer(TestSimilarityBase.java:406)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testGL1(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] DFR GL1 score not correct. expected:<1.6390540599822998> but was:<1.6463143825531006>
+    [junit] junit.framework.AssertionFailedError: DFR GL1 score not correct. expected:<1.6390540599822998> but was:<1.6463143825531006>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testGL1(TestSimilarityBase.java:454)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testSPLForIB(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] IB SPL-L score not correct. expected:<2.2387237548828125> but was:<2.240699052810669>
+    [junit] junit.framework.AssertionFailedError: IB SPL-L score not correct. expected:<2.2387237548828125> but was:<2.240699052810669>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testSPLForIB(TestSimilarityBase.java:425)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testD(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] DFR D score not correct. expected:<16.328256607055664> but was:<16.449575424194336>
+    [junit] junit.framework.AssertionFailedError: DFR D score not correct. expected:<16.328256607055664> but was:<16.449575424194336>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testD(TestSimilarityBase.java:490)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Testcase: testIFB(org.apache.lucene.search.similarities.TestSimilarityBase):	FAILED
+    [junit] DFR I(F)B score not correct. expected:<7.345303535461426> but was:<7.96761417388916>
+    [junit] junit.framework.AssertionFailedError: DFR I(F)B score not correct. expected:<7.345303535461426> but was:<7.96761417388916>
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.correctnessTestCore(TestSimilarityBase.java:534)
+    [junit] 	at org.apache.lucene.search.similarities.TestSimilarityBase.testIFB(TestSimilarityBase.java:512)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:148)
+    [junit] 	at org.apache.lucene.util.LuceneTestCaseRunner.runChild(LuceneTestCaseRunner.java:50)
+    [junit] 
+    [junit] 
+    [junit] Tests run: 29, Failures: 10, Errors: 0, Time elapsed: 0.249 sec
+    [junit] 
+    [junit] ------------- Standard Error -----------------
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testLLForIB -Dtests.seed=5b0c21c4ee577328:6f568a6cc2e567d:-4e7f394168833f57
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testIneB2 -Dtests.seed=5b0c21c4ee577328:67d7da0ede6bc804:-4e7f394168833f57
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testPL2 -Dtests.seed=5b0c21c4ee577328:22a023ff9d156923:-4e7f394168833f57
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testBEB1 -Dtests.seed=5b0c21c4ee577328:-6be510de2c6fc544:-4e7f394168833f57
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testLMDirichlet -Dtests.seed=5b0c21c4ee577328:35265bdd65adc51:-4e7f394168833f57
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testLMJelinekMercer -Dtests.seed=5b0c21c4ee577328:4985f2c63181d100:-4e7f394168833f57
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testGL1 -Dtests.seed=5b0c21c4ee577328:-16f4d0abc495351e:-4e7f394168833f57
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testSPLForIB -Dtests.seed=5b0c21c4ee577328:-16df68b098f6575c:-4e7f394168833f57
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testD -Dtests.seed=5b0c21c4ee577328:-2581347e27dc467e:-4e7f394168833f57
+    [junit] NOTE: reproduce with: ant test -Dtestcase=TestSimilarityBase -Dtestmethod=testIFB -Dtests.seed=5b0c21c4ee577328:35bc68bbc870565:-4e7f394168833f57
+    [junit] NOTE: test params are: codec=RandomCodecProvider: {random_BYTES_FIXED_SORTED-6769181251371964129=Standard(minBlockSize=87 maxBlockSize=173), random_FIXED_INTS_16-3711030640991093867=Standard(minBlockSize=87 maxBlockSize=173), random_FLOAT_32-6769181251371964129=MockFixedIntBlock(blockSize=1910), random_BYTES_FIXED_STRAIGHT-6769181251371964129=MockSep, random_BYTES_VAR_STRAIGHT-3711030640991093867=MockFixedIntBlock(blockSize=1910), random_BYTES_VAR_STRAIGHT-6769181251371964129=Memory, random_BYTES_FIXED_DEREF1536278979540737077=Pulsing(freqCutoff=10 minBlockSize=100 maxBlockSize=263), random_VAR_INTS-3711030640991093867=Standard(minBlockSize=87 maxBlockSize=173), random_BYTES_FIXED_DEREF-6769181251371964129=Pulsing(freqCutoff=10 minBlockSize=100 maxBlockSize=263), random_BYTES_VAR_DEREF1536278979540737077=Memory, random_FIXED_INTS_161536278979540737077=Memory, random_BYTES_VAR_DEREF-3711030640991093867=MockSep, body=MockRandom, random_FIXED_INTS_8-3711030640991093867=Memory, random_FLOAT_64-6769181251371964129=MockFixedIntBlock(blockSize=1910), random_FIXED_INTS_64-3711030640991093867=MockRandom, random_FIXED_INTS_64-6769181251371964129=MockVariableIntBlock(baseBlockSize=97), random_FIXED_INTS_81536278979540737077=MockRandom, random_BYTES_FIXED_SORTED1536278979540737077=Memory, random_FIXED_INTS_32-3711030640991093867=MockVariableIntBlock(baseBlockSize=97)}, sim=RandomSimilarityProvider(queryNorm=false,coord=true): {random_BYTES_FIXED_SORTED-6769181251371964129=DFR BeL2, random_FIXED_INTS_16-3711030640991093867=DFR I(n)L2, random_FLOAT_32-6769181251371964129=DFR I(ne)1, random_BYTES_FIXED_STRAIGHT-6769181251371964129=IB SPL-D1, random_BYTES_VAR_STRAIGHT-3711030640991093867=IB LL-L1, random_BYTES_VAR_STRAIGHT-6769181251371964129=DFR I(n)L3(800.0), random_BYTES_FIXED_DEREF1536278979540737077=IB SPL-D1, random_VAR_INTS-3711030640991093867=DFR BeB2, random_BYTES_FIXED_DEREF-6769181251371964129=DFR BeL3(800.0), random_BYTES_VAR_DEREF1536278979540737077=IB LL-L3(800.0), random_FIXED_INTS_161536278979540737077=LM Jelinek-Mercer(0.700000), random_BYTES_VAR_DEREF-3711030640991093867=IB LL-L2, body=DFR G2, random_FIXED_INTS_8-3711030640991093867=IB SPL-D1, random_FLOAT_64-6769181251371964129=DFR BeL1, random_FIXED_INTS_64-3711030640991093867=DFR I(F)1, random_FIXED_INTS_64-6769181251371964129=DFR GL2, random_FIXED_INTS_81536278979540737077=DFR I(F)2, random_BYTES_FIXED_SORTED1536278979540737077=DFR I(F)2, random_FIXED_INTS_32-3711030640991093867=IB SPL-D3(800.0), id=DFR GL2}, locale=ar_SY, timezone=EAT
+    [junit] NOTE: all tests run in this JVM:
+    [junit] [TestSearchForDuplicates, TestCachingTokenFilter, TestCheckIndex, TestGlobalFieldNumbers, TestIndexReaderOnDiskFull, TestIndexWriterDelete, TestLongPostings, TestNoMergePolicy, TestPerSegmentDeletes, TestPositionBasedTermVectorMapper, TestStressAdvance, TestStressNRT, TestTermsEnum, TestTieredMergePolicy, TestDocValues, TestDisjunctionMaxQuery, TestMatchAllDocsQuery, TestPrefixInBooleanQuery, TestRegexpQuery, TestRegexpRandom, TestSimpleExplanationsOfNonMatches, TestSloppyPhraseQuery, TestSpanQueryFilter, TestTermScorer, TestSimilarityBase]
+    [junit] NOTE: Linux 6.8.0-60-generic amd64/Private Build 1.8.0_452 (64-bit)/cpus=14,threads=1,free=323630224,total=527433728
+    [junit] ------------- ---------------- ---------------
+    [junit] TEST org.apache.lucene.search.similarities.TestSimilarityBase FAILED
+    [junit] Testsuite: org.apache.lucene.search.TestNumericRangeQuery32
+    [junit] Tests run: 27, Failures: 0, Errors: 0, Time elapsed: 1.217 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestPrefixQuery
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSetNorm
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSimpleExplanations
+    [junit] Tests run: 69, Failures: 0, Errors: 0, Time elapsed: 0.352 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.TestSort
+    [junit] Tests run: 23, Failures: 0, Errors: 0, Time elapsed: 1.319 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestNearSpansOrdered
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.044 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestByteArrayDataInput
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestFileSwitchDirectory
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.025 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestFixedBitSet
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.598 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestIndexableBinaryStringTools
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.115 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestTwoPhaseCommitTool
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestVirtualMethod
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.search.spans.TestBasics
+    [junit] Tests run: 24, Failures: 0, Errors: 0, Time elapsed: 3.63 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.automaton.TestLevenshteinAutomata
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.217 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestRAMDirectory
+    [junit] Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.118 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.store.TestWindowsMMap
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.051 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestArrayUtil
+    [junit] Tests run: 11, Failures: 0, Errors: 0, Time elapsed: 1.148 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestDoubleBarrelLRUCache
+    [junit] Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.012 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestSortedVIntList
+    [junit] Tests run: 19, Failures: 0, Errors: 0, Time elapsed: 0.012 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.TestVersionComparator
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+    [junit] 
+    [junit] Testsuite: org.apache.lucene.util.automaton.TestDeterminizeLexicon
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.294 sec
+    [junit] 

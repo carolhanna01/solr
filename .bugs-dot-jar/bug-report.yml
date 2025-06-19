@@ -1,0 +1,147 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      assignee:
+        '#text': Robert Muir
+        '@username': rcmuir
+      attachments:
+        attachment:
+          '@author': rcmuir
+          '@created': Sun, 11 Sep 2011 23:06:13 +0000
+          '@id': '12493974'
+          '@name': LUCENE-3430.patch
+          '@size': '17910'
+      comments:
+        comment:
+        - '#text': '<p>patch, my modifications to the others take the same approach
+            as lucene''s sim</p>
+
+
+            <p>I did the relevance testing (across all 129 possibilities) with short
+            queries, no problems, still waiting on my computer for long queries...
+            if that comes back ok I''d like to commit.</p>'
+          '@author': rcmuir
+          '@created': Sun, 11 Sep 2011 23:06:13 +0000
+          '@id': '13102372'
+        - '#text': '<p>This issue was moved to GitHub issue: <a href="https://github.com/apache/lucene/issues/4503"
+            class="external-link" target="_blank" rel="nofollow noopener">#4503</a>.</p>'
+          '@author': tomoko uchida
+          '@created': Sun, 28 Aug 2022 12:57:07 +0000
+          '@id': '17589635'
+      created: Sun, 11 Sep 2011 23:05:22 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '1.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: no_permission
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '2689'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 2 years, 42 weeks, 4 days ago
+        - '@id': customfield_12310120
+          '@key': com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes
+          customfieldname: Lucene Fields
+          customfieldvalues:
+            customfieldvalue:
+              '#text': New
+              '@key': '10121'
+        - '@id': customfield_12313320
+          '@key': com.atlassian.jira.toolkit:message
+          customfieldname: Lucene Mailing List Info
+          customfieldvalues: null
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|i04khj:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '24584'
+      description: "<p>here is why this test sometimes fails (my explanation in the\
+        \ test i wrote):</p>\n\n<div class=\"preformatted panel\" style=\"border-width:\
+        \ 1px;\"><div class=\"preformattedContent panelContent\">\n<pre>  /** make\
+        \ sure all sims work with spanOR(termX, termY) where termY does not exist\
+        \ */\n  public void testCrazySpans() throws Exception {\n    // The problem:\
+        \ \"normal\" lucene queries create scorers, returning null if terms dont exist\n\
+        \    // This means they never score a term that does not exist.\n    // however\
+        \ with spans, there is only one scorer for the whole hierarchy:\n    // inner\
+        \ queries are not real queries, their boosts are ignored, etc.\n</pre>\n</div></div>\n\
+        \n<p>Basically, SpanQueries aren't really queries, you just get one scorer.\
+        \ it calls extractTerms on the whole hierarchy and computes weights (e.g.\
+        \ IDF) on<br/>\nthe whole bag of terms, even if they don't exist.</p>\n\n\
+        <p>This is fine, we already have tests that sim's won't bug-out in computeStats()\
+        \ here: however they don't expect to actually score documents based on<br/>\n\
+        these terms that don't exist... however this is exactly what happens in Spans\
+        \ because it doesn't use sub-scorers.</p>\n\n<p>Lucene's sim avoids this with\
+        \ the (docFreq + 1)</p>"
+      due: null
+      environment: null
+      fixVersion: 4.0-ALPHA
+      key:
+        '#text': LUCENE-3430
+        '@id': '12522692'
+      labels: null
+      link: https://issues.apache.org/jira/browse/LUCENE-3430
+      priority:
+        '#text': Major
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/major.svg
+        '@id': '3'
+      project:
+        '#text': Lucene - Core
+        '@id': '12310110'
+        '@key': LUCENE
+      reporter:
+        '#text': Robert Muir
+        '@username': rcmuir
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Mon, 12 Sep 2011 01:13:33 +0000
+      status:
+        '#text': Closed
+        '@description': The issue is considered finished, the resolution is correct.
+          Issues which are not closed can be reopened.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/closed.png
+        '@id': '6'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: TestParser.testSpanTermXML fails with some sims
+      title: '[LUCENE-3430] TestParser.testSpanTermXML fails with some sims'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Sun, 28 Aug 2022 12:57:07 +0000
+      version: 4.0-ALPHA
+      votes: '0'
+      watches: '0'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA
