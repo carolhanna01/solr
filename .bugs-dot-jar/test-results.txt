@@ -1,0 +1,359 @@
+Buildfile: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build.xml
+
+jflex-uptodate-check:
+
+jflex-notice:
+
+javacc-uptodate-check:
+
+javacc-notice:
+
+init:
+
+clover.setup:
+
+clover.info:
+     [echo] 
+     [echo]       Clover not found. Code coverage reports disabled.
+     [echo]   	
+
+clover:
+
+common.compile-core:
+    [mkdir] Created dir: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/java
+    [javac] Compiling 611 source files to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/java
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/automaton/Automaton.java:433: warning: [rawtypes] found raw type: Set
+    [javac]     @SuppressWarnings("unchecked") Set<State> map[] = new Set[states.length];
+    [javac]                                                           ^
+    [javac]   missing type arguments for generic class Set<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in interface Set
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopDocs.java:122: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     final FieldComparator[] comparators;
+    [javac]           ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopDocs.java:148: warning: [rawtypes] found raw type: FieldComparator
+    [javac]       comparators = new FieldComparator[sortFields.length];
+    [javac]                         ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopDocs.java:166: warning: [rawtypes] found raw type: FieldComparator
+    [javac]         final FieldComparator comp = comparators[compIDX];
+    [javac]               ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/SortField.java:379: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public FieldComparator getComparator(final int numHits, final int sortPos) throws IOException {
+    [javac]          ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparatorSource.java:39: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public abstract FieldComparator newComparator(String fieldname, int numHits, int sortPos, boolean reversed)
+    [javac]                   ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:153: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public abstract FieldComparator setNextReader(AtomicReaderContext context) throws IOException;
+    [javac]                   ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:204: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:261: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:338: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:399: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:481: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:543: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:627: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:692: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:775: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:827: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:890: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1010: warning: [rawtypes] found raw type: FieldComparator
+    [javac]       public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]              ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1289: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1293: warning: [rawtypes] found raw type: FieldComparator
+    [javac]       FieldComparator perSegComp = null;
+    [javac]       ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1460: warning: [rawtypes] found raw type: FieldComparator
+    [javac]       public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]              ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1706: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1727: warning: [rawtypes] found raw type: FieldComparator
+    [javac]       FieldComparator perSegComp = null;
+    [javac]       ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1855: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldComparator.java:1924: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     public FieldComparator setNextReader(AtomicReaderContext context) throws IOException {
+    [javac]            ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/index/codecs/BlockTreeTermsReader.java:489: warning: [rawtypes] found raw type: Arc
+    [javac]       @SuppressWarnings("unchecked") private FST.Arc<BytesRef>[] arcs = new FST.Arc[5];
+    [javac]                                                                                ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/index/codecs/BlockTreeTermsReader.java:814: warning: [rawtypes] found raw type: Arc
+    [javac]           @SuppressWarnings("unchecked") final FST.Arc<BytesRef>[] next = new FST.Arc[ArrayUtil.oversize(1+ord, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]                                                                                  ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/index/codecs/BlockTreeTermsReader.java:1183: warning: [rawtypes] found raw type: Arc
+    [javac]       @SuppressWarnings("unchecked") private FST.Arc<BytesRef>[] arcs = new FST.Arc[1];
+    [javac]                                                                                ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/index/codecs/BlockTreeTermsReader.java:1332: warning: [rawtypes] found raw type: Arc
+    [javac]           @SuppressWarnings("unchecked") final FST.Arc<BytesRef>[] next = new FST.Arc[ArrayUtil.oversize(1+ord, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]                                                                                  ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/Builder.java:148: warning: [rawtypes] found raw type: UnCompiledNode
+    [javac]     @SuppressWarnings("unchecked") final UnCompiledNode<T>[] f = (UnCompiledNode<T>[]) new UnCompiledNode[10];
+    [javac]                                                                                            ^
+    [javac]   missing type arguments for generic class UnCompiledNode<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class UnCompiledNode
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/Builder.java:404: warning: [rawtypes] found raw type: UnCompiledNode
+    [javac]         new UnCompiledNode[ArrayUtil.oversize(input.length+1, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]             ^
+    [javac]   missing type arguments for generic class UnCompiledNode<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class UnCompiledNode
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/Builder.java:562: warning: [rawtypes] found raw type: Arc
+    [javac]       arcs = (Arc<T>[]) new Arc[1];
+    [javac]                             ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/Builder.java:593: warning: [rawtypes] found raw type: Arc
+    [javac]           new Arc[ArrayUtil.oversize(numArcs+1, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]               ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/FST.java:266: warning: [rawtypes] found raw type: Arc
+    [javac]     cachedRootArcs = (FST.Arc<T>[]) new FST.Arc[0x80];
+    [javac]                                            ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/FSTEnum.java:33: warning: [rawtypes] found raw type: Arc
+    [javac]   @SuppressWarnings("unchecked") protected FST.Arc<T>[] arcs = new FST.Arc[10];
+    [javac]                                                                       ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/fst/FSTEnum.java:462: warning: [rawtypes] found raw type: Arc
+    [javac]         new FST.Arc[ArrayUtil.oversize(1+upto, RamUsageEstimator.NUM_BYTES_OBJECT_REF)];
+    [javac]                ^
+    [javac]   missing type arguments for generic class Arc<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class Arc
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/BooleanQuery.java:403: warning: auxiliary class MatchOnlyConjunctionTermScorer in /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/MatchOnlyConjunctionTermsScorer.java should not be accessed from outside its own source file
+    [javac]       return new MatchOnlyConjunctionTermScorer(this, disableCoord ? 1.0f : coord(
+    [javac]                  ^
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldCacheRangeFilter.java:460: warning: [rawtypes] found raw type: FieldCacheRangeFilter
+    [javac]     FieldCacheRangeFilter other = (FieldCacheRangeFilter) o;
+    [javac]     ^
+    [javac]   missing type arguments for generic class FieldCacheRangeFilter<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldCacheRangeFilter
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:142: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     comparators = new FieldComparator[numComparators];
+    [javac]                       ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:172: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public FieldComparator[] getComparators() {
+    [javac]          ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:180: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   public void setComparator(int pos, FieldComparator comparator) {
+    [javac]                                      ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:187: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   protected final FieldComparator[] comparators;  // use setComparator to change this array
+    [javac]                   ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/FieldValueHitQueue.java:188: warning: [rawtypes] found raw type: FieldComparator
+    [javac]   protected FieldComparator firstComparator;      // this must always be equal to comparators[0]
+    [javac]             ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopFieldCollector.java:49: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     FieldComparator comparator;
+    [javac]     ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/TopFieldCollector.java:385: warning: [rawtypes] found raw type: FieldComparator
+    [javac]     final FieldComparator[] comparators;
+    [javac]           ^
+    [javac]   missing type arguments for generic class FieldComparator<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Object declared in class FieldComparator
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/NumericRangeQuery.java:355: warning: [rawtypes] found raw type: NumericRangeQuery
+    [javac]       final NumericRangeQuery q=(NumericRangeQuery)o;
+    [javac]             ^
+    [javac]   missing type arguments for generic class NumericRangeQuery<T>
+    [javac]   where T is a type-variable:
+    [javac]     T extends Number declared in class NumericRangeQuery
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/payloads/PayloadSpanUtil.java:139: warning: [rawtypes] found raw type: List
+    [javac]         @SuppressWarnings("unchecked") final List<Query>[] disjunctLists = new List[maxPosition + 1];
+    [javac]                                                                                ^
+    [javac]   missing type arguments for generic class List<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in interface List
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/search/spans/SpanMultiTermQueryWrapper.java:130: warning: [rawtypes] found raw type: SpanMultiTermQueryWrapper
+    [javac]     final SpanMultiTermQueryWrapper other = (SpanMultiTermQueryWrapper) obj;
+    [javac]           ^
+    [javac]   missing type arguments for generic class SpanMultiTermQueryWrapper<Q>
+    [javac]   where Q is a type-variable:
+    [javac]     Q extends MultiTermQuery declared in class SpanMultiTermQueryWrapper
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/automaton/MinimizationOperations.java:78: warning: [rawtypes] found raw type: ArrayList
+    [javac]       (ArrayList<State>[][]) new ArrayList[statesLen][sigmaLen];
+    [javac]                                  ^
+    [javac]   missing type arguments for generic class ArrayList<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class ArrayList
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/automaton/MinimizationOperations.java:80: warning: [rawtypes] found raw type: HashSet
+    [javac]       (HashSet<State>[]) new HashSet[statesLen];
+    [javac]                              ^
+    [javac]   missing type arguments for generic class HashSet<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class HashSet
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/java/org/apache/lucene/util/automaton/MinimizationOperations.java:82: warning: [rawtypes] found raw type: ArrayList
+    [javac]       (ArrayList<State>[]) new ArrayList[statesLen];
+    [javac]                                ^
+    [javac]   missing type arguments for generic class ArrayList<E>
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class ArrayList
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 53 warnings
+     [copy] Copying 2 files to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/java
+
+compile-core:
+
+compile-test-framework:
+    [mkdir] Created dir: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/test-framework
+    [javac] Compiling 53 source files to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/classes/test-framework
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test-framework/java/org/apache/lucene/util/LuceneTestCase.java:39: error: cannot find symbol
+    [javac] import org.apache.lucene.index.IndexReader.ReaderClosedListener;
+    [javac]                                           ^
+    [javac]   symbol:   class ReaderClosedListener
+    [javac]   location: class IndexReader
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/src/test-framework/java/org/apache/lucene/util/LuceneTestCase.java:1225: error: cannot find symbol
+    [javac]        r.addReaderClosedListener(new ReaderClosedListener() {
+    [javac]                                      ^
+    [javac]   symbol:   class ReaderClosedListener
+    [javac]   location: class LuceneTestCase
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] 2 errors
+    [javac] 1 warning
