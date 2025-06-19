@@ -33,7 +33,7 @@ public class BasicModelP extends BasicModel {
   
   @Override
   public final float score(BasicStats stats, float tfn) {
-    float lambda = (float)(stats.getTotalTermFreq()+1) / (stats.getNumberOfDocuments()+1);
+    float lambda = (float)stats.getTotalTermFreq() / stats.getNumberOfDocuments();
     return (float)(tfn * log2(tfn / lambda)
         + (lambda + 1 / (12 * tfn) - tfn) * LOG2_E
         + 0.5 * log2(2 * Math.PI * tfn));
