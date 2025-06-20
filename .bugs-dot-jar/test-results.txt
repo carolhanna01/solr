@@ -1,0 +1,165 @@
+Buildfile: /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/core/build.xml
+
+-clover.disable:
+
+ivy-availability-check:
+[loadresource] Do not set property disallowed.ivy.jars.list as its length is 0.
+
+-ivy-fail-disallowed-ivy-version:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: Apache Ivy 2.5.1 - 20221101102211 :: https://ant.apache.org/ivy/ ::
+[ivy:configure] :: loading settings :: file = /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+resolve:
+
+init:
+
+compile-core:
+    [javac] Compiling 1 source file to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/core/classes/java
+
+compile-test-framework:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+[loadresource] Do not set property disallowed.ivy.jars.list as its length is 0.
+
+-ivy-fail-disallowed-ivy-version:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+init:
+
+compile-lucene-core:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+[loadresource] Do not set property disallowed.ivy.jars.list as its length is 0.
+
+-ivy-fail-disallowed-ivy-version:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+compile-codecs:
+
+-check-git-state:
+
+-git-cleanroot:
+
+-copy-git-state:
+
+git-autoclean:
+
+ivy-availability-check:
+[loadresource] Do not set property disallowed.ivy.jars.list as its length is 0.
+
+-ivy-fail-disallowed-ivy-version:
+
+ivy-fail:
+
+ivy-configure:
+[ivy:configure] :: loading settings :: file = /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/top-level-ivy-settings.xml
+
+resolve:
+
+common.init:
+
+compile-lucene-core:
+
+init:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+compile-core:
+
+-clover.disable:
+
+-clover.load:
+
+-clover.classpath:
+
+-clover.setup:
+
+clover:
+
+common.compile-core:
+
+compile-core:
+
+compile-test:
+    [javac] Compiling 1 source file to /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/build/core/classes/test
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/core/src/test/org/apache/lucene/index/TestFilterCodecReader.java:42: error: cannot find symbol
+    [javac]         assertSame(FilterCodecReader.unwrap(r), reader.getSequentialSubReaders().get(0));
+    [javac]                                     ^
+    [javac]   symbol:   method unwrap(FilterCodecReader)
+    [javac]   location: class FilterCodecReader
+    [javac] /home/carol/Downloads/Workspaces/bugs-dot-jar/solr/lucene/core/src/test/org/apache/lucene/index/TestFilterCodecReader.java:43: error: cannot find symbol
+    [javac]         assertSame(r.getDelegate(), reader.getSequentialSubReaders().get(0));
+    [javac]                     ^
+    [javac]   symbol:   method getDelegate()
+    [javac]   location: variable r of type FilterCodecReader
+    [javac] 2 errors

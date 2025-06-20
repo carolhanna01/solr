@@ -1,0 +1,273 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      aggregateprogress:
+        '@percentage': '100'
+        currentProgress:
+          row:
+          - '@backgroundColor': '#51a825'
+            '@percentage': '100'
+          - '@backgroundColor': '#ec8e00'
+            '@percentage': '0'
+        originalProgress:
+          row:
+          - '@backgroundColor': '#89afd7'
+            '@percentage': '0'
+          - '@backgroundColor': transparent
+            '@percentage': '100'
+      assignee:
+        '#text': Unassigned
+        '@username': '-1'
+      attachments: null
+      comments:
+        comment:
+        - '#text': <p>+1</p>
+          '@author': jpountz
+          '@created': Mon, 17 Sep 2018 08:28:41 +0000
+          '@id': '16617212'
+        - '#text': '<p>Commit 6fac57d9ad4e2251118b400215b08901781c9696 in lucene-solr''s
+            branch refs/heads/master from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=simonw"
+            class="user-hover" rel="simonw">simonw</a><br/>
+
+            [ <a href="https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=6fac57d"
+            class="external-link" target="_blank" rel="nofollow noopener">https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=6fac57d</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-8502" title="
+            Allow access to delegate in FilterCodecReader" class="issue-link" data-issue-key="LUCENE-8502"><del>LUCENE-8502</del></a>:
+            Allow access to delegate in FilterCodecReader</p>
+
+
+            <p>FilterCodecReader doesn''t allow access to it''s delegate like other<br/>
+
+            filter readers. This adds a new getDelegate method to access the<br/>
+
+            wrapped reader.</p>'
+          '@author': jira-bot
+          '@created': Mon, 17 Sep 2018 09:03:22 +0000
+          '@id': '16617265'
+        - '#text': '<p>Commit e0b524bce43e8362bb982bd06d01ef039fe0f2f6 in lucene-solr''s
+            branch refs/heads/branch_7x from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=simonw"
+            class="user-hover" rel="simonw">simonw</a><br/>
+
+            [ <a href="https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=e0b524b"
+            class="external-link" target="_blank" rel="nofollow noopener">https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=e0b524b</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-8502" title="
+            Allow access to delegate in FilterCodecReader" class="issue-link" data-issue-key="LUCENE-8502"><del>LUCENE-8502</del></a>:
+            Allow access to delegate in FilterCodecReader</p>
+
+
+            <p>FilterCodecReader doesn''t allow access to it''s delegate like other<br/>
+
+            filter readers. This adds a new getDelegate method to access the<br/>
+
+            wrapped reader.</p>'
+          '@author': jira-bot
+          '@created': Mon, 17 Sep 2018 09:11:37 +0000
+          '@id': '16617273'
+        - '#text': '<p>Commit 140c7e19366814e5397e1fdf7e74694f94d177b7 in lucene-solr''s
+            branch refs/heads/branch_7_5 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=simonw"
+            class="user-hover" rel="simonw">simonw</a><br/>
+
+            [ <a href="https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=140c7e1"
+            class="external-link" target="_blank" rel="nofollow noopener">https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=140c7e1</a>
+            ]</p>
+
+
+            <p><a href="https://issues.apache.org/jira/browse/LUCENE-8502" title="
+            Allow access to delegate in FilterCodecReader" class="issue-link" data-issue-key="LUCENE-8502"><del>LUCENE-8502</del></a>:
+            Allow access to delegate in FilterCodecReader</p>
+
+
+            <p>FilterCodecReader doesn''t allow access to it''s delegate like other<br/>
+
+            filter readers. This adds a new getDelegate method to access the<br/>
+
+            wrapped reader.</p>'
+          '@author': jira-bot
+          '@created': Mon, 17 Sep 2018 09:12:39 +0000
+          '@id': '16617274'
+        - '#text': '<p>Commit e61f6961cc09b708a438f2fc41a653de0ea0de17 in lucene-solr''s
+            branch refs/heads/branch_7_5 from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=simonw"
+            class="user-hover" rel="simonw">simonw</a><br/>
+
+            [ <a href="https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=e61f696"
+            class="external-link" target="_blank" rel="nofollow noopener">https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=e61f696</a>
+            ]</p>
+
+
+            <p>Add missing changes entries for <a href="https://issues.apache.org/jira/browse/LUCENE-8502"
+            title=" Allow access to delegate in FilterCodecReader" class="issue-link"
+            data-issue-key="LUCENE-8502"><del>LUCENE-8502</del></a> and <a href="https://issues.apache.org/jira/browse/LUCENE-8503"
+            title="Simplify unwrapping Filter*Reader" class="issue-link" data-issue-key="LUCENE-8503"><del>LUCENE-8503</del></a></p>'
+          '@author': jira-bot
+          '@created': Mon, 17 Sep 2018 14:08:17 +0000
+          '@id': '16617576'
+        - '#text': '<p>Commit d38e90b85495610a7411305745b50e24201babb6 in lucene-solr''s
+            branch refs/heads/branch_7x from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=simonw"
+            class="user-hover" rel="simonw">simonw</a><br/>
+
+            [ <a href="https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=d38e90b"
+            class="external-link" target="_blank" rel="nofollow noopener">https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=d38e90b</a>
+            ]</p>
+
+
+            <p>Add missing changes entries for <a href="https://issues.apache.org/jira/browse/LUCENE-8502"
+            title=" Allow access to delegate in FilterCodecReader" class="issue-link"
+            data-issue-key="LUCENE-8502"><del>LUCENE-8502</del></a> and <a href="https://issues.apache.org/jira/browse/LUCENE-8503"
+            title="Simplify unwrapping Filter*Reader" class="issue-link" data-issue-key="LUCENE-8503"><del>LUCENE-8503</del></a></p>'
+          '@author': jira-bot
+          '@created': Mon, 17 Sep 2018 14:08:20 +0000
+          '@id': '16617578'
+        - '#text': '<p>Commit 895bff46b2c3d3d027e693e11a2feac9f518191d in lucene-solr''s
+            branch refs/heads/master from <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=simonw"
+            class="user-hover" rel="simonw">simonw</a><br/>
+
+            [ <a href="https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=895bff4"
+            class="external-link" target="_blank" rel="nofollow noopener">https://git-wip-us.apache.org/repos/asf?p=lucene-solr.git;h=895bff4</a>
+            ]</p>
+
+
+            <p>Add missing changes entries for <a href="https://issues.apache.org/jira/browse/LUCENE-8502"
+            title=" Allow access to delegate in FilterCodecReader" class="issue-link"
+            data-issue-key="LUCENE-8502"><del>LUCENE-8502</del></a> and <a href="https://issues.apache.org/jira/browse/LUCENE-8503"
+            title="Simplify unwrapping Filter*Reader" class="issue-link" data-issue-key="LUCENE-8503"><del>LUCENE-8503</del></a></p>'
+          '@author': jira-bot
+          '@created': Mon, 17 Sep 2018 14:08:23 +0000
+          '@id': '16617580'
+        - '#text': '<p>This issue was moved to GitHub issue: <a href="https://github.com/apache/lucene/issues/9548"
+            class="external-link" target="_blank" rel="nofollow noopener">#9548</a>.</p>'
+          '@author': tomoko uchida
+          '@created': Sun, 28 Aug 2022 15:36:00 +0000
+          '@id': '17594716'
+      created: Mon, 17 Sep 2018 08:23:15 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '0.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: no_permission
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 2 years, 42 weeks, 4 days ago
+        - '@id': customfield_12310120
+          '@key': com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes
+          customfieldname: Lucene Fields
+          customfieldvalues:
+            customfieldvalue:
+              '#text': New
+              '@key': '10121'
+        - '@id': customfield_12313320
+          '@key': com.atlassian.jira.toolkit:message
+          customfieldname: Lucene Mailing List Info
+          customfieldvalues: null
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|i3y5dr:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+      description: "<p> FilterCodecReader doesn't allow access to it's delegate like\
+        \ other<br/>\n    filter readers. This adds a new getDelegate method to access\
+        \ the<br/>\n    wrapped reader.</p>"
+      due: null
+      environment: null
+      fixVersion:
+      - '7.5'
+      - '8.0'
+      key:
+        '#text': LUCENE-8502
+        '@id': '13185435'
+      labels: null
+      link: https://issues.apache.org/jira/browse/LUCENE-8502
+      priority:
+        '#text': Major
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/major.svg
+        '@id': '3'
+      progress:
+        '@percentage': '100'
+        currentProgress:
+          row:
+          - '@backgroundColor': '#51a825'
+            '@percentage': '100'
+          - '@backgroundColor': '#ec8e00'
+            '@percentage': '0'
+        originalProgress:
+          row:
+          - '@backgroundColor': '#89afd7'
+            '@percentage': '0'
+          - '@backgroundColor': transparent
+            '@percentage': '100'
+      project:
+        '#text': Lucene - Core
+        '@id': '12310110'
+        '@key': LUCENE
+      reporter:
+        '#text': Simon Willnauer
+        '@username': simonw
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Mon, 17 Sep 2018 09:13:12 +0000
+      status:
+        '#text': Closed
+        '@description': The issue is considered finished, the resolution is correct.
+          Issues which are not closed can be reopened.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/closed.png
+        '@id': '6'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: Allow access to delegate in FilterCodecReader
+      timeestimate:
+        '#text': 0h
+        '@seconds': '0'
+      timespent:
+        '#text': 10m
+        '@seconds': '600'
+      title: '[LUCENE-8502]  Allow access to delegate in FilterCodecReader'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Sun, 28 Aug 2022 15:36:00 +0000
+      version:
+      - '7.5'
+      - '8.0'
+      votes: '0'
+      watches: '3'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA

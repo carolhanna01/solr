@@ -1,0 +1,70 @@
+diff --git a/lucene/core/src/java/org/apache/lucene/index/FilterCodecReader.java b/lucene/core/src/java/org/apache/lucene/index/FilterCodecReader.java
+index 4187051006..0f8dcfc8a6 100644
+--- a/lucene/core/src/java/org/apache/lucene/index/FilterCodecReader.java
++++ b/lucene/core/src/java/org/apache/lucene/index/FilterCodecReader.java
+@@ -39,6 +39,15 @@ import org.apache.lucene.util.Bits;
+  * {@link #getCoreCacheHelper()} and {@link #getReaderCacheHelper()}.
+  */
+ public abstract class FilterCodecReader extends CodecReader {
++
++  /** Get the wrapped instance by <code>reader</code> as long as this reader is
++   *  an instance of {@link FilterCodecReader}.  */
++  public static CodecReader unwrap(CodecReader reader) {
++    while (reader instanceof FilterCodecReader) {
++      reader = ((FilterCodecReader) reader).getDelegate();
++    }
++    return reader;
++  }
+   /** 
+    * The underlying CodecReader instance. 
+    */
+@@ -127,6 +136,11 @@ public abstract class FilterCodecReader extends CodecReader {
+     in.checkIntegrity();
+   }
+ 
++  /** Returns the wrapped {@link CodecReader}. */
++  public CodecReader getDelegate() {
++    return in;
++  }
++
+   /**
+    * Returns a filtered codec reader with the given live docs and numDocs.
+    */
+diff --git a/lucene/core/src/test/org/apache/lucene/index/TestFilterCodecReader.java b/lucene/core/src/test/org/apache/lucene/index/TestFilterCodecReader.java
+index feb803fffb..53ca7749db 100644
+--- a/lucene/core/src/test/org/apache/lucene/index/TestFilterCodecReader.java
++++ b/lucene/core/src/test/org/apache/lucene/index/TestFilterCodecReader.java
+@@ -16,8 +16,12 @@
+  */
+ package org.apache.lucene.index;
+ 
++import java.io.IOException;
+ import java.lang.reflect.Method;
+ import java.lang.reflect.Modifier;
++
++import org.apache.lucene.document.Document;
++import org.apache.lucene.store.Directory;
+ import org.apache.lucene.util.LuceneTestCase;
+ 
+ public class TestFilterCodecReader extends LuceneTestCase {
+@@ -27,6 +31,20 @@ public class TestFilterCodecReader extends LuceneTestCase {
+     implTestDeclaredMethodsOverridden(subClass.getSuperclass(), subClass);
+   }
+ 
++  public void testGetDelegate() throws IOException {
++    try (Directory dir = newDirectory();
++         IndexWriter w = new IndexWriter(dir,newIndexWriterConfig())) {
++      w.addDocument(new Document());
++      try (DirectoryReader reader = w.getReader()) {
++        FilterCodecReader r = FilterCodecReader.wrapLiveDocs((CodecReader) reader.getSequentialSubReaders().get(0),
++            null, 1);
++
++        assertSame(FilterCodecReader.unwrap(r), reader.getSequentialSubReaders().get(0));
++        assertSame(r.getDelegate(), reader.getSequentialSubReaders().get(0));
++      }
++    }
++  }
++
+   private void implTestDeclaredMethodsOverridden(Class<?> superClass, Class<?> subClass) throws Exception {
+     for (final Method superClassMethod : superClass.getDeclaredMethods()) {
+       final int modifiers = superClassMethod.getModifiers();
