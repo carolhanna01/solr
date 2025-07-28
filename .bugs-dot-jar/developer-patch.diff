@@ -1,17 +1,3 @@
-diff --git a/lucene/CHANGES.txt b/lucene/CHANGES.txt
-index bbd00d8da1..34e78ac16d 100644
---- a/lucene/CHANGES.txt
-+++ b/lucene/CHANGES.txt
-@@ -60,6 +60,9 @@ Bug fixes
-   closed listeners. This was fixed by LUCENE-6501.
-   (Adrien Grand, Uwe Schindler)
- 
-+* LUCENE-6520: Geo3D GeoPath.done() would throw an NPE if adjacent path
-+  segments were co-linear. (Karl Wright via David Smiley)
-+
- Changes in Runtime Behavior
- 
- * LUCENE-6501: The subreader structure in ParallelCompositeReader
 diff --git a/lucene/spatial/src/java/org/apache/lucene/spatial/spatial4j/geo3d/GeoPath.java b/lucene/spatial/src/java/org/apache/lucene/spatial/spatial4j/geo3d/GeoPath.java
 index 379467b048..2dfacaca1d 100755
 --- a/lucene/spatial/src/java/org/apache/lucene/spatial/spatial4j/geo3d/GeoPath.java
@@ -103,30 +89,3 @@ index 379467b048..2dfacaca1d 100755
          this.cutoffPlanes = new Membership[]{new SidedPlane(prevCutoffPlane)};
        } else {
          // dunno what happened
-diff --git a/lucene/spatial/src/test/org/apache/lucene/spatial/spatial4j/geo3d/GeoPathTest.java b/lucene/spatial/src/test/org/apache/lucene/spatial/spatial4j/geo3d/GeoPathTest.java
-index 27b3792581..998cbe8ccb 100755
---- a/lucene/spatial/src/test/org/apache/lucene/spatial/spatial4j/geo3d/GeoPathTest.java
-+++ b/lucene/spatial/src/test/org/apache/lucene/spatial/spatial4j/geo3d/GeoPathTest.java
-@@ -19,6 +19,7 @@ package org.apache.lucene.spatial.spatial4j.geo3d;
- 
- import org.junit.Test;
- 
-+import static java.lang.Math.toRadians;
- import static org.junit.Assert.assertEquals;
- import static org.junit.Assert.assertFalse;
- import static org.junit.Assert.assertTrue;
-@@ -182,4 +183,14 @@ public class GeoPathTest {
- 
-   }
- 
-+  @Test
-+  public void testCoLinear() {
-+    // p1: (12,-90), p2: (11, -55), (129, -90)
-+    GeoPath p = new GeoPath(PlanetModel.SPHERE, 0.1);
-+    p.addPoint(toRadians(-90), toRadians(12));//south pole
-+    p.addPoint(toRadians(-55), toRadians(11));
-+    p.addPoint(toRadians(-90), toRadians(129));//south pole again
-+    p.done();//at least test this doesn't bomb like it used too -- LUCENE-6520
-+  }
-+
- }
